@@ -1,0 +1,75 @@
+<section id="contactSec" class="contactSec contact">
+  <div class="container">
+    <div class="page-heading">
+      <span class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></span>
+      <h2>Get in Touch</h2>
+    </div>
+    <div class="row">
+      <div class="col-md-5 col-sm-5 col-xs-12">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua. Ut enim ad minim enim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+          ex ea commodo consequat.</p>
+        <address class="w-100 d-flex">
+          <ul>
+            <li><i class="fa fa-home"></i>241, Sector 19 Dwarka New Delhi, 110075</li>
+            <li><i class="fa fa-envelope"></i> <a href="mailto:sahani.durgesh@gmail.com">sahani.durgesh@gmail.com</a>
+            </li>
+            <li><i class="fa fa-phone"></i><a href="tel:919717758007">+91-97177-58007</a></li>
+            <li><i class="fa fa-skype" aria-hidden="true"></i>sahani.durgesh</li>
+          </ul>
+        </address>
+        <div class="social_links">
+          <ul>
+            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-7 col-sm-7 col-xs-12">
+        <div class="subheading">
+          <h3>Let's Talk</h3>
+        </div>
+        <form [formGroup]="contactform" (ngSubmit)="visitUs(contact_data)">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form_item"
+                [class.has_error]="contactform.get('e_name')?.invalid && contactform.get('e_name')?.touched">
+                <label>Your Name</label>
+                <input type="text" [(ngModel)]="contact_data.e_name" name="e_name" formControlName="e_name"
+                  class="form-control" />
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form_item"
+                [class.has_error]="contactform.get('e_email')?.invalid && contactform.get('e_email')?.touched">
+                <label>Email ID</label>
+                <input type="email" [(ngModel)]="contact_data.e_email" name="e_email" formControlName="e_email"
+                  class="form-control" />
+              </div>
+            </div>
+          </div>
+          <div class="form_item"
+            [class.has_error]="contactform.get('e_subject')?.invalid && contactform.get('e_subject')?.touched">
+            <label>Subject</label>
+            <input type="text" [(ngModel)]="contact_data.e_subject" name="e_subject" formControlName="e_subject"
+              class="form-control" />
+          </div>
+          <div class="form_item"
+            [class.has_error]="contactform.get('e_message')?.invalid && contactform.get('e_message')?.touched">
+            <label>Your Message</label>
+            <textarea [(ngModel)]="contact_data.e_message" name="e_message" formControlName="e_message"
+              class="form-control" cols="20" rows="3"></textarea>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <button class="btn btn-danger" [disabled]="contactform.invalid" type="submit"><i
+                  class="fa fa-paper-plane-o" aria-hidden="true"></i>&nbsp;Send Message</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>

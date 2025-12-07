@@ -1,0 +1,14 @@
+@use "profile";
+.skills-experience{
+background-color:rgb(0, 160, 125,.3);
+
+.single_experties{width:100%; display:block; float:left; clear:both; margin:0 0 15px;
+.skilled-tittle{font-weight:500; color:#333;}
+.progress *{ transition: width 3s;}
+.progress{border-radius:0; background-color:rgba(0,0,0,.3); position:relative;
+.progress-bar{background-color:var(--green_100);  width:0px; position:absolute;}
+ }
+}
+}
+
+

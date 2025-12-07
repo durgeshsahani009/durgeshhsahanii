@@ -1,0 +1,28 @@
+<div class="container">
+  <div class="row">
+    @for (item of navItems; track $index) {
+    <div class="col-md-3">
+      <div class="card">
+        <div class="card-body">
+          <h2 class="card-title"><a [routerLink]="item.path">{{item.title}}</a></h2>
+          <p class="card-text">{{item.description}}</p>
+          <div class="card">
+            <ul class="list-group list-group-flush">
+              @for (subItem of item.children; track $index) {
+              @if(subItem.active){
+              <li class="list-group-item">
+                <a class="btn btn-sm" [class]="subItem?.color" [routerLink]="item.path+subItem.name">{{subItem.title}}
+                </a>
+              </li>
+              }
+              }          
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    }
+
+
+  </div>
+</div>

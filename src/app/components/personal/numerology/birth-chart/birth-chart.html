@@ -1,0 +1,37 @@
+<app-header></app-header>
+<div class="container my-3">
+  <div class="row">
+    <div class="col-md-6 mb-2">
+      <div class="row">
+        <div class="col-md-2">Date</div>
+        <div class="col-md-10">
+          <div class="input-group">
+            <div class="input-group-text">
+              <span class="me-3  d-flex align-item-center ">
+                <input class="form-check-input mt-0" (change)="createChart(datefield.value)" type="radio" name="gender"
+                  checked value="m">&nbsp; M</span>
+              <span><input (change)="createChart(datefield.value)" class="form-check-input mt-0" type="radio"
+                  name="gender" value="f"> &nbsp;F</span>
+            </div>
+            <input type="date" (change)="createChart(datefield.value)" class="form-control" #datefield>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <table class="table chart_grid table-bordered" border="1" [cellPadding]="5"></table>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6 mb-2">
+      @if(_driver){
+      <p class="mb-0">Driver : <b>{{_driver}}</b></p>
+      <p class="mb-0">Conductor :<b>{{_conductor}}</b> </p>
+      <p class="mb-0">Kua : <b>{{_kua}}</b></p>
+      }
+    </div>
+    <div class="col-md-6 mb-2"></div>
+  </div>
+
+
+</div>

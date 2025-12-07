@@ -1,0 +1,89 @@
+<header>
+  <div class="head_bott_bar">
+    <div class="container">
+      <div class="row">
+        <div  class="col-md-2 logo">
+          <a routerLink="home"><img src="images/logo5.png" /></a>
+        </div>
+        <div class="col-md-8 menues">
+          <nav>
+            <span class="menu_icon" [class.btn_active]="clicked" (click)="clicked = !clicked">
+              <span class="strips strp1"></span>
+              <span class="strips strp2"></span>
+              <span class="strips strp3"></span>
+            </span>
+            <ul>
+              <li><a routerLink="/home">Home</a></li>
+              <li><a routerLink="/about">About</a></li>
+              <li><a href="javascript:void(0)">Service</a></li>
+              <li><a routerLink="/skills-experience">Skills &amp; Experience</a></li>
+              <li><a href="javascript:void(0)">Portfolio</a></li>
+              <li><a routerLink="/contact">Contact</a></li>
+              @if (isMobile) {
+              
+              @if(authService.loggedIn()){
+              <li class="acountmenu border_t"><a routerLink="/dashboard">
+                  <i class="fa fa-tachometer" aria-hidden="true"></i>Dashboard
+                </a></li>
+              }
+              @if(!authService.loggedIn()){
+              <li class="acountmenu border_t"><a routerLink="/login">
+                <i class="fa fa-sign-in" aria-hidden="true"></i>&nbsp;Login</a></li>
+              }
+              @if(!authService.loggedIn()){
+              <li class="acountmenu"><a routerLink="/register">
+                <i class="fa fa-user-plus" aria-hidden="true"></i>&nbsp;Register</a></li>
+              }
+              @if(authService.loggedIn()){
+              <li class="acountmenu"><a (click)="authService.logoutUser()" href="javascript:void(0)">
+                <i class="fa fa-sign-out" aria-hidden="true"></i>&nbsp;Logout</a></li>
+              }
+            }
+            </ul>
+          </nav>
+        </div>
+        @if(!isMobile){
+        <div class="col-md-2 col-sm-2 col-xs-2 accouts_nav">
+          <ul>
+            @if(authService.loggedIn()){
+            <li><a routerLink="dashboard" routerLinkActive="active">
+                <i class="fa fa-tachometer" aria-hidden="true"></i>
+                Dashboard</a> </li>
+            }
+            @if(!authService.loggedIn()){
+            <li>
+              <a routerLink="login" routerLinkActive="active"><i class="fa fa-sign-in"
+                  aria-hidden="true"></i>&nbsp;Login</a>
+            </li>
+            }
+            @if(!authService.loggedIn()){
+              <li>
+                <a routerLink="register" routerLinkActive="active"><i class="fa fa-user-plus"
+                    aria-hidden="true"></i>&nbsp;Register</a>
+              </li>
+            }
+            @if(authService.loggedIn()){
+              <li>
+                <a (click)="authService.logoutUser()" href="javascript:void(0)">
+                  <i class="fa fa-sign-out" aria-hidden="true"></i>&nbsp;Logout</a>
+              </li>
+            }
+          </ul>
+        </div>
+      }
+      </div>
+    </div>
+  </div>
+</header>
+
+
+<main class="contentSec">
+  <router-outlet></router-outlet>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="copyright"><a routerLink="/"><span class="fa fa-home"></span></a> Copyright © 2025-2026 <span> durgesh
+        sahani. </span> All right reserved.</div>
+  </div>
+</footer>

@@ -1,0 +1,29 @@
+<!--SKILL & EXPERIENCE SECTION -->
+<section class="skill_experience skills-experience">
+  <div class="container">
+
+    <div id="graphicdesign">
+      <div class="page-heading">
+        <span class="icon"><i class="fa fa-cogs" aria-hidden="true"></i></span>
+        <h2>Skills &amp; Experience</h2>
+      </div>
+
+      <div class="skill_progress">
+        <div class="row">
+          <div *ngFor="let item of skillSets; let i=index" class="col-md-6">
+            <div class="single_experties">
+              <div class="skilled-tittle">{{item.tech}}</div>
+              <div [style.transition]="item.transition" class="progress">
+                <div [style.width]="item.expertise" class="progress-bar photoshop-bg wow Rx-width-90 animated"
+                  role="progressbar" data-wow-duration="0.5s" data-wow-delay=".5s" aria-valuenow="0" aria-valuemin="0"
+                  aria-valuemax="100">
+                  <span class="photoshop-color">{{item.expertise}}</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
