@@ -11,4 +11,12 @@ export class Tutorial {
   getAngular(): Observable<any> {
     return this.http.get('json/angular.json');
   }
+
+  getJavaScrript():Observable<any>{
+    return this.http.get('json/javascript.json');
+  }
+
+  getIndex():Observable<any>{
+    return this.http.get('json/index.json')
+  }
 }

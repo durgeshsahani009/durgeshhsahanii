@@ -20,6 +20,7 @@ navItems:any = this.getMenus();
           { name: "angular", title: "Angular", color: "btn-primary", active: true },
           { name: "mongodb", title: "MongoDB", color: "btn-primary", active: true },
           { name: "nodejs", title: "Nodejs", color: "btn-primary", active: true },
+          { name: "index", title: "Index", color: "btn-primary", active: true },
           { name: "jscore", title: "JavaScript Core", color: "btn-primary", active: false },
           { name: "es5-6", title: "ES5 / ES6", color: "btn-primary", active: false },
           { name: "javaScript-reasoning", title: "JavaScript Reasoning", color: "btn-primary", active: false },

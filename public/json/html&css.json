@@ -1,0 +1,743 @@
+{
+    "data": [
+        {
+            "id": "1",
+            "que": "What are the meta tag?",
+            "order": [
+                "paragraph"
+            ],
+            "ans": {
+                "paragraph": [
+                    "Meta tag is used to provide additional important information about a document in a variety of ways. Meta elements are typically used to specify page description, keywords, author of the document, last modified, and other meta information."
+                ],
+                "list": [],
+                "codeblock": {
+                    "lang": "",
+                    "code": ""
+                }
+            }
+        },
+        {
+            "id": "2",
+            "que": "What is the different between html4 and html5 doctype?",
+            "order": [
+                "paragraph"
+            ],
+            "ans": {
+                "paragraph": [
+                    "The HTML 4 Doctypes describe the root element, and provides two ways (a URL and a code for finding it if you have a local copy) for finding the DTD. but HTML 5 Doctype is a magic string that triggers standards mode in browsers."
+                ],
+                "list": [],
+                "codeblock": {
+                    "lang": "",
+                    "code": ""
+                }
+            }
+        },
+          {
+            "id": "3",
+            "que": "Different between canvas and svg in html5?",
+            "order": [
+                "paragraph"
+            ],
+            "ans": {
+                "paragraph": [
+                    "The SVG stands for Scalable Vector Graphics, and language for describing 2D graphics.SVG is based on XML, which means that every element is available within the SVG DOM. Canvas are used to draws 2D graphics with the help of JavaScript."
+                ],
+                "list": [],
+                "codeblock": {
+                    "lang": "",
+                    "code": ""
+                }
+            }
+        },  {
+            "id": "4",
+            "que": "Difference between \"background-size:cover\" and \"background-size:100%\"?",
+            "order": [
+                "paragraph"
+            ],
+            "ans": {
+                "paragraph": [
+                    "Using background-size:cover, background area is completely covered by the background image, but some parts of the background image may not be in view within the background positioning area. It means some of the image may be cut off where as the 100% background-size will be display complete background-image within the view area."
+                ],
+                "list": [],
+                "codeblock": {
+                    "lang": "",
+                    "code": ""
+                }
+            }
+        },  {
+            "id": "5",
+            "que": "What is semantic HTML?",
+            "order": [
+                "paragraph"
+            ],
+            "ans": {
+                "paragraph": [
+                    "Semantic HTML clearly defines what kind of code it is holding and help for structuring and understanding of the layout."
+                ],
+                "list": [],
+                "codeblock": {
+                    "lang": "",
+                    "code": ""
+                }
+            }
+        },  {
+            "id": "6",
+            "que": "Why to use HTML5 semantic tag instead of div ?",
+            "order": [
+                "paragraph"
+            ],
+            "ans": {
+                "paragraph": [
+                    "Semantic tags used for proper Separation of content, presentation and understanding of the layout. Using the semantic elements, the name clearly defines what kind of code it is holding. Where as using div tag we have to define a class or id that tells about what kind of code it is holding."
+                ],
+                "list": [],
+                "codeblock": {
+                    "lang": "",
+                    "code": ""
+                }
+            }
+        },  {
+            "id": "7",
+            "que": "What is local storage in HTML5?",
+            "order": [
+                "paragraph"
+            ],
+            "ans": {
+                "paragraph": [
+                    "Using local storage, web applications can store data locally within the user's browser. Before HTML5, application data had to be stored in cookies, included in every server request. Local storage is more secure, and large amounts of data(upto 5MB) can be stored locally, without affecting website performance."
+                ],
+                "list": [],
+                "codeblock": {
+                    "lang": "",
+                    "code": ""
+                }
+            }
+        },  {
+            "id": "1",
+            "que": "",
+            "order": [
+                "paragraph"
+            ],
+            "ans": {
+                "paragraph": [
+                    ""
+                ],
+                "list": [],
+                "codeblock": {
+                    "lang": "",
+                    "code": ""
+                }
+            }
+        },  {
+            "id": "1",
+            "que": "",
+            "order": [
+                "paragraph"
+            ],
+            "ans": {
+                "paragraph": [
+                    ""
+                ],
+                "list": [],
+                "codeblock": {
+                    "lang": "",
+                    "code": ""
+                }
+            }
+        },  {
+            "id": "1",
+            "que": "",
+            "order": [
+                "paragraph"
+            ],
+            "ans": {
+                "paragraph": [
+                    ""
+                ],
+                "list": [],
+                "codeblock": {
+                    "lang": "",
+                    "code": ""
+                }
+            }
+        },  {
+            "id": "1",
+            "que": "",
+            "order": [
+                "paragraph"
+            ],
+            "ans": {
+                "paragraph": [
+                    ""
+                ],
+                "list": [],
+                "codeblock": {
+                    "lang": "",
+                    "code": ""
+                }
+            }
+        },  {
+            "id": "1",
+            "que": "",
+            "order": [
+                "paragraph"
+            ],
+            "ans": {
+                "paragraph": [
+                    ""
+                ],
+                "list": [],
+                "codeblock": {
+                    "lang": "",
+                    "code": ""
+                }
+            }
+        },  {
+            "id": "1",
+            "que": "",
+            "order": [
+                "paragraph"
+            ],
+            "ans": {
+                "paragraph": [
+                    ""
+                ],
+                "list": [],
+                "codeblock": {
+                    "lang": "",
+                    "code": ""
+                }
+            }
+        },  {
+            "id": "1",
+            "que": "",
+            "order": [
+                "paragraph"
+            ],
+            "ans": {
+                "paragraph": [
+                    ""
+                ],
+                "list": [],
+                "codeblock": {
+                    "lang": "",
+                    "code": ""
+                }
+            }
+        },  {
+            "id": "1",
+            "que": "",
+            "order": [
+                "paragraph"
+            ],
+            "ans": {
+                "paragraph": [
+                    ""
+                ],
+                "list": [],
+                "codeblock": {
+                    "lang": "",
+                    "code": ""
+                }
+            }
+        },  {
+            "id": "1",
+            "que": "",
+            "order": [
+                "paragraph"
+            ],
+            "ans": {
+                "paragraph": [
+                    ""
+                ],
+                "list": [],
+                "codeblock": {
+                    "lang": "",
+                    "code": ""
+                }
+            }
+        },  {
+            "id": "1",
+            "que": "",
+            "order": [
+                "paragraph"
+            ],
+            "ans": {
+                "paragraph": [
+                    ""
+                ],
+                "list": [],
+                "codeblock": {
+                    "lang": "",
+                    "code": ""
+                }
+            }
+        },  {
+            "id": "1",
+            "que": "",
+            "order": [
+                "paragraph"
+            ],
+            "ans": {
+                "paragraph": [
+                    ""
+                ],
+                "list": [],
+                "codeblock": {
+                    "lang": "",
+                    "code": ""
+                }
+            }
+        },  {
+            "id": "1",
+            "que": "",
+            "order": [
+                "paragraph"
+            ],
+            "ans": {
+                "paragraph": [
+                    ""
+                ],
+                "list": [],
+                "codeblock": {
+                    "lang": "",
+                    "code": ""
+                }
+            }
+        },  {
+            "id": "1",
+            "que": "",
+            "order": [
+                "paragraph"
+            ],
+            "ans": {
+                "paragraph": [
+                    ""
+                ],
+                "list": [],
+                "codeblock": {
+                    "lang": "",
+                    "code": ""
+                }
+            }
+        },  {
+            "id": "1",
+            "que": "",
+            "order": [
+                "paragraph"
+            ],
+            "ans": {
+                "paragraph": [
+                    ""
+                ],
+                "list": [],
+                "codeblock": {
+                    "lang": "",
+                    "code": ""
+                }
+            }
+        },  {
+            "id": "1",
+            "que": "",
+            "order": [
+                "paragraph"
+            ],
+            "ans": {
+                "paragraph": [
+                    ""
+                ],
+                "list": [],
+                "codeblock": {
+                    "lang": "",
+                    "code": ""
+                }
+            }
+        },  {
+            "id": "1",
+            "que": "",
+            "order": [
+                "paragraph"
+            ],
+            "ans": {
+                "paragraph": [
+                    ""
+                ],
+                "list": [],
+                "codeblock": {
+                    "lang": "",
+                    "code": ""
+                }
+            }
+        },  {
+            "id": "1",
+            "que": "",
+            "order": [
+                "paragraph"
+            ],
+            "ans": {
+                "paragraph": [
+                    ""
+                ],
+                "list": [],
+                "codeblock": {
+                    "lang": "",
+                    "code": ""
+                }
+            }
+        },  {
+            "id": "1",
+            "que": "",
+            "order": [
+                "paragraph"
+            ],
+            "ans": {
+                "paragraph": [
+                    ""
+                ],
+                "list": [],
+                "codeblock": {
+                    "lang": "",
+                    "code": ""
+                }
+            }
+        },  {
+            "id": "1",
+            "que": "",
+            "order": [
+                "paragraph"
+            ],
+            "ans": {
+                "paragraph": [
+                    ""
+                ],
+                "list": [],
+                "codeblock": {
+                    "lang": "",
+                    "code": ""
+                }
+            }
+        },  {
+            "id": "1",
+            "que": "",
+            "order": [
+                "paragraph"
+            ],
+            "ans": {
+                "paragraph": [
+                    ""
+                ],
+                "list": [],
+                "codeblock": {
+                    "lang": "",
+                    "code": ""
+                }
+            }
+        },  {
+            "id": "1",
+            "que": "",
+            "order": [
+                "paragraph"
+            ],
+            "ans": {
+                "paragraph": [
+                    ""
+                ],
+                "list": [],
+                "codeblock": {
+                    "lang": "",
+                    "code": ""
+                }
+            }
+        },  {
+            "id": "1",
+            "que": "",
+            "order": [
+                "paragraph"
+            ],
+            "ans": {
+                "paragraph": [
+                    ""
+                ],
+                "list": [],
+                "codeblock": {
+                    "lang": "",
+                    "code": ""
+                }
+            }
+        },  {
+            "id": "1",
+            "que": "",
+            "order": [
+                "paragraph"
+            ],
+            "ans": {
+                "paragraph": [
+                    ""
+                ],
+                "list": [],
+                "codeblock": {
+                    "lang": "",
+                    "code": ""
+                }
+            }
+        },  {
+            "id": "1",
+            "que": "",
+            "order": [
+                "paragraph"
+            ],
+            "ans": {
+                "paragraph": [
+                    ""
+                ],
+                "list": [],
+                "codeblock": {
+                    "lang": "",
+                    "code": ""
+                }
+            }
+        },  {
+            "id": "1",
+            "que": "",
+            "order": [
+                "paragraph"
+            ],
+            "ans": {
+                "paragraph": [
+                    ""
+                ],
+                "list": [],
+                "codeblock": {
+                    "lang": "",
+                    "code": ""
+                }
+            }
+        },  {
+            "id": "1",
+            "que": "",
+            "order": [
+                "paragraph"
+            ],
+            "ans": {
+                "paragraph": [
+                    ""
+                ],
+                "list": [],
+                "codeblock": {
+                    "lang": "",
+                    "code": ""
+                }
+            }
+        },  {
+            "id": "1",
+            "que": "",
+            "order": [
+                "paragraph"
+            ],
+            "ans": {
+                "paragraph": [
+                    ""
+                ],
+                "list": [],
+                "codeblock": {
+                    "lang": "",
+                    "code": ""
+                }
+            }
+        },  {
+            "id": "1",
+            "que": "",
+            "order": [
+                "paragraph"
+            ],
+            "ans": {
+                "paragraph": [
+                    ""
+                ],
+                "list": [],
+                "codeblock": {
+                    "lang": "",
+                    "code": ""
+                }
+            }
+        },  {
+            "id": "1",
+            "que": "",
+            "order": [
+                "paragraph"
+            ],
+            "ans": {
+                "paragraph": [
+                    ""
+                ],
+                "list": [],
+                "codeblock": {
+                    "lang": "",
+                    "code": ""
+                }
+            }
+        },  {
+            "id": "1",
+            "que": "",
+            "order": [
+                "paragraph"
+            ],
+            "ans": {
+                "paragraph": [
+                    ""
+                ],
+                "list": [],
+                "codeblock": {
+                    "lang": "",
+                    "code": ""
+                }
+            }
+        },  {
+            "id": "1",
+            "que": "",
+            "order": [
+                "paragraph"
+            ],
+            "ans": {
+                "paragraph": [
+                    ""
+                ],
+                "list": [],
+                "codeblock": {
+                    "lang": "",
+                    "code": ""
+                }
+            }
+        },  {
+            "id": "1",
+            "que": "",
+            "order": [
+                "paragraph"
+            ],
+            "ans": {
+                "paragraph": [
+                    ""
+                ],
+                "list": [],
+                "codeblock": {
+                    "lang": "",
+                    "code": ""
+                }
+            }
+        },  {
+            "id": "1",
+            "que": "",
+            "order": [
+                "paragraph"
+            ],
+            "ans": {
+                "paragraph": [
+                    ""
+                ],
+                "list": [],
+                "codeblock": {
+                    "lang": "",
+                    "code": ""
+                }
+            }
+        },  {
+            "id": "1",
+            "que": "",
+            "order": [
+                "paragraph"
+            ],
+            "ans": {
+                "paragraph": [
+                    ""
+                ],
+                "list": [],
+                "codeblock": {
+                    "lang": "",
+                    "code": ""
+                }
+            }
+        },  {
+            "id": "1",
+            "que": "",
+            "order": [
+                "paragraph"
+            ],
+            "ans": {
+                "paragraph": [
+                    ""
+                ],
+                "list": [],
+                "codeblock": {
+                    "lang": "",
+                    "code": ""
+                }
+            }
+        },  {
+            "id": "1",
+            "que": "",
+            "order": [
+                "paragraph"
+            ],
+            "ans": {
+                "paragraph": [
+                    ""
+                ],
+                "list": [],
+                "codeblock": {
+                    "lang": "",
+                    "code": ""
+                }
+            }
+        },  {
+            "id": "1",
+            "que": "",
+            "order": [
+                "paragraph"
+            ],
+            "ans": {
+                "paragraph": [
+                    ""
+                ],
+                "list": [],
+                "codeblock": {
+                    "lang": "",
+                    "code": ""
+                }
+            }
+        },  {
+            "id": "1",
+            "que": "",
+            "order": [
+                "paragraph"
+            ],
+            "ans": {
+                "paragraph": [
+                    ""
+                ],
+                "list": [],
+                "codeblock": {
+                    "lang": "",
+                    "code": ""
+                }
+            }
+        },  {
+            "id": "1",
+            "que": "",
+            "order": [
+                "paragraph"
+            ],
+            "ans": {
+                "paragraph": [
+                    ""
+                ],
+                "list": [],
+                "codeblock": {
+                    "lang": "",
+                    "code": ""
+                }
+            }
+        }
+    ]
+}

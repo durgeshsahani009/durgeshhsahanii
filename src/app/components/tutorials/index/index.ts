@@ -3,12 +3,12 @@ import { Tutorial } from '../../../services/tutorial';
 import { Highlight } from '../../../core/highlight';
 
 @Component({
-  selector: 'app-angular',
+  selector: 'app-index',
   imports: [Highlight],
-  templateUrl: './angular.html',
-  styleUrl: './angular.scss',
+  templateUrl: './index.html',
+  styleUrl: './index.scss',
 })
-export class Angular {
+export class Index {
 wraperWD:any=0;
   constructor(private tutorialservice: Tutorial){
        
@@ -19,12 +19,9 @@ wraperWD:any=0;
     this.fetchAngular();
   }
 
-  
-
-
   dataset:any=[];
   fetchAngular(){
-    this.tutorialservice.getAngular().subscribe({
+    this.tutorialservice.getIndex().subscribe({
       next:(res:any)=>{
         if(res["status"]==="success"){
           this.dataset = res["data"];      
@@ -49,5 +46,4 @@ wraperWD:any=0;
     }
     return space;
   }
-
 }
