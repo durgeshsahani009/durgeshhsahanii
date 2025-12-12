@@ -4,6 +4,7 @@ import { Javascript } from './javascript/javascript';
 import { Angular } from './angular/angular';
 import { Mongodb } from './mongodb/mongodb';
 import { Nodejs } from './nodejs/nodejs';
+import { Index } from './index';
 
 
 export const TUTORIAL_ROUTES: Routes = [
@@ -14,7 +15,8 @@ export const TUTORIAL_ROUTES: Routes = [
       { path: 'javascript', component: Javascript },
       { path: 'angular', component: Angular },
       { path: 'mongodb', component: Mongodb },
-      { path: 'nodejs', component: Nodejs }
+      { path: 'nodejs', component: Nodejs },
+      {path:'index',component:Index}
     ]
   }
 ];

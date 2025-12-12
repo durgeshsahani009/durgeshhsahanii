@@ -1,0 +1,1383 @@
+{
+    "data": [
+        
+        {
+            "id": "1",
+            "que": "What is Bubble Sort algorithm method?",
+            "order": [
+                "paragraph"
+            ],
+            "ans": {
+                "paragraph": [
+                    "Bubble Sort is the simplest sorting algorithm that works by repeatedly swapping the adjacent elements if they are in wrong order."
+                ],
+                "list": [],
+                "codeblock": {
+                    "lang": "",
+                    "code": ""
+                }
+            }
+        },
+
+        {
+            "id": "2",
+            "que": "Instanceof operator in JavaScriptt?",
+            "order": [
+                "paragraph"
+            ],
+            "ans": {
+                "paragraph": [
+                    "The instanceof operator in JavaScript is used to check the type of an object at run time. It returns a boolean value if true then it indicates that the object is an instance of a particular class and if false then it is not."
+                ],
+                "list": [],
+                "codeblock": {
+                    "lang": "",
+                    "code": ""
+                }
+            }
+        },
+
+        {
+            "id": "3",
+            "que": "What is Constructor in JavaScript?",
+            "order": [
+                "paragraph"
+            ],
+            "ans": {
+                "paragraph": [
+                    "A constructor is a function that are use to initializes an object"
+                ],
+                "list": [],
+                "codeblock": {
+                    "lang": "",
+                    "code": ""
+                }
+            }
+        },
+
+        {
+            "id": "4",
+            "que": "Pure function?",
+            "order": [
+                "paragraph","code"
+            ],
+            "ans": {
+                "paragraph": [
+                    "The Event Loop has one simple job to monitor the Call Stack and the Callback Queue. If the Call Stack is empty, it will take the first event from the queue and will push it to the Call Stack, which effectively runs it.",
+                    "The example for event loop are:"
+                ],
+                "list": [],
+                "codeblock": {
+                    "lang": "",
+                    "code": [
+                        {
+                            "tab": "1",
+                            "line": " console.log('First One');"
+                        },
+                        {
+                            "tab": "2",
+                            "line": " setTimeout( ()=>{"
+                        },
+                        {
+                            "tab": "3",
+                            "line": " console.log('Second One');"
+                        },
+                        {
+                            "tab": "4",
+                            "line": "}, 0);"
+                        },
+                        {
+                            "tab": "5",
+                            "line": "console.log('Third One'); "
+                        }
+                    ]
+                }
+            }
+        },
+
+        {
+            "id": "5",
+            "que": "What is JavaScript?",
+            "order": [
+                "paragraph"
+            ],
+            "ans": {
+                "paragraph": [
+                    "JavaScript is a scripting language which is used for most often client-side web development."
+                ],
+                "list": [],
+                "codeblock": {
+                    "lang": "",
+                    "code": ""
+                }
+            }
+        },
+
+        {
+            "id": "6",
+            "que": "Which company developed JavaScript?",
+            "order": [
+                "paragraph"
+            ],
+            "ans": {
+                "paragraph": [
+                    "Netscape is the software company who developed JavaScript."
+                ],
+                "list": [],
+                "codeblock": {
+                    "lang": "",
+                    "code": ""
+                }
+            }
+        },
+
+        {
+            "id": "7",
+            "que": "Difference between JavaScript and Jscript?",
+            "order": [
+                "paragraph"
+            ],
+            "ans": {
+                "paragraph": [
+                    "JavaScript and Jscript both are almost similar. JavaScript is developed by Netscape and Jscript was developed by Microsoft"
+                ],
+                "list": [],
+                "codeblock": {
+                    "lang": "",
+                    "code": ""
+                }
+            }
+        },
+
+        {
+            "id": "8",
+            "que": "What is the Data Type of JavaScript?",
+            "order": [
+                "paragraph","list"
+            ],
+            "ans": {
+                "paragraph": [
+                    "There are different of Data Type of JavaScript like-"
+                ],
+                "list": [
+                {"desc":"String"},
+                {"desc":"Number"},
+                {"desc":"Boolean"},
+                {"desc":"Function"},
+                {"desc":"Null"},
+                {"desc":"Undefined"}],
+                "codeblock": {
+                    "lang": "",
+                    "code": ""
+                }
+            }
+        },
+
+        {
+            "id": "9",
+            "que": "What is the use of Math Object in JavaScript?",
+            "order": [
+                "paragraph"
+            ],
+            "ans": {
+                "paragraph": [
+                    "The math object provides us properties and methods for mathematical constants and functions."
+                ],
+                "list": [],
+                "codeblock": {
+                    "lang": "",
+                    "code": ""
+                }
+            }
+        },
+
+        {
+            "id": "10",
+            "que": "What types of Boolean operators in JavaScript?",
+            "order": [
+                "paragraph","list"
+            ],
+            "ans": {
+                "paragraph": [
+                    "There are three types of Boolean operators in javascript like-"
+                ],
+                "list": [
+                    {"desc":"AND (&&) operator"},
+                    {"desc":"OR (||) operator and"},
+                    {"desc":"NOT (!) Operator"}
+                ],
+                "codeblock": {
+                    "lang": "",
+                    "code": ""
+                }
+            }
+        },
+
+        {
+            "id": "11",
+            "que": "What does \"1\"+2+4 evaluate to?",
+            "order": [
+                "paragraph"
+            ],
+            "ans": {
+                "paragraph": [
+                    "Since 1 is a string, everything is a string, so the result is 124."
+                ],
+                "list": [],
+                "codeblock": {
+                    "lang": "",
+                    "code": ""
+                }
+            }
+        },
+
+        {
+            "id": "12",
+            "que": "What are the calback function ?",
+            "order": [
+                "paragraph"
+            ],
+            "ans": {
+                "paragraph": [
+                    "A callback function is executed after the current effect is 100% finished. JavaScript statements are executed line by line. However, with effects, the next line of code can be run even though the effect is not finished. This can create errors. To prevent this, we can create a callback function."
+                ],
+                "list": [],
+                "codeblock": {
+                    "lang": "",
+                    "code": ""
+                }
+            }
+        },
+
+        {
+            "id": "13",
+            "que": "What does 3+4+\"7\" evaluate to?",
+            "order": [
+                "paragraph"
+            ],
+            "ans": {
+                "paragraph": [
+                    "Since 3 and 4 are integers, this is number arithmetic, since 7 is a string, it is concatenation, so 77 is the result."
+                ],
+                "list": [],
+                "codeblock": {
+                    "lang": "",
+                    "code": ""
+                }
+            }
+        },
+
+        {
+            "id": "14",
+            "que": "Different between \"undefined\" and \"null\" in javascript?",
+            "order": [
+                "paragraph"
+            ],
+            "ans": {
+                "paragraph": [
+                    "Undefinded means the variable has not been declared or has not been given a value. while null is a special object because type null return object."
+                ],
+                "list": [],
+                "codeblock": {
+                    "lang": "",
+                    "code": ""
+                }
+            }
+        },
+
+        {
+            "id": "15",
+            "que": "What is function in javascript ?",
+            "order": [
+                "paragraph"
+            ],
+            "ans": {
+                "paragraph": [
+                    "A JavaScript function is a block of code designed to perform a particular task."
+                ],
+                "list": [],
+                "codeblock": {
+                    "lang": "",
+                    "code": ""
+                }
+            }
+        },
+
+        {
+            "id": "16",
+            "que": "What types of looping structures are there in JavaScript?",
+            "order": [
+                "paragraph"
+            ],
+            "ans": {
+                "paragraph": [
+                    "There are three types of loops in javascript like-"
+                ],
+                "list": [
+                {"desc":"For loop"},
+                {"desc":"While loop and"},
+                {"desc":"Do-While loop"}
+            ],
+                "codeblock": {
+                    "lang": "",
+                    "code": ""
+                }
+            }
+        },
+
+        {
+            "id": "17",
+            "que": "What is the difference between “==” and “===”?",
+            "order": [
+                "paragraph"
+            ],
+            "ans": {
+                "paragraph": [
+                    "\"==\" operator compare the value and \"===\" operator compare the value and data type."
+                ],
+                "list": [],
+                "codeblock": {
+                    "lang": "",
+                    "code": ""
+                }
+            }
+        },
+
+        {
+            "id": "18",
+            "que": "What is “===” operator?",
+            "order": [
+                "paragraph"
+            ],
+            "ans": {
+                "paragraph": [
+                    "'===' is called as strict equality operator which returns true when two operands are having same value and data type."
+                ],
+                "list": [],
+                "codeblock": {
+                    "lang": "",
+                    "code": ""
+                }
+            }
+        },
+
+        {
+            "id": "19",
+            "que": "What is Undefined in Javascript?",
+            "order": [
+                "paragraph"
+            ],
+            "ans": {
+                "paragraph": [
+                    "Undefined is a javscript variable which has not value. The typeof is also undefined."
+                ],
+                "list": [],
+                "codeblock": {
+                    "lang": "",
+                    "code": ""
+                }
+            }
+        },
+
+        {
+            "id": "20",
+            "que": "String and number addition.",
+            "order": [
+                "paragraph"
+            ],
+            "ans": {
+                "paragraph": [
+                    "If we add a number and a string, the result will be a string!"
+                ],
+                "list": [],
+                "codeblock": {
+                    "lang": "",
+                    "code": ""
+                }
+            }
+        },
+
+        {
+            "id": "21",
+            "que": "Functions which are used to convert nonnumeric (string) values into numbers?",
+            "order": [
+                "paragraph","list"
+            ],
+            "ans": {
+                "paragraph": [
+                    "In JavaScript there are three different ways to convert a string into a number."
+                ],
+                "list": [
+                {"desc":"Number()"},
+                {"desc":"parseInt()"},
+                {"desc":"parseFloat()"}],
+                "codeblock": {
+                    "lang": "",
+                    "code": ""
+                }
+            }
+        },
+
+        {
+            "id": "22",
+            "que": "What are undeclared and undefined variables?",
+            "order": [
+                "paragraph"
+            ],
+            "ans": {
+                "paragraph": [
+                    "Undeclared variables are those that do not exist in a program and are not declared.And undefined variables are those that are declared in the program but have not been given any value."
+                ],
+                "list": [],
+                "codeblock": {
+                    "lang": "",
+                    "code": ""
+                }
+            }
+        },
+
+        {
+            "id": "23",
+            "que": "What is the use of isNaN function?",
+            "order": [
+                "paragraph"
+            ],
+            "ans": {
+                "paragraph": [
+                    "isNan function returns true if the argument is not a number otherwise it is false."
+                ],
+                "list": [],
+                "codeblock": {
+                    "lang": "",
+                    "code": ""
+                }
+            }
+        },
+
+        {
+            "id": "24",
+            "que": "What is negative infinity?",
+            "order": [
+                "paragraph"
+            ],
+            "ans": {
+                "paragraph": [
+                    "Negative Infinity is a number in JavaScript which can be derived by dividing negative number by zero."
+                ],
+                "list": [],
+                "codeblock": {
+                    "lang": "",
+                    "code": ""
+                }
+            }
+        },
+
+        {
+            "id": "25",
+            "que": "Is it possible to break JavaScript Code into several lines?",
+            "order": [
+                "paragraph"
+            ],
+            "ans": {
+                "paragraph": [
+                    "String statement can be line break by the use of a backslash, \"\" ,  at the end of the first line"
+                ],
+                "list": [],
+                "codeblock": {
+                    "lang": "",
+                    "code": ""
+                }
+            }
+        },
+
+        {
+            "id": "26",
+            "que": "What is a prompt box?",
+            "order": [
+                "paragraph"
+            ],
+            "ans": {
+                "paragraph": [
+                    "A prompt box is a box which allows the user to enter input by providing a text box"
+                ],
+                "list": [],
+                "codeblock": {
+                    "lang": "",
+                    "code": ""
+                }
+            }
+        },
+
+        {
+            "id": "27",
+            "que": "What is ‘this’ keyword in JavaScript?",
+            "order": [
+                "paragraph"
+            ],
+            "ans": {
+                "paragraph": [
+                    "‘This’ keyword is used to point at the current object in the code."
+                ],
+                "list": [],
+                "codeblock": {
+                    "lang": "",
+                    "code": ""
+                }
+            }
+        },
+
+        {
+            "id": "28",
+            "que": "What types of values is there in javaScript.",
+            "order": [
+                "paragraph"
+            ],
+            "ans": {
+                "paragraph": [
+                    "The JavaScript syntax defines two types of values: Fixed values and variable values. Fixed values are called literals. Variable values are called variables."
+                ],
+                "list": [],
+                "codeblock": {
+                    "lang": "",
+                    "code": ""
+                }
+            }
+        },
+
+        {
+            "id": "29",
+            "que": "What is JavaScript Statements ?",
+            "order": [
+                "paragraph"
+            ],
+            "ans": {
+                "paragraph": [
+                    "JavaScript statements are composed of: Values, Operators, Expressions, Keywords, and Comments."
+                ],
+                "list": [],
+                "codeblock": {
+                    "lang": "",
+                    "code": ""
+                }
+            }
+        },
+
+        {
+            "id": "30",
+            "que": "What do mean by NULL in Javascript?",
+            "order": [
+                "paragraph"
+            ],
+            "ans": {
+                "paragraph": [
+                    "The NULL value is used to represent no value or no object. It implies no object or null string, no valid boolean value, no number and no array object."
+                ],
+                "list": [],
+                "codeblock": {
+                    "lang": "",
+                    "code": ""
+                }
+            }
+        },
+
+        {
+            "id": "31",
+            "que": "What are all the types of Pop up boxes available in JavaScript?",
+            "order": [
+                "paragraph","list"
+            ],
+            "ans": {
+                "paragraph": [
+                    "There are three types of popup boxes in javascript like-"
+                ],
+                "list": [
+                {"desc":"Alert box"},
+                {"desc":"Confirm box"},
+                {"desc":"Prompt box"}],
+                "codeblock": {
+                    "lang": "",
+                    "code": ""
+                }
+            }
+        },
+
+        {
+            "id": "32",
+            "que": "What is the use of Void(0)?",
+            "order": [
+                "paragraph"
+            ],
+            "ans": {
+                "paragraph": [
+                    "Void(0) is used to prevent the page from refreshing and parameter “zero” is passed while calling."
+                ],
+                "list": [],
+                "codeblock": {
+                    "lang": "",
+                    "code": ""
+                }
+            }
+        },
+
+        {
+            "id": "33",
+            "que": "What is the data type of variables of in JavaScript?",
+            "order": [
+                "paragraph"
+            ],
+            "ans": {
+                "paragraph": [
+                    "All variables in the JavaScript are object data types."
+                ],
+                "list": [],
+                "codeblock": {
+                    "lang": "",
+                    "code": ""
+                }
+            }
+        },
+
+        {
+            "id": "34",
+            "que": "What is an Object?",
+            "order": [
+                "paragraph"
+            ],
+            "ans": {
+                "paragraph": [
+                    "The object is a collection of properties and the each property associated with the name-value pairs. The object can contain any data types (numbers, arrays, object etc.)"
+                ],
+                "list": [],
+                "codeblock": {
+                    "lang": "",
+                    "code": ""
+                }
+            }
+        },
+
+        {
+            "id": "35",
+            "que": "What is \"typeOf\" operator?",
+            "order": [
+                "paragraph"
+            ],
+            "ans": {
+                "paragraph": [
+                    "The \"typeOf\" operator is used to find the type of variables."
+                ],
+                "list": [],
+                "codeblock": {
+                    "lang": "",
+                    "code": ""
+                }
+            }
+        },
+
+        {
+            "id": "36",
+            "que": "What is OOP?",
+            "order": [
+                "paragraph"
+            ],
+            "ans": {
+                "paragraph": [
+                    "The object oriented programming is commonly known as OOP. Most of the languages are developed using OOP concept."
+                ],
+                "list": [],
+                "codeblock": {
+                    "lang": "",
+                    "code": ""
+                }
+            }
+        },
+
+        {
+            "id": "37",
+            "que": "What is the difference between an alert box and a confirmation box?",
+            "order": [
+                "paragraph"
+            ],
+            "ans": {
+                "paragraph": [
+                    "An alert box displays only one button which is the OK button. But a Confirmation box displays two buttons namely OK and cancel."
+                ],
+                "list": [],
+                "codeblock": {
+                    "lang": "",
+                    "code": ""
+                }
+            }
+        },
+
+        {
+            "id": "38",
+            "que": "What are JavaScript Cookies?",
+            "order": [
+                "paragraph"
+            ],
+            "ans": {
+                "paragraph": [
+                    "Cookies are the small test files stored in a computer and it gets created when the user visits the websites to store information that they need."
+                ],
+                "list": [],
+                "codeblock": {
+                    "lang": "",
+                    "code": ""
+                }
+            }
+        },
+
+        {
+            "id": "39",
+            "que": "What is scope variable in JavaScript?",
+            "order": [
+                "paragraph"
+            ],
+            "ans": {
+                "paragraph": [
+                    "The scope is set of variables, function, and objects and the JavaScript can have global scope variable and local scope variable."
+                ],
+                "list": [],
+                "codeblock": {
+                    "lang": "",
+                    "code": ""
+                }
+            }
+        },
+
+        {
+            "id": "40",
+            "que": "Mention what is the disadvantage of using innerHTML in JavaScript?",
+            "order": [
+                "paragraph","list"
+            ],
+            "ans": {
+                "paragraph": [
+                    "If you use innerHTML in JavaScript the disadvantage is"
+                ],
+                "list": [
+                    {"desc":"Content is replaced everywhere"},
+                    {"desc":"We cannot use like “appending to innerHTML”"},
+                    {"desc":"Even if you use +=like “innerHTML = innerHTML + ‘html’” still the old content is replaced by html"},
+                    {"desc":"The entire innerHTML content is re-parsed and build into elements, therefore its much slower"},
+                    {"desc":"The innerHTML does not provide validation and therefore we can potentially insert valid andbroken HTML in the document and break it"}
+                ],
+                "codeblock": {
+                    "lang": "",
+                    "code": ""
+                }
+            }
+        },
+
+        {
+            "id": "41",
+            "que": "What is break and continue statements?",
+            "order": [
+                "paragraph"
+            ],
+            "ans": {
+                "paragraph": [
+                    "Break statement exits from the current loop. Continue statement continues with next statement of the loop."
+                ],
+                "list": [],
+                "codeblock": {
+                    "lang": "",
+                    "code": ""
+                }
+            }
+        },
+
+        {
+            "id": "42",
+            "que": "Which keyword is used to print the text in the screen?",
+            "order": [
+                "paragraph"
+            ],
+            "ans": {
+                "paragraph": [
+                    "document.write(“Welcome”) is used to print the text – Welcome in the screen."
+                ],
+                "list": [],
+                "codeblock": {
+                    "lang": "",
+                    "code": ""
+                }
+            }
+        },
+
+        {
+            "id": "43",
+            "que": "What is the use of blur function?",
+            "order": [
+                "paragraph"
+            ],
+            "ans": {
+                "paragraph": [
+                    "Blur function is used to remove the focus from the specified object."
+                ],
+                "list": [],
+                "codeblock": {
+                    "lang": "",
+                    "code": ""
+                }
+            }
+        },
+
+        {
+            "id": "44",
+            "que": "What are the different types of errors in JavaScript?",
+            "order": [
+                "paragraph","list"
+            ],
+            "ans": {
+                "paragraph": [
+                    "There are three types of errors:"
+                ],
+                "list": [
+                {"title":"Load time errors:","desc":" Errors which come up when loading a web page like improper syntax errors are known as Load time errors and it generates the errors dynamically."},
+                {"title":"Run time errors:","desc":" Errors that come due to misuse of the command inside the HTML language."},
+                {"title":"Logical Errors:","desc":" Errors which come up due to the bad logic performed on a function which is having different operation."}],
+                "codeblock": {
+                    "lang": "",
+                    "code": ""
+                }
+            }
+        },
+
+        {
+            "id": "45",
+            "que": "What is the use of Push method in JavaScript?",
+            "order": [
+                "paragraph"
+            ],
+            "ans": {
+                "paragraph": [
+                    "The push method is used to add or append one or more elements to the end of an Array. Using this method, we can append multiple elements by passing multiple arguments."
+                ],
+                "list": [],
+                "codeblock": {
+                    "lang": "",
+                    "code": ""
+                }
+            }
+        },
+
+        {
+            "id": "46",
+            "que": "What is unshift method in JavaScript?",
+            "order": [
+                "paragraph"
+            ],
+            "ans": {
+                "paragraph": [
+                    "Unshift method is like push method which works at the beginning of the array. This method is used to prepend one or more elements to the beginning of the array."
+                ],
+                "list": [],
+                "codeblock": {
+                    "lang": "",
+                    "code": ""
+                }
+            }
+        },
+
+        {
+            "id": "47",
+            "que": "What is the ‘Strict’ mode in JavaScript and how can it be enabled?",
+            "order": [
+                "paragraph","code"
+            ],
+            "ans": {
+                "paragraph": [
+                    "Strict Mode adds certain compulsions to JavaScript. Under the strict mode, JavaScript shows errors for a piece of codes, which did not show an error before, but might be problematic and potentially unsafe. Strict mode also solves some mistakes that hamper the JavaScript engines to work efficiently.",
+                    "Strict mode can be enabled by adding the string literal “use strict” above the file. This can be illustrated by the given example:"
+                ],
+                "list": [],
+                "codeblock": {
+                    "lang": "",
+                    "code": [
+                    {"tab":"1","line":"function myfunction(){"},
+                    {"tab":"2","line":"\"use strict\";"},
+                    {"tab":"3","line":"var v = \"This is a strict mode function\";"},
+                    {"tab":"4","line":"}"}]
+                }
+            }
+        },
+
+        {
+            "id": "48",
+            "que": "Define event bubbling?",
+            "order": [
+                "paragraph"
+            ],
+            "ans": {
+                "paragraph": [
+                    "JavaScript allows DOM elements to be nested inside each other. In such a case, if the handler of the child is clicked, the handler of parent will also work as it were also clicked."
+                ],
+                "list": [],
+                "codeblock": {
+                    "lang": "",
+                    "code": ""
+                }
+            }
+        },
+
+        {
+            "id": "49",
+            "que": "How are DOM utilized in JavaScript?",
+            "order": [
+                "paragraph"
+            ],
+            "ans": {
+                "paragraph": [
+                    "DOM stands for Document Object Model and is responsible for how various objects in a document interact with each other. DOM is required for developing web pages, which includes objects like paragraph, links, etc. These objects can be operated to include actions like add or delete. DOM is also required to add extra capabilities to a web page. On top of that, the use of API gives an advantage over other existing models."
+                ],
+                "list": [],
+                "codeblock": {
+                    "lang": "",
+                    "code": ""
+                }
+            }
+        },
+
+        {
+            "id": "50",
+            "que": "How are event handlers utilized in JavaScript?",
+            "order": [
+                "paragraph"
+            ],
+            "ans": {
+                "paragraph": [
+                    "Events are the actions that result from activities, such as clicking a link or filling a form, by the user. An event handler is required to manage proper execution of all these events. Event handlers are an extra attribute of the object. This attribute includes event’s name and the action taken if the event takes place."
+                ],
+                "list": [],
+                "codeblock": {
+                    "lang": "",
+                    "code": ""
+                }
+            }
+        },
+
+        {
+            "id": "51",
+            "que": "What are Screen objects?",
+            "order": [
+                "paragraph","list"
+            ],
+            "ans": {
+                "paragraph": [
+                    "Screen objects are used to read the information for the client’s screen. The properties of screen objects are –"
+                ],
+                "list": [
+                {"title":"AvalHeight:","desc":" Gives the height of client’s screen"},
+                {"title":"AvailWidth:","desc":" Gives the width of client’s screen."},
+                {"title":"ColorDepth:","desc":" Gives the bit depth of images on the client’s screen"},
+                {"title":"Height:","desc":" Gives the total height of the client’s screen, including the taskbar"},
+                {"title":"Width:","desc":" Gives the total width of the client’s screen, including the taskbar"}
+            ],
+                "codeblock": {
+                    "lang": "",
+                    "code": ""
+                }
+            }
+        },
+
+        {
+            "id": "52",
+            "que": "What are the decodeURI() and encodeURI()?",
+            "order": [
+                "paragraph"
+            ],
+            "ans": {
+                "paragraph": [
+                    "EncodeURl() is used to convert URL into their hex coding. And DecodeURI() is used to convert the encoded URL back to normal."
+                ],
+                "list": [],
+                "codeblock": {
+                    "lang": "",
+                    "code": ""
+                }
+            }
+        },
+
+        {
+            "id": "53",
+            "que": "How are JavaScript and ECMA Script related?",
+            "order": [
+                "paragraph"
+            ],
+            "ans": {
+                "paragraph": [
+                    "ECMAScript is nothing but another name for JavaScript. Precisely, ECMAScript is the formal name of JavaScript, when XML elements have to be accessed."
+                ],
+                "list": [],
+                "codeblock": {
+                    "lang": "",
+                    "code": ""
+                }
+            }
+        },
+
+        {
+            "id": "54",
+            "que": "What is the array in javascript?",
+            "order": [
+                "paragraph"
+            ],
+            "ans": {
+                "paragraph": [
+                    "Array are used to store multiple values in a single variable. In the other word Array is collection of variables of the same types."
+                ],
+                "list": [],
+                "codeblock": {
+                    "lang": "",
+                    "code": ""
+                }
+            }
+        },
+
+        {
+            "id": "55",
+            "que": "Scope in JavaScript ?",
+            "order": [
+                "paragraph"
+            ],
+            "ans": {
+                "paragraph": [
+                    "Scope is the accessibility of variables, functions, and objects from different parts of the code during runtime. In other words, scope determines the visibility of variables."
+                ],
+                "list": [],
+                "codeblock": {
+                    "lang": "",
+                    "code": ""
+                }
+            }
+        },
+
+        {
+            "id": "56",
+            "que": "What types of scopes are there in JavaScript?",
+            "order": [
+                "paragraph","list","paragraph2"
+            ],
+            "ans": {
+                "paragraph": [
+                    ""
+                ],
+                
+                "list": [
+                    {"desc":""},
+                    {"desc":""}
+                ],
+                "list 2":[],
+                "codeblock": {
+                    "lang": "",
+                    "code": ""
+                }
+            }
+        },
+
+        {
+            "id": "57",
+            "que": "The Lifetime of JavaScript Variables",
+            "order": [
+                "paragraph"
+            ],
+            "ans": {
+                "paragraph": [
+                    "The lifetime of a JavaScript variable starts when it is declared",
+                    "Local variables are deleted when the function is completed.",
+                    "In a web browser, global variables are deleted when you close the browser window (or tab), but remain available to new pages loaded into the same window."
+                ],
+                "list": [],
+                "codeblock": {
+                    "lang": "",
+                    "code": ""
+                }
+            }
+        },
+
+        {
+            "id": "58",
+            "que": "Pure function?",
+            "order": [
+                "paragraph","list","code"
+            ],
+            "ans": {
+                "paragraph": [
+                    "The host property returns the hostname and port of a URL."    
+                ],
+                "list": [{"title":"Example :"}],
+                "codeblock": {
+                    "lang": "",
+                    "code": [
+                        {"tab":"1","line":"var  x = location.host;"},
+                        {"tab":"2","line":"console.log(x);"}
+                ]
+                }
+            }
+        },
+
+        {
+            "id": "59",
+            "que": "Anonymous Function",
+            "order": [
+                "paragraph"
+            ],
+            "ans": {
+                "paragraph": [
+                    "The function without a name is called anonymous function.",
+                    "Functions stored in variables do not need function names. They are always invoked (called) using the variable name."
+                ],
+                "list": [],
+                "codeblock": {
+                    "lang": "",
+                    "code": ""
+                }
+            }
+        },
+
+        {
+            "id": "60",
+            "que": "Semicolons",
+            "order": [
+                "paragraph"
+            ],
+            "ans": {
+                "paragraph": [
+                    "Semicolons are used to separate executable JavaScript statements.",
+                    "Since a function declaration is not an executable statement, it is not common to end it with a semicolon."
+                ],
+                "list": [],
+                "codeblock": {
+                    "lang": "",
+                    "code": ""
+                }
+            }
+        },
+
+        {
+            "id": "61",
+            "que": "Object in JavaScript.",
+            "order": [
+                "paragraph","list","paragraph2"
+            ],
+            "ans": {
+                "paragraph": [
+                    "In JavaScript, almost \"everything\" is an object."
+                ],
+                "paragraph2": [
+                    "All JavaScript values, except primitives, are objects"
+                ],
+                "list": [
+                {"desc":"Booleans can be objects (if defined with the new keyword)"},
+                {"desc":"Numbers can be objects (if defined with the new keyword)"},
+                {"desc":"Strings can be objects (if defined with the new keyword)"},
+                {"desc":"Dates are always objects"},
+                {"desc":"Maths are always objects"},
+                {"desc":"Regular expressions are always objects"},
+                {"desc":"Arrays are always objects"},
+                {"desc":"Functions are always objects"},
+                {"desc":"Objects are always objects"}
+                ],
+                "codeblock": {
+                    "lang": "",
+                    "code": ""
+                }
+            }
+        },
+
+        {
+            "id": "62",
+            "que": "JavaScript Primitives",
+            "order": [
+                "paragraph"
+            ],
+            "ans": {
+                "paragraph": [
+                    ""
+                ],
+                "list": [],
+                "codeblock": {
+                    "lang": "",
+                    "code": ""
+                }
+            }
+        },
+
+        {
+            "id": "63",
+            "que": "Differences between JSON and JavaScript object?",
+            "order": [
+                "paragraph"
+            ],
+            "ans": {
+                "paragraph": [
+                    "In JSON all keys must be quoted, while in object literals this is not necessary.",
+                    "We can change formate using \"JSON.stringfy()\" and \"JSON.parse()\" function."
+                ],
+                "list": [],
+                "codeblock": {
+                    "lang": "",
+                    "code": ""
+                }
+            }
+        },
+
+        {
+            "id": "64",
+            "que": "JSON Syntax Rules.",
+            "order": [
+                "paragraph"
+            ],
+            "ans": {
+                "paragraph": [
+                    "JSON syntax is derived from JavaScript object notation syntax:"
+                ],
+                "list": [
+                {"desc":"Data is in name/value pairs"},
+                {"desc":"Data is separated by commas"},
+                {"desc":"Curly braces hold objects"},
+                {"desc":"Square brackets hold arrays"}
+                ],
+                "codeblock": {
+                    "lang": "",
+                    "code": ""
+                }
+            }
+        },
+
+        {
+            "id": "65",
+            "que": "JSON Values Data Type.",
+            "order": [
+                "paragraph"
+            ],
+            "ans": {
+                "paragraph": [
+                    ""
+                ],
+                "list": [],
+                "codeblock": {
+                    "lang": "",
+                    "code": ""
+                }
+            }
+        },
+
+        {
+            "id": "66",
+            "que": "What is ECMAScript.",
+            "order": [
+                "paragraph"
+            ],
+            "ans": {
+                "paragraph": [
+                    ""
+                ],
+                "list": [],
+                "codeblock": {
+                    "lang": "",
+                    "code": ""
+                }
+            }
+        },
+
+        {
+            "id": "67",
+            "que": "How many way to remove array item?",
+            "order": [
+                "paragraph"
+            ],
+            "ans": {
+                "paragraph": [
+                    "There are 4 different ways to remove the array item."
+                ],
+                "list": [
+                {"title":"pop -","desc":"Using \"pop\" method we can removes item from the End of an Array"},
+                {"title":"shift -","desc":"Using \"shift\" method we can removes item from the beginning of an Array"},
+                {"title":"splice -","desc":" Using \"splice\" method we can removes item from a specific Array index"},
+                {"title":"filter -","desc":"Using \"filter\" method we can programatically remove item from an Array"}
+            ],
+                "codeblock": {
+                    "lang": "",
+                    "code": ""
+                }
+            }
+        },
+
+        {
+            "id": "68",
+            "que": "What does on() in JavaScript do?",
+            "order": [
+                "paragraph"
+            ],
+            "ans": {
+                "paragraph": [
+                    "The on() method attaches one or more event handlers for the selected elements and child elements."
+                ],
+                "list": [],
+                "codeblock": {
+                    "lang": "",
+                    "code": ""
+                }
+            }
+        },
+
+        {
+            "id": "69",
+            "que": "What is regular expression in javascript.",
+            "order": [
+                "paragraph"
+            ],
+            "ans": {
+                "paragraph": [
+                    "A regular expression is a sequence of characters that forms a search pattern."
+                ],
+                "list": [],
+                "codeblock": {
+                    "lang": "",
+                    "code": ""
+                }
+            }
+        },
+
+        {
+            "id": "70",
+            "que": "What is console.log?",
+            "order": [
+                "paragraph"
+            ],
+            "ans": {
+                "paragraph": [
+                    "Console is an object and log is its method."
+                ],
+                "list": [],
+                "codeblock": {
+                    "lang": "",
+                    "code": ""
+                }
+            }
+        },
+
+        {
+            "id": "71",
+            "que": "Difference between synchronous & asynchronous method.",
+            "order": [
+                "paragraph"
+            ],
+            "ans": {
+                "paragraph": [
+                    "Synchronous : Synchronous operation wait for each operation to complete, after that it executes the next operation.",
+                    "Asynchronous : Asynchronous operation never wait for each operation to complete, rather it executes all operations in the first GO only."
+                ],
+                "list": [],
+                "codeblock": {
+                    "lang": "",
+                    "code": ""
+                }
+            }
+        }
+    ],
+
+    "status":"success"
+}
