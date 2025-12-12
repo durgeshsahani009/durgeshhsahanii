@@ -2,12 +2,12 @@ import { Component } from '@angular/core';
 import { Tutorial } from '../../../services/tutorial';
 import { Highlight } from '../../../core/highlight';
 @Component({
-  selector: 'app-javascript',
+  selector: 'app-javascript-es6',
   imports: [Highlight],
-  templateUrl: './javascript.html',
-  styleUrl: './javascript.scss',
+  templateUrl: './javascript-es6.html',
+  styleUrl: './javascript-es6.scss',
 })
-export class Javascript {
+export class JavascriptES6 {
   warperWD: any = 0;
   constructor(private tutorialService: Tutorial) { }
 

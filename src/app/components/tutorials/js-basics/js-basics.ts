@@ -3,12 +3,12 @@ import { Tutorial } from '../../../services/tutorial';
 import { Highlight } from '../../../core/highlight';
 
 @Component({
-  selector: 'app-index',
+  selector: 'app-js-basics',
   imports: [Highlight],
-  templateUrl: './index.html',
-  styleUrl: './index.scss',
+  templateUrl: './js-basics.html',
+  styleUrl: './js-basics.scss',
 })
-export class Index {
+export class JsBasics{
 wraperWD:any=0;
   constructor(private tutorialservice: Tutorial){
        
@@ -21,7 +21,7 @@ wraperWD:any=0;
 
   dataset:any=[];
   fetchAngular(){
-    this.tutorialservice.getIndex().subscribe({
+    this.tutorialservice.getJascriptBasic().subscribe({
       next:(res:any)=>{
         if(res["status"]==="success"){
           this.dataset = res["data"];      

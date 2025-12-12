@@ -2,6 +2,7 @@
 <div class="container">
   <div class="row">
     <div class="col-md-4">
+      <label class="w-100">Name Number</label>
       <div class="input-group mb-3">
         <input (keyup.enter)="getNameNumber(name.value)" #name type="text" class="form-control"
           placeholder="Enter name">
@@ -20,6 +21,7 @@
 
   <div class="row mt-3">
     <div class="col-md-4">
+      <label class="w-100">Total of Numbers</label>
       <div class="input-group mb-3">
         <input (keyup.enter)="getMobileNo(number.value)" #number type="text" class="form-control" placeholder="Enter number">
         <button (click)="getMobileNo(number.value)" class="input-group-text bg-primary" id="basic-addon2">GO</button>

@@ -1,10 +1,11 @@
 import { Routes } from '@angular/router';
 import { TutorialsComponent } from './tutorials';
-import { Javascript } from './javascript/javascript';
 import { Angular } from './angular/angular';
 import { Mongodb } from './mongodb/mongodb';
 import { Nodejs } from './nodejs/nodejs';
-import { Index } from './index';
+import { JsBasics } from './js-basics/js-basics';
+import { HtmlCss } from './html-css/html-css';
+import { JavascriptES6 } from './javascript-es6/javascript-es6';
 
 
 export const TUTORIAL_ROUTES: Routes = [
@@ -12,11 +13,12 @@ export const TUTORIAL_ROUTES: Routes = [
   {
     path: 'tutorial', component: TutorialsComponent, children: [
       { path: '', redirectTo: "/m/tutorial/javascript", pathMatch: "full" },
-      { path: 'javascript', component: Javascript },
+      { path: 'javascript-es6', component: JavascriptES6},
       { path: 'angular', component: Angular },
       { path: 'mongodb', component: Mongodb },
       { path: 'nodejs', component: Nodejs },
-      {path:'index',component:Index}
+      { path: 'js-basics', component: JsBasics},
+      { path: 'html-css', component: HtmlCss }
     ]
   }
 ];

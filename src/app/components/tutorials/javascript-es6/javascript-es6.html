@@ -1,5 +1,5 @@
 <div class="container">
-  <h2>INDEX</h2>
+  <h2>JAVASCRIPT ES6</h2>
   <hr />
   <ol id="que_index">
     @for (item of dataset; let i=$index; track i) {
@@ -31,7 +31,7 @@
       </ul>
       }
       @if(type==='code'){
-      <div [style.maxWidth]="wraperWD" class="source_wrapper">
+      <div [style.maxWidth]="warperWD" class="source_wrapper">
         <div appHighlight class="source">
           <pre><code class="language-{{item.ans.codeblock.lang}}">
                         @for (codes of item.ans.codeblock.code; track $index) {
@@ -46,9 +46,5 @@
     </li>
     }
   </ol>
-
   <hr />
-
-
-
 </div>

@@ -13,10 +13,10 @@ export class Tutorial {
   }
 
   getJavaScrript():Observable<any>{
-    return this.http.get('json/javascript.json');
+    return this.http.get('json/js_es6.json');
   }
 
-  getIndex():Observable<any>{
-    return this.http.get('json/index.json')
+  getJascriptBasic():Observable<any>{
+    return this.http.get('json/jascript_basic.json')
   }
 }
