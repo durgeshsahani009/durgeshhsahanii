@@ -17,4 +17,22 @@
     </div>
   </div>
   }
+
+  <div class="row mt-3">
+    <div class="col-md-4">
+      <div class="input-group mb-3">
+        <input (keyup.enter)="getMobileNo(number.value)" #number type="text" class="form-control" placeholder="Enter number">
+        <button (click)="getMobileNo(number.value)" class="input-group-text bg-primary" id="basic-addon2">GO</button>
+      </div>
+    </div>
+  </div>
+
+  @if(totalOfNumber){
+  <div class="row">
+    <div class="col-md-4 d-flex">
+      <label class="me-5">Total: {{totalOfNumber}}</label>      
+    </div>
+  </div>
+  }
+
 </div>

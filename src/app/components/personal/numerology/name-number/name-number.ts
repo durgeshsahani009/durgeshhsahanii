@@ -34,18 +34,30 @@ totalNo: any = 0;
     }
   }
 
-  // getCombineNo(num: any) {
-  //   if (num <= 9) return 0;
-  //   let total: any = 0
-  //   if (num > 9) {
-  //     total = num.toString().split('').map((k: any) => parseInt(k))
-  //       .reduce((a: any, b: any) => a + b, 0);
-  //     if (total > 9) {
-  //       this.getCombineNo(total);
-  //     }
-  //   }
-  //   return total;
-  // }
+  totalOfNumber:any=0;
+  getMobileNo(num: any) {
+    let result: any = 0;
+    if (num < 10) result = num;
+    else {
+      let arr = num.toString().split('').map((k: any) => parseInt(k));
+      let total = arr.reduce((total: any, current: any) => total + current, 0);
+      if (total > 9) result = getTotal(total);
+      else result = total
+    }
+    this.totalOfNumber = result;
+    
+    function getTotal(num: any) {
+      let result: any = 0;
+      if (num < 10) result = num;
+      else {
+        let arr = num.toString().split('').map((k: any) => parseInt(k));
+        let total = arr.reduce((total: any, current: any) => total + current, 0);
+        if (total > 9) result = getTotal(total);
+        else result = total
+      }
+      return result
+    }
+  }
 
  
 }

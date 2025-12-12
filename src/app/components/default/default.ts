@@ -10,6 +10,11 @@ import { RouterLink } from '@angular/router';
 export class Default {
 navItems:any = this.getMenus();
 
+
+  constructor() {
+    document.body.classList.remove('profile');
+  }
+  
   getMenus() {
     return [
       {

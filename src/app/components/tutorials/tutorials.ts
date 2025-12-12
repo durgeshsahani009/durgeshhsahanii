@@ -14,6 +14,7 @@ export class TutorialsComponent {
   constructor(private router: Router) {
     this.router.events.pipe(filter((event: any) => event instanceof NavigationEnd))
       .subscribe((event: NavigationEnd) => this.isActiveMenu = false);
+      document.body.classList.remove('profile');
   }
 
 

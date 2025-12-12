@@ -9,7 +9,6 @@ import { Header } from '../../common/header/header';
 })
 export class BirthChart {
 
-  constructor(){}
 
   _driver:any;
   _conductor:any;
