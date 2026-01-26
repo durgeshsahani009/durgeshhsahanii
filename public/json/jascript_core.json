@@ -1,0 +1,58 @@
+{
+  "data":[
+   {
+      "id":"1",
+      "que":"JavaScript Array method with its version.",
+       "order":["subTitle-0","list_0","subTitle-1","list_1","subTitle-2","list_2","subTitle-3","list_3","subTitle-4","list_4"],
+      "ans":{
+        "paragraph": [],
+        "subTitle":["ECMAScript 1", "ECMAScript 3", "ECMAScript 5", "ECMAScript 6 or ES6 or ES2015", "ECMAScript 7 or ES7 or ES2016"],
+        "list_0":[       
+          {"desc":"concat()"},
+          {"desc":"join()"},
+          {"desc":"pop()"},
+          {"desc":"push()"},
+          {"desc":"reverse()"},
+          {"desc":"shift()"},
+          {"desc":"slice()"},
+          {"desc":"sort()"},
+          {"desc":"splice()"},
+          {"desc":"toString()"},
+          {"desc":"unshift()"},
+          {"desc":"valueOf()"}
+        ],
+        "list_1":[       
+          {"desc":"some()"}
+        ],
+        "list_2": [
+          {"desc": "every()"},
+          {"desc": "filter()"},
+          {"desc": "forEach()"},
+          {"desc": "indexOf()"},
+          {"desc": "isArray()"},
+          {"desc": "lastIndexOf()"},
+          {"desc": "map()"},
+          {"desc": "reduce()"},
+          {"desc": "reduceRight()"}          
+        ],
+        "list_3":[       
+          {"desc":"copyWithin()"},
+          {"desc":"entries()"},
+          {"desc":"fill()"},
+          {"desc":"find()"},
+          {"desc":"findIndex()"},
+          {"desc":"from()"},
+          {"desc":"keys()"}
+        ],
+         "list_4":[       
+          {"desc":"includes()"}
+        ],
+        "codeblock":{
+          "lang":"",
+          "code":""
+        }
+      }
+    }
+  ],
+  "status": "success"
+}

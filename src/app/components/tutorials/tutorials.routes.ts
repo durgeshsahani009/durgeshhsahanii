@@ -6,6 +6,7 @@ import { Nodejs } from './nodejs/nodejs';
 import { JsBasics } from './js-basics/js-basics';
 import { HtmlCss } from './html-css/html-css';
 import { JavascriptES6 } from './javascript-es6/javascript-es6';
+import { JavascriptCore } from './javascript-core/javascript-core';
 
 
 export const TUTORIAL_ROUTES: Routes = [
@@ -14,6 +15,7 @@ export const TUTORIAL_ROUTES: Routes = [
     path: 'tutorial', component: TutorialsComponent, children: [
       { path: '', redirectTo: "/m/tutorial/javascript", pathMatch: "full" },
       { path: 'javascript-es6', component: JavascriptES6},
+      { path: 'jscore', component: JavascriptCore },
       { path: 'angular', component: Angular },
       { path: 'mongodb', component: Mongodb },
       { path: 'nodejs', component: Nodejs },

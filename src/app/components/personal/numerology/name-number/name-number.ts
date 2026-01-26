@@ -1,13 +1,15 @@
 import { Component } from '@angular/core';
 import { Header } from '../../common/header/header';
-
+import { MatRadioModule } from '@angular/material/radio';
+import { FormsModule } from '@angular/forms';
 @Component({
   selector: 'app-name-number',
-  imports: [Header],
+  imports: [Header, FormsModule, MatRadioModule],
   templateUrl: './name-number.html',
   styleUrl: './name-number.scss',
 })
 export class NameNumber {
+  optionToCheck:any="name"
 totalNo: any = 0;
   subTotal: any = 0;
   getNameNumber(data: any) {

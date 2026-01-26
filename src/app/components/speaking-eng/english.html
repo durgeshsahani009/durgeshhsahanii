@@ -1,0 +1,28 @@
+<div class="blue_themes">
+  <header class="custom_nav">
+    <div class="container">
+      <a routerLink="/"><span class="fa fa-home"></span></a>
+      <nav>
+        <div [class.open]="isActiveMenu" class="Menu-btn">
+          <div (click)="isActiveMenu = !isActiveMenu" class="stripes">
+            <div class="stripe stripe1"></div>
+            <div class="stripe stripe2"></div>
+            <div class="stripe stripe3"></div>
+          </div>
+        </div>
+        <ul>
+          @for (item of navItems; track $index) {
+          @if(item.active) {
+          <li><a [routerLink]="'/m/speaking/'+item?.name">{{item.title}}</a></li>
+          }
+          }
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="content">
+    <router-outlet></router-outlet>
+  </div>
+
+</div>

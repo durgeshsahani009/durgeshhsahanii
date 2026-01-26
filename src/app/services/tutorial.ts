@@ -19,4 +19,8 @@ export class Tutorial {
   getJascriptBasic():Observable<any>{
     return this.http.get('json/jascript_basic.json')
   }
+
+  getJascriptCore(): Observable<any> {
+    return this.http.get('json/jascript_core.json')
+  }
 }

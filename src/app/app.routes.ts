@@ -21,6 +21,18 @@ export const routes: Routes = [
         loadChildren: () =>
           import('./components/personal/personal.routes')
             .then(m => m.PERSONAL_ROUTES)
+      },
+      {
+        path: 'm',
+        loadChildren: () =>
+          import('./components/tutorials/tutorials.routes')
+            .then(m => m.TUTORIAL_ROUTES)
+      },
+      {
+        path: 'm',
+        loadChildren: () =>
+          import('./components/speaking-eng/english.routes')
+            .then(m => m.ENGLISH_ROUTES)
       }
     ]
   }

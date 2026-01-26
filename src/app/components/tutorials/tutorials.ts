@@ -25,7 +25,7 @@ export class TutorialsComponent {
       { name: "mongodb", title: "MongoDB", active: true },
       { name: "nodejs", title: "Nodejs", active: true },
       { name: "js-basics", title: "JS Basics", active: true },
-      { name: "jscore", title: "JavaScript Core", active: false },
+      { name: "jscore", title: "JavaScript Core", active: true },
       { name: "es5-6", title: "ES5 / ES6", active: false },
       { name: "javaScript-reasoning", title: "JavaScript Reasoning", active: false },
       { name: "oojs-programing", title: "OOJS Programing", active: false },

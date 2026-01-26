@@ -1,0 +1,58 @@
+
+<div class="container">
+  <h2>JavaScript Core</h2>
+  <hr />
+  <ol id="que_index">
+    @for (item of dataset; let i=$index; track i) {
+    <li [attr.index]="getIndex(i)">
+      <h4>{{item.que}}</h4>
+      @for (type of item.order; track $index) {
+      @if(type==='paragraph'){
+      @for (paragraph of item?.ans[type]; track $index) {
+      <p [innerHTML]="paragraph"></p>
+      }
+      }
+      @if(type==='paragraph2'){
+      @for (paragraph of item?.ans[type]; track $index) {
+       <p [innerHTML]="paragraph"></p>
+       }
+      }
+      @if(type.slice(0,8)==='subTitle'){  
+        <h5>{{item?.ans['subTitle'][type.slice(9)]}}</h5>        
+      }
+      @if(type.slice(0,4)==='list'){
+      <ul class="normal_bullet">
+        @for (list of item?.ans[type]; track $index) {
+        <li>@if(list?.title){<b>{{list.title}}</b>} {{list.desc}}</li>
+        }
+      </ul>
+      }
+      @if(type==='list2'){
+      <ul class="normal_bullet">
+        @for (list of item?.ans[type]; track $index) {
+        <li>@if(list?.title){<b>{{list.title}}</b>} {{list.desc}}</li>
+        }
+      </ul>
+      }
+      @if(type==='code'){
+      <div [style.maxWidth]="wraperWD" class="source_wrapper">
+        <div appHighlight class="source">
+          <pre><code class="language-{{item.ans.codeblock.lang}}">
+                        @for (codes of item.ans.codeblock.code; track $index) {
+                        {{spaces(codes.tab)}}{{codes.line}}
+                        }
+                      </code></pre>
+        </div>
+      </div>
+      }
+      }
+
+    </li>
+    }
+  </ol>
+
+  <hr />
+
+
+
+</div>
