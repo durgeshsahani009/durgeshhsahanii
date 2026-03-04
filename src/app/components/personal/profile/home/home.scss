@@ -3,7 +3,7 @@
 .hello_txt, .name_txt{font-family: 'Roboto Condensed', sans-serif;}
 .btn_div .btn_outline{-webkit-transition:.5s ease; -moz-transition:.5s ease; -o-transition:.5s ease; transition:.5s ease;}
 .landing_sec{width:100%; display:flex;  clear:both; background-repeat:no-repeat; background-position: top center; background-attachment:fixed; background-size:cover; align-items:center; height:100vh; position:relative; text-align:center; padding:75px 0 0; z-index:5;}
-.landing_sec:before{content:""; position:absolute; left:0; top:0; width:100%; height:100%; background-color:rgba(0, 159, 124, 0.75); z-index:-1;}
+.landing_sec:before{content:""; position:absolute; left:0; top:0; width:100%; height:100%; background-color:rgba(10, 10, 10, 0.75); z-index:-1;}
 .landing_sec .container{width:50%; color:#FFF;}
 .hello_txt{width:100%; display:block; float:left; clear:both; margin:0 0 5px; padding:0; text-transform:uppercase; font-size:24px; font-weight:600;}
 .hello_txt span{color:var(--success_hover);}

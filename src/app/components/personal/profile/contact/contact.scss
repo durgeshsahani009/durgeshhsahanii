@@ -1,11 +1,11 @@
 @use "profile";
 .contactSec {
-  background-color: var(--theme_color);
+  background-color: var(--light);
   padding: 50px 0;
-  clear: both; color: var(--light);
-  h2,.icon{color:var(--green_900);}
-.page-heading{border-color: var(--green_900);}
-.btn-danger{background-color:var(--green_900); border-color:var(--green_900); color:var(--green_100);}
+  clear: both; color: var(--text_color);
+  h2,.icon{color:var(--green_100);}
+.page-heading{border-color: var(--green_200);}
+.btn-danger{background-color:var(--green_200); border-color:var(--green_200); color:var(--light);}
   address ul {
     width: 100%;
     display: flex;
@@ -21,15 +21,16 @@
 
   address li i.fa {
     font-size: 20px;
-    border: 1px solid var(--green_900);
+    border: 1px solid var(--green_200);
     width: 35px;
     padding: 5px 0;
     margin-right: 10px;
     text-align: center;
+    color: var(--green_200);
   }
 
   address li a {
-    color: var(--green_900);
+    color: var(--green_200);
   }
 
   .form_item {
@@ -47,9 +48,9 @@
     input[type="text"],
     input[type="email"] {
       height: 45px;
-      border: 1px solid #fff;
+      border: 1px solid var(--gray_100);
       padding: 10px 10px;
-      background-color: #fff;
+      background-color: var(--light)
     }
 
     textarea {
@@ -57,16 +58,19 @@
       padding: 10px 10px;
       background-color: #fff;
       outline: none;
-      border: none;
+      border: 1px solid var(--gray_100);
+      background-color: var(--light)
     }
 
     label {
       position: absolute;
       left: 15px;
       top: -15px;
-      background: var(--green_100);
+      background: var(--green_200);
       border: 1px solid transparent;
       padding: 2px 5px;
+      color: var(--light);
+      border-radius:2px;
     }
 
     &.has_error {
@@ -100,13 +104,11 @@
     bottom: 0;
   }
 
-  h3:after {
-    right: 0;
-  }
+ 
 
   h3:before,
   h3:after {
-    background-color:var(--green_900);
+    background-color:var(--green_200);
   }
 
   h3:before {
@@ -114,7 +116,10 @@
   }
 
   h3 {
-    border-color:var(--green_900) !important;
+    border-color:var(--green_200) !important;
+  }
+  h3:after {
+    right:0;
   }
 }
 

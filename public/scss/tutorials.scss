@@ -135,8 +135,8 @@ pre[class*="language-"]{padding:0; margin:0; clear:both; display:block;}
 .form-control#oojs_select{border-radius:2px; font-size:12px; height:28px;}
 .form-control#oojs_select label{font-size:12px;}
 .source_wrapper{width:100%; display:block; float:left; clear:both; overflow:hidden; max-width:100%;}
-
-
+.highlight{background-color:#076413;  font-size: .8rem; padding: 2px 5px;}
+.marker{background-color:#027812; }
 @media only screen and (max-width:1366px){
 	.source_code{max-width:1250px; min-width:1250px;}
 	#pract_index .source{max-width:1250px; min-width:1250px;}

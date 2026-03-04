@@ -30,19 +30,19 @@ section{padding:100px 0 0;}
 .list_row{width:100%; display:block; float:left; clear:both; margin:0 0 5px;}
 .content_holder{width:100%; display:block; float:left; clear:both; padding:30px 0;}
 .content_holder p{font-size:16px; line-height:24px;}
-.content_holder a{color:var(--green_900); text-decoration:none;}
+.content_holder a{color:var(--green_200); text-decoration:none;}
 .content_holder a:hover{text-decoration:underline;}
 
 .front_pg .dotted{width:100%; display:block; float:left; margin:15px 0;padding:0; border-top:0; border-left:0; border-right:0; border-bottom:1px dashed #999;}
 .front_pg .profile_row{margin-bottom:15px; font-size:16px;}
 .front_pg .profile_row label{font-weight:600; display:inline; margin-right:5px;}
-.front_pg  .btn-danger{padding:10px 30px; background-color:var(--green_900); border-color:var(--green_900); border-radius:2px; font-size:17px; color:var(--green_100);}
+.front_pg  .btn-danger{padding:10px 30px; background-color:var(--green_200); border-color:var(--green_200); border-radius:2px; font-size:17px; color:var(--light);}
 .profile_pic img{padding:5px; background:#fff; border:1px solid #999;}
 .profile_pic .description{width:100%; display:block; float:left; margin:15px 0; padding:0; text-align:center;}
 .profile_pic .description label{display:block; width:100%;font-weight:400; font-size:14px; text-transform:uppercase;}
-.profile_pic .description span{width:100%; display:block; float:left; clear:both; font-size:12px; font-style:italic; color:var(--green_900);}
+.profile_pic .description span{width:100%; display:block; float:left; clear:both; font-size:12px; font-style:italic; color:var(--green_200);}
 .front_pg .skill_button{margin:0; padding:0; list-style:none; width:100%; display:block;}
-.front_pg .skill_button li{float:left; margin:5px; display:block; padding:8px 15px; border-radius:4px; font-size:16px; background:var(--green_900); color:var(--green_100);}
+.front_pg .skill_button li{float:left; margin:5px; display:block; padding:8px 15px; border-radius:4px; font-size:16px; background:var(--green_200); color:var(--light); font-weight:500;}
 
 
 .register .forms_row .btn{text-transform:uppercase; font-size:18px;}

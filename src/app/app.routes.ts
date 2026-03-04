@@ -2,8 +2,8 @@ import { Routes } from '@angular/router';
 import { Default } from './components/default/default';
 
 export const routes: Routes = [
-  { path: "", redirectTo: "/default", pathMatch: "full" },
-  { path: "default", component: Default },
+  { path: "", redirectTo: "/personal/profile/me/default", pathMatch: "full" },
+  { path: "dashboard", component: Default },
   {
     path: '',
     loadComponent: () =>

@@ -22,13 +22,14 @@ export class Auth {
     return this.http.post<any>(this._loginUrl, user, this.headerOption)
   }
   loggedIn() {
-    return !!localStorage.getItem('token')
+    return !!sessionStorage.getItem('token');
   }
   getToken() {
-    return localStorage.getItem('token')
+    return sessionStorage.getItem('token');
   }
   logoutUser() {
-    localStorage.removeItem('token');
-    this._router.navigate(['/home']);
+    sessionStorage.removeItem('token');
+    sessionStorage.removeItem('user');
+    this._router.navigate(['/personal/profile/me/default']);
   }
 }

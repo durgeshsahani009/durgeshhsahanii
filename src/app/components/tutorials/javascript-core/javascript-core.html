@@ -7,23 +7,29 @@
     <li [attr.index]="getIndex(i)">
       <h4>{{item.que}}</h4>
       @for (type of item.order; track $index) {
-      @if(type==='paragraph'){
-      @for (paragraph of item?.ans[type]; track $index) {
-      <p [innerHTML]="paragraph"></p>
-      }
-      }
-      @if(type==='paragraph2'){
-      @for (paragraph of item?.ans[type]; track $index) {
-       <p [innerHTML]="paragraph"></p>
-       }
-      }
-      @if(type.slice(0,8)==='subTitle'){  
+        @if(type==='paragraph'){
+          @for (paragraph of item?.ans[type]; track $index) {
+            <p [innerHTML]="paragraph"></p>
+          }
+        }
+        @if(type==='paragraph2'){
+          @for (paragraph of item?.ans[type]; track $index) {
+            <p [innerHTML]="paragraph"></p>
+          }
+        }
+
+            
+      @if(type.slice(0,8)==='subTitle'){          
         <h5>{{item?.ans['subTitle'][type.slice(9)]}}</h5>        
       }
       @if(type.slice(0,4)==='list'){
-      <ul class="normal_bullet">
+      <ul class="normal_bullet" [class.listCols]="item?.ans[type][0]?.info">
         @for (list of item?.ans[type]; track $index) {
-        <li>@if(list?.title){<b>{{list.title}}</b>} {{list.desc}}</li>
+        <li>
+          @if(list?.title){<b>{{list.title}}</b>} <span>{{list.desc}}</span> 
+          @if(list?.info){<span>{{list?.info}}</span>}
+          @if(list?.marker){<span class="me-3 d-block mb-2" [innerHTML]="list?.marker"></span>}
+        </li>
         }
       </ul>
       }
@@ -45,8 +51,8 @@
         </div>
       </div>
       }
-      }
-
+   
+    }
     </li>
     }
   </ol>

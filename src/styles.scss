@@ -36,10 +36,18 @@ body {
 :root{
   --theme_color:#009f7c;
   --green_100: #016e57;
+  --green_200: #03a07e;
   --theme_red:#FF305B;
   --success_hover:#00ffd6;
   --green_900:#00ffd6;
   --light:#fff;
+  --text_color:#444;
+  --gray_100:#999;
+  --gray_200:#aaa;
+  --gray_300:#bbb;
+  --gray_400:#ccc;
+  --gray_500:#ddd;
+  --gray_600:#dadada;
 }
 /* You can add global styles to this file, and also import other style files */
 /* You can add global styles to this file, and also import other style files */
@@ -48,6 +56,7 @@ body {
 @import url('../public/css/prism-a11y-dark.css');
 // @import url('../public/css/prism-duotone-dark.css');
 @import url('../public/scss/tutorials.scss');
+
 body.profile{background-color:#fff !important;}
 
 .chart_grid {width: 100%; text-align: center;
@@ -57,5 +66,6 @@ body.profile{background-color:#fff !important;}
   
 }
 .content{width:100%; display:block; float:left; overflow:hidden;}
-html, body { height: 100%; }
+html, body { height: 100%; margin:0; padding:0; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.login_panel .mat-mdc-dialog-surface{border-radius:4px !important; border:1px solid var(--gray_100); background-color:var(--light);}

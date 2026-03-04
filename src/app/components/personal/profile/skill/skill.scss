@@ -1,6 +1,6 @@
 @use "profile";
 .skills-experience{
-background-color:rgb(0, 160, 125,.3);
+background-color:var(--light);
 
 .single_experties{width:100%; display:block; float:left; clear:both; margin:0 0 15px;
 .skilled-tittle{font-weight:500; color:#333;}

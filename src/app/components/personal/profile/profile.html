@@ -19,10 +19,9 @@
               <li><a routerLink="/skills-experience">Skills &amp; Experience</a></li>
               <li><a href="javascript:void(0)">Portfolio</a></li>
               <li><a routerLink="/contact">Contact</a></li>
-              @if (isMobile) {
-              
+              @if (isMobile) {              
               @if(authService.loggedIn()){
-              <li class="acountmenu border_t"><a routerLink="/dashboard">
+              <li class="acountmenu border_t"><a routerLink="/">
                   <i class="fa fa-tachometer" aria-hidden="true"></i>Dashboard
                 </a></li>
               }
@@ -47,28 +46,22 @@
           <ul>
             @if(authService.loggedIn()){
             <li><a routerLink="dashboard" routerLinkActive="active">
-                <i class="fa fa-tachometer" aria-hidden="true"></i>
-                Dashboard</a> </li>
+                <i class="fa fa-user-circle-o fs-6" aria-hidden="true"></i>
+                Durgeshh <i class="fa fa-caret-down" aria-hidden="true"></i></a>               
+              <ul class="subItem">
+                <li><a routerLink="/dashboard"><i class="fa fa-tachometer " aria-hidden="true"></i>&nbsp;Dashboard</a></li>
+                <li><a (click)="authService.logoutUser()" href="javascript:void(0)">
+                  <i class="fa fa-sign-out" aria-hidden="true"></i>&nbsp;Logout</a></li>
+              </ul>
+              </li>
             }
             @if(!authService.loggedIn()){
             <li>
-              <a routerLink="login" routerLinkActive="active"><i class="fa fa-sign-in"
+              <a (click)="login()" href="javascript:void(0)"><i class="fa fa-sign-in"
                   aria-hidden="true"></i>&nbsp;Login</a>
             </li>
-            }
-            @if(!authService.loggedIn()){
-              <li>
-                <a routerLink="register" routerLinkActive="active"><i class="fa fa-user-plus"
-                    aria-hidden="true"></i>&nbsp;Register</a>
-              </li>
-            }
-            @if(authService.loggedIn()){
-              <li>
-                <a (click)="authService.logoutUser()" href="javascript:void(0)">
-                  <i class="fa fa-sign-out" aria-hidden="true"></i>&nbsp;Logout</a>
-              </li>
-            }
-          </ul>
+            }      
+           </ul>
         </div>
       }
       </div>
@@ -83,7 +76,7 @@
 
 <footer>
   <div class="container">
-    <div class="copyright"><a routerLink="/"><span class="fa fa-home"></span></a> Copyright © 2025-2026 <span> durgesh
+    <div class="copyright"> Copyright © 2025-2026 <span> durgesh
         sahani. </span> All right reserved.</div>
   </div>
 </footer>
