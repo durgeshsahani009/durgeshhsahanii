@@ -1,17 +1,18 @@
 <h2 mat-dialog-title class="ps-4 mt-2">Login</h2>
-<mat-dialog-content class="mat-typography">
-<form [formGroup]="loginform">
-  <div class="form-group mb-2">
-    <label>Username</label>
-    <input type="text" formControlName="username" class="form-control" placeholder="Enter username." />
-  </div>
-   <div class="form-group mb-2">
-    <label>Password</label>
-    <input type="password" formControlName="password" class="form-control" placeholder="Enter password." />
-  </div>
-  </form>
-</mat-dialog-content>
-<mat-dialog-actions align="start">
-  <button class="btn  btn-secondary me-2" mat-dialog-close>Cancel</button>
-  <button class="btn  btn-primary" (click)="login(loginform.value)" [mat-dialog-close]="true" cdkFocusInitial>Login</button>
-</mat-dialog-actions>
+<form [formGroup]="loginform" (ngSubmit)="login(loginform.value)">
+  <mat-dialog-content class="mat-typography">
+    <div class="form-group mb-2">
+      <label>Username</label>
+      <input type="text" formControlName="username" class="form-control" placeholder="Enter username." />
+    </div>
+    <div class="form-group mb-2">
+      <label>Password</label>
+      <input type="password" formControlName="password" class="form-control" placeholder="Enter password." />
+    </div>
+
+  </mat-dialog-content>
+  <mat-dialog-actions align="start">
+    <button class="btn  btn-secondary me-2" type="button" mat-dialog-close>Cancel</button>
+    <button class="btn  btn-primary" type="submit" [mat-dialog-close]="true" cdkFocusInitial>Login</button>
+  </mat-dialog-actions>
+</form>

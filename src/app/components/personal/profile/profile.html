@@ -21,18 +21,16 @@
               <li><a routerLink="/contact">Contact</a></li>
               @if (isMobile) {              
               @if(authService.loggedIn()){
-              <li class="acountmenu border_t"><a routerLink="/">
-                  <i class="fa fa-tachometer" aria-hidden="true"></i>Dashboard
+              <li class="acountmenu border_t"><a routerLink="/dashboard">
+                  <i class="fa fa-tachometer" aria-hidden="true"></i>&nbsp;Dashboard
                 </a></li>
               }
               @if(!authService.loggedIn()){
-              <li class="acountmenu border_t"><a routerLink="/login">
+              <li class="acountmenu border_t">
+                <a (click)="login()" href="javascript:void(0)">
                 <i class="fa fa-sign-in" aria-hidden="true"></i>&nbsp;Login</a></li>
               }
-              @if(!authService.loggedIn()){
-              <li class="acountmenu"><a routerLink="/register">
-                <i class="fa fa-user-plus" aria-hidden="true"></i>&nbsp;Register</a></li>
-              }
+             
               @if(authService.loggedIn()){
               <li class="acountmenu"><a (click)="authService.logoutUser()" href="javascript:void(0)">
                 <i class="fa fa-sign-out" aria-hidden="true"></i>&nbsp;Logout</a></li>
@@ -45,7 +43,7 @@
         <div class="col-md-2 col-sm-2 col-xs-2 accouts_nav">
           <ul>
             @if(authService.loggedIn()){
-            <li><a routerLink="dashboard" routerLinkActive="active">
+            <li><a href="javascript:void(0)">
                 <i class="fa fa-user-circle-o fs-6" aria-hidden="true"></i>
                 Durgeshh <i class="fa fa-caret-down" aria-hidden="true"></i></a>               
               <ul class="subItem">
@@ -60,8 +58,9 @@
               <a (click)="login()" href="javascript:void(0)"><i class="fa fa-sign-in"
                   aria-hidden="true"></i>&nbsp;Login</a>
             </li>
-            }      
-           </ul>
+            }       
+          
+          </ul>
         </div>
       }
       </div>

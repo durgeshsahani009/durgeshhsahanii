@@ -1,0 +1,1535 @@
+{
+  "data":[
+    {
+      "id":"1",
+      "que":"Angular Architecture?",
+       "order":["paragraph","list"],
+      "ans":{
+        "paragraph": [
+          "Angular Architecture?Angular is a framework for building client applications using HTML and TypeScript. The framework consists of several libraries, some of them core and some are optional.",
+          "We are creating Angular applications by composing HTML templates, writing component classes to manage those templates, adding application logic in services, and boxing components and services in modules.",
+          "Then we launch the app by bootstrapping the root module. Angular presenting our application content in a browser and responding to user interactions according to the instructions which we have provided.",
+          "There main building blocks of an Angular application are:"
+        ],
+        "list":[       
+          {"desc":"Modules"},
+          {"desc":"Components"},
+          {"desc":"Templates"},
+          {"desc":"Meta data"},
+          {"desc":"Databinding"},
+          {"desc":"Directives"},
+          {"desc":"Services"},
+          {"desc":"Dependency injection"}
+        ],
+        "codeblock":{
+          "lang":"",
+          "code":""
+        }
+      }
+    },
+    {
+      "id":"2",
+      "que":"Service worker?",
+       "order":["paragraph","list"],
+      "ans":{
+        "paragraph":["A service worker is a script that runs in the web browser and manages caching of an application.","Service workers function act as a network proxy. They intercept all outgoing HTTP requests made by the application and can choose how to respond to them. For example, they can query a local cache and deliver a cached response if one is available.","Adding a service worker to an Angular application is one of the steps for turning an application into a Progressive Web App &lpar;also known as a PWA&rpar;.The list of design goals of Angular service workers are,"],
+        "list":[
+          {"desc": "It caches an application just like installing a native application."},
+          {"desc": "When you refresh the application, it loads the latest fully cached version."},
+          {"desc": "When changes are published then it immediately updates in the background."},
+          {"desc": "Service workers saves the bandwidth by downloading the resources only when they changed."}
+        ],
+        "codeblock":{
+          "lang":"",
+          "code":""
+        }
+      }
+    },
+{
+      "id":"3",
+      "que":"What are the limitations with web workers?",
+       "order":["paragraph","list"],
+      "ans":{
+        "paragraph":["You need to remember two important things when using Web Workers in Angular projects."],
+        "list":[
+         {"desc": "Some environments or platforms&lpar;like &#x40;angular/platform-server&rpar; used in Server-side Rendering, don't support Web Workers. In this case you need to provide a fallback mechanism to perform the computations to work in this environments."},
+         {"desc": "Running Angular in web worker using &#x40;angular/platform-webworker is not yet supported in Angular CLI."}
+        ],
+        "codeblock":{
+          "lang":"",
+          "code":""
+        }
+      }
+    },
+{
+      "id":"4",
+      "que":"forkJoin in rxjs?",
+       "order":["paragraph"],
+      "ans":{
+        "paragraph":["orkJoin allows us to group multiple observables and execute them in parallel, then return only one observable.It handle multiple API requests in angular to avoid nested subscriptions."],
+        "list":[],
+        "codeblock":{
+          "lang":"",
+          "code":""
+        }
+      }
+    },
+{
+     "id": "5",
+      "que":"What are the @Injectable()?",
+       "order":["paragraph","list", "code"],
+      "ans":{
+        "paragraph":["The @Injectable() decorator aims to actually set some metadata about which dependencies to inject into the constructor of the associated class. It is a class decorator that does not require parameters. Without this decorator no dependency will be injected. If the parameter, providedIn: 'root' has been specifies that means Angular should provide the service into the root injector."],
+        "list":[],
+        "codeblock":{
+          "lang":"javascript",
+          "code":[
+            {"tab":"1", "line":"@Injectable()"},
+            {"tab":"2", "line":"export class SomeService {"},
+            {"tab":"5", "line":"constructor(private http:Http){}"},
+            {"tab":"2", "line":"}"}
+          ]
+        }
+      }
+    },
+{
+      "id": "6",
+      "que":"What are the Inject()?",
+       "order":["paragraph","code"],
+      "ans":{
+        "paragraph":["The @Inject decorator must be used at the level of constructor parameters to specify metadata regarding elements to inject. Without it, the type of parameters is used. (obj:SomeType is equivalent to @Inject(SomeType) obj)."],
+        "list":[],
+        "codeblock":{
+          "lang": "typescript",
+          "code":[
+             {"tab":"1", "line":"@Injectable()"},
+             {"tab":"1", "line":"export class SomeService {"},
+             {"tab":"5", "line":"constructor("},
+             {"tab":"5", "line":"@Inject() private http:Http,"},
+             {"tab": "5", "line": "@Inject('sometoken') obj) {}"},
+             {"tab":"2", "line":"}"}
+          ]
+        }
+      }
+    },
+    {
+      "id": "7",
+      "que": "How do you perform Error handling?",
+      "order": ["paragraph"],
+      "ans": {
+        "paragraph": ["If the request fails on the server or failed to reach the server due to network issues then HttpClient will return an error object instead of a successful reponse. In this case, we need to handle in the component by passing error object as a second callback to subscribe() method."],
+        "list": [],
+        "codeblock": {
+          "lang": "",
+          "code": ""
+        }
+      }
+    },
+    {
+      "id": "8",
+      "que": "What types of change detection strategies are available in angular?",
+      "order": ["paragraph"],
+      "ans": {
+        "paragraph": ["Change detection is a mechanism to care about view re-rendering in case data changes. There are two strategies – Default and OnPush. If all components use the default strategy, Zone checks the entire tree regardless of where the change occurred. On the other hand, Onpush informs Angular that users will comply with the performance enhancement and constraints. This will tell Angular that our component depends only on the input and any object that is passed to it should be considered immutable."],
+        "list": [],
+        "codeblock": {
+          "lang": "",
+          "code": ""
+        }
+      }
+    },
+    {
+      "id": "9",
+      "que": "What is Zones in Angular?",
+      "order": ["paragraph"],
+      "ans": {
+        "paragraph": ["Zone.js is a library that creates a context around asynchronous functions in order to to make them trackable. Angular’s change detection is heavily dependent on Zones."],
+        "list": [],
+        "codeblock": {
+          "lang": "",
+          "code": ""
+        }
+      }
+    },
+    {
+      "id": "10",
+      "que": "What is ngZone service in angular?",
+      "order": ["paragraph"],
+      "ans": {
+        "paragraph": ["NgZone is used by developers to start change detection resulted by async operations automatically. It gives us back control of our code’s execution. It can be used to subscribe to an Observable that is present outside of the angular zone and also to return to the angular zone when reacting to the same Observable.The most common use of NgZone service is to optimize performance when starting a work consisting of one or more asynchronous tasks that do not require UI updates."],
+        "list": [],
+        "codeblock": {
+          "lang": "",
+          "code": ""
+        }
+      }
+    },
+    {
+      "id": "11",
+      "que": "If your data model is updated outside the 'Zone', explain the process how will you the view?",
+      "order": ["paragraph","list"],
+      "ans": {
+        "paragraph": ["You can update your view using any of the following:"],
+        "list": [
+            {"title":"ApplicationRef.prototype.tick() :", "desc": "It will perform change detection on the complete component tree."},
+            {"title":"NgZone.prototype.run() :", "desc": "It will perform the change detection on the entire component tree."},
+            {"title":"ChangeDetectorRef.prototype.detectChanges() :", "desc": "It will launch the change detection on the current component and its children."}
+        ],
+        "codeblock": {
+          "lang": "",
+          "code": ""
+        }
+      }
+    },
+    {
+      "id": "12",
+      "que": "What is NoopZone?",
+      "order": ["paragraph"],
+      "ans": {
+        "paragraph": ["Zone is loaded in Angular applications by default and it helps Angular to know when to trigger the change detection. This way, it make sures developers focus on application development rather core part of Angular. We can also use Angular without Zone but the change detection need to be implemented on ourself and noop zone need to be configured in bootstrap process."],
+        "list": [ ],
+        "codeblock": {
+          "lang": "",
+          "code": ""
+        }
+      }
+    },
+    {
+      "id": "13",
+      "que": "Difference between Template Driven and Reactive forms forms?",
+      "order": ["paragraph"],
+      "ans": {
+        "paragraph": ["Template Driven Forms are based on template only and In the template-driven approach, most of the logic are driven from the template whereas in reactive-driven approach, the logic are mainly written inside typescript code.","Template Driven Forms need the FormsModule, while Reactive forms need the ReactiveFormsModule."],
+        "list": [],
+        "codeblock": {
+          "lang": "",
+          "code": ""
+        }
+      }
+    },
+{
+      "id": "14",
+      "que": "Multicasting in Angular?",
+      "order": ["paragraph"],
+      "ans": {
+        "paragraph": ["Multi-casting is the practice of broadcasting to a list of multiple subscribers in a single execution. For example we will share the data using the Subject observable inside Service and whichever components are emitting the value to the service; the other components will be receiving the value from the service that has subscribed to it"],
+        "list": [],
+        "codeblock": {
+          "lang": "",
+          "code": ""
+        }
+      }
+    },
+{
+      "id": "15",
+      "que": "Angular Ivy? And What are the features included in ivy preview?",
+      "order": ["paragraph","list"],
+      "ans": {
+        "paragraph": ["Angular Ivy is a new rendering engine for Angular. With the version 9 release of Angular, the new compiler and runtime instructions are used by default instead of the older compiler and runtime,which is known as View Engine.", "AOT compilation with Ivy is faster and be used by default. In our application we can set the AOT compilation as default build options inside angular.json file."],
+        "list": [],
+        "codeblock": {
+          "lang": "",
+          "code": ""
+        }
+      }
+    },
+{
+      "id": "16",
+      "que": "Features included in ivy preview?",
+      "order": ["paragraph"],
+      "ans": {
+        "paragraph": ["With Ivy, we can expect the features like-"],
+        "list": [
+            {"desc": "Generated code that is easier to read and debug at runtime"},
+            {"desc": "Faster re-build time"},
+            {"desc": "Improved payload size"},
+            {"desc": "Improved template type checking"}
+        ],
+        "codeblock": {
+          "lang": "",
+          "code": ""
+        }
+      }
+    },
+{
+      "id": "17",
+      "que": "Codelyzer in angular?",
+      "order": ["paragraph","code"],
+      "ans": {
+        "paragraph": ["Codelyzer provides set of tslint rules for static code analysis of Angular and TypeScript projects. We can run the static code analyzer over web apps, NativeScript, Ionic etc. Angular CLI has support for this and it can be use as below-"],
+        "list": [],
+        "codeblock": {
+          "lang": "javascript",
+          "code":[
+             {"tab":"1", "line":"ng new codelyzer ng lint"}           
+          ]
+        }
+      }
+    },
+{
+      "id": "18",
+      "que": "Use of codelyzer?",
+      "order": ["paragraph"],
+      "ans": {
+        "paragraph": ["All enterprise applications follows a set of coding conventions and guidelines to maintain code in better way. Codelyzer is an open source tool to run and check whether the pre-defined coding guidelines has been followed or not. Codelyzer does only static code analysis for angular and typescript project.","Codelyzer's coding conventions are usually defined in tslint.json file.Codelyzer can be run via angular cli or npm directly. Editors like Visual Studio Code and Atom also supports codelyzer just by doing a basic settings."],
+        "list": [],
+        "codeblock": {
+          "lang": "",
+          "code": ""
+        }
+      }
+    },
+{
+      "id": "19",
+      "que": "Explain MVVM architecture.",
+      "order": ["paragraph","list","paragraph2"],
+      "ans": {
+        "paragraph": ["MVVM architecture consists of three parts:"],
+        "paragraph2": ["Model contains the structure of an entity. In simple terms it contains data of an object.","View is the visual layer of the application. It displays the data contained inside theModel. In angular terms, this will be the HTML template of a component.","ViewModel is an abstract layer of the application. A viewmodel handles the logic of the application. It manages the data of a model and displays it in the view. The MVVM model supports two-way data binding between View and ViewModel."],
+        "list": [
+            {"desc": "Model"},
+            {"desc": "View"},
+            {"desc": "ViewModel"}
+        ],
+        "codeblock": {
+          "lang": "",
+          "code": ""
+        }
+      }
+    },
+{
+      "id": "20",
+      "que": "Why were client-side frameworks like Angular introduced?",
+      "order": ["paragraph"],
+      "ans": {
+        "paragraph": ["Before Angular, web developers used VanillaJS and jQuery to develop dynamic websites but, as the logic implementation, the code became more and more tedious to maintain. For applications that use complex logic, developers had to put in extra effort to maintain separation of concerns for the app. Also, jQuery did not provide facilities for data handling across views.","For tackling the above problems, client-side frameworks like Angular came into the picture, which made lifeeasier. Client-side frameworks allow to develop advanced web applications like Single-Page-Application, whereas Vanilla JS or jQuery does not provide this facility."],
+        "list": [],
+        "codeblock": {
+          "lang": "",
+          "code": ""
+        }
+      }
+    },
+{
+      "id": "21",
+      "que": "What is Angular Universal?",
+      "order": ["paragraph"],
+      "ans": {
+        "paragraph": ["Angular Universal is also known as server-side rendering (SSR) and allows server to pre-render Angular application while user hits website for first time. Server-Side Rendering (SSR) means the server will return the static HTML page, including all the data, to the client, after compiling everything.", "The server has to perform the complete process again whenever the route changes. The server-Side script is used to fetch the dynamic data; these scripts are written in the server-side language. Server-side rendering has bunch of benefits for SEO, performance, and accessibility of web-app!"],
+        "list": [],
+        "codeblock": {
+          "lang": "",
+          "code": ""
+        }
+      }
+    },
+{
+      "id": "22",
+      "que": "Difference between Angular expressions and JavaScript expressions?",
+      "order": ["paragraph","list"],
+      "ans": {
+        "paragraph": ["There are multiple differences between javascript and angular expressions, like:"],
+        "list": [
+            {"desc": "Unlike JavaScript expressions, Angular expressions can be written inside HTML."},
+            {"desc" :"Angular expressions handle null and undefined value while JavaScript does not."},
+            {"desc": "Angular expressions do not support conditionals, loops, and exceptions, while JavaScript expressions can do."},
+            {"desc": "Angular expressions support filters, while JavaScript expressions do not."}
+        ],
+        "codeblock": {
+          "lang": "",
+          "code": ""
+        }
+      }
+    },
+{
+      "id": "23",
+      "que": "What is the need of header in http request?",
+      "order": ["paragraph"],
+      "ans": {
+        "paragraph": ["The HTTP headers are used to pass additional information between the clients and the server through the request and response header."],
+        "list": [],
+        "codeblock": {
+          "lang": "",
+          "code": ""
+        }
+      }
+    },
+{
+      "id": "24",
+      "que": "Can we have multiple 'router-outlet' on same template?",
+      "order": ["paragraph","code"],
+      "ans": {
+        "paragraph": ["Yes! We can use multiple router-outlets in same template by configuring our routers and simply add the router-outlet name. When we don't provide any name for router-outlet, this should becomes primary router outlet. The Syntax is like below:-"],
+        "list": [ ],
+        "codeblock": {
+          "lang": "xml",
+          "code": [
+              {"tab":"1", "line":"<router-outlet></router-outlet>"},     
+              {"tab":"1", "line":"<router-outlet name='userlist'></router-outlet>"},     
+              {"tab":"1", "line":"<router-outlet name='userinfo'></router-outlet>"},     
+              {"tab":"1", "line":""},     
+              {"tab":"2", "line":"const routes: Routes = ["},     
+              {"tab":"4", "line":"{path: 'home', component: HomeComponent },"},     
+              {"tab":"4", "line":"{path: 'user', component: userComponent, children: ["},     
+              {"tab":"4", "line":"{path: 'userList', component: userListComponent, outlet: 'userList' },"},     
+              {"tab":"4", "line":"{path: ':id', component: userInfoComponent, outlet: 'userInfo' }]"},     
+              {"tab":"2", "line":"}];"}     
+          ]
+        }
+      }
+    },
+{
+      "id": "25",
+      "que": "What is 'elementRef' in Angular?",
+      "order": ["paragraph"],
+      "ans": {
+        "paragraph": ["Angular ElementRef is a wrapper around a native element inside of a View. It's simply a class that wraps native DOM elements in the browser and allows us to work with the DOM by providing the nativeElement object which exposes all the methods and properties of the native elements."],
+        "list": [],
+        "codeblock": {
+          "lang": "",
+          "code": ""
+        }
+      }
+    },
+{
+      "id": "26",
+      "que": "How can declare global variable without service in Angular?",
+      "order": ["paragraph","code"],
+      "ans": {
+        "paragraph": ["We can create a new .ts file for example globals.ts and declear a class. Then simply add static variable and then import it everywhere we need it. This way we can declare global variable without using service. And also we can declare global variable using window keyword inside component."],
+        "list": [],
+        "codeblock": {
+          "lang": "typescript",
+          "code": [
+             {"tab":"1", "line":"export class Globals {"},     
+             {"tab":"2", "line":"static ERROR_MSG = 'Something has gone wrong!!!';"},     
+             {"tab":"1", "line":"}"}  
+          ]
+        }
+      }
+    },
+
+{
+      "id": "27",
+      "que": "Performance Optimization Techniques in Angular?",
+      "order": ["paragraph","list"],
+      "ans": {
+        "paragraph": ["There are different types of performance optimization techniques available in angular."],
+        "list": [
+            {"desc": "ChangeDetectionStrategy.OnPush"},
+            {"desc": "Detaching the Change Detector"},
+            {"desc": "Use pure pipes"},
+            {"desc": "Use trackBy option for *ngFor directive"},
+            {"desc": "Optimize template expressions"},
+            {"desc": "Lazy-Loading"},
+            {"desc": "Preloading"},
+            {"desc": "Unsubscribe from Observables"}
+        ],
+        "codeblock": {
+          "lang": "",
+          "code": ""
+        }
+      }
+    },
+{
+      "id": "28",
+      "que": "What is 'trackBy option for *ngFor' in Angular ?",
+      "order": ["paragraph"],
+      "ans": {
+        "paragraph": ["When we changed in the object or collection Angular change detection runs and destroy the previous DOM elements and recreates the DOM for each item again. But using the trackBy option Angular track which items have been added or removed according to the unique identifier and create or destroy only the items that has changed."],
+        "list": [],
+        "codeblock": {
+          "lang": "",
+          "code": ""
+        }
+      }
+    },
+{
+      "id": "29",
+      "que": "What is 'Detach Change Detection/NgZone' in Angular ?",
+      "order": ["paragraph"],
+      "ans": {
+        "paragraph": ["We can inject the change detector instance into the components to either attach or detach the component from the change detection tree. So, when Angular runs change detection on the component tree, the component with its sub-tree will be skipped."],
+        "list": [],
+        "codeblock": {
+          "lang": "",
+          "code": ""
+        }
+      }
+    },
+{
+      "id": "30",
+      "que": "What is 'OnPush Change Detection' in Angular ?",
+      "order": ["paragraph"],
+      "ans": {
+        "paragraph": ["With the OnPush change detection strategy, we can tell Angular not to check each component, every time the change detection runs.In this strategy, Angular will check the references of the objects and if the reference is the same, no deep comparison will be performed."],
+        "list": [],
+        "codeblock": {
+          "lang": "",
+          "code": ""
+        }
+      }
+    },
+{
+      "id": "31",
+      "que": "What is 'Preloading' in Angular ?",
+      "order": ["paragraph"],
+      "ans": {
+        "paragraph": ["Preloading is an optimization strategy that loads resources like webpages, audio & video files for faster future navigations. This speeds up both loading and rendering of the resource because the resource will already be present in the browser cache."],
+        "list": [ ],
+        "codeblock": {
+          "lang": "",
+          "code": ""
+        }
+      }
+    },
+{
+      "id": "32",
+      "que": "What is 'Unsubscribing from Observables' in Angular ?",
+      "order": ["paragraph"],
+      "ans": {
+        "paragraph": ["Observables have a subscribe method which is called with a callback function in order to get the values emitted. If the subscription is not closed, The callback function attached to it will be continuously called, which could pose memory leaks and degrade performance. So it's always a good practice to unsubscribe from observables using a lifecycle hook method called 'OnDestroy'."],
+        "list": [],
+        "codeblock": {
+          "lang": "",
+          "code": ""
+        }
+      }
+    },
+{
+      "id": "33",
+      "que": "What is 'ng-template' in Angular ?",
+      "order": ["paragraph"],
+      "ans": {
+        "paragraph": ["The 'ng-template' is a virtual element and its contents are controlled by structural directory. By defualt its content are not visible. The structrual directory are used with asterisk(*) prefix, this asterisk(*) is the short hand notation for 'ng-template' and we can see in the browser's inspect view. In the browser compilation the element with structural directory are wrapped using the ng-template commented code."],
+        "list": [],
+        "codeblock": {
+          "lang": "",
+          "code": ""
+        }
+      }
+    },
+{
+      "id": "34",
+      "que": "What is 'ng-container' in Angular?",
+      "order": ["paragraph"],
+      "ans": {
+        "paragraph": ["The 'ng-container' is a logical container that can be used to group nodes but is not rendered in the DOM tree as a node. The ng-container are similar to ng-template but it is visible by default. It is especially helpful when we want to apply two structural directives to the same element as we know that angular does not allow to apply mulitple structural diretive on same element, on that situation we can use ng-container because it it does not get rendered in the DOM."],
+        "list": [],
+        "codeblock": {
+          "lang": "",
+          "code": ""
+        }
+      }
+    },
+{
+      "id": "35",
+      "que": "Difference b/w pure & impure pipe in Angular ?",
+      "order": ["paragraph"],
+      "ans": {
+        "paragraph": ["A pure pipe is only called when Angular detects a change in the value or the parameters passed to a pipe. An impure pipe is called for every change detection cycle no matter whether the value or parameter(s) changes."],
+        "list": [],
+        "codeblock": {
+          "lang": "",
+          "code": ""
+        }
+      }
+    },
+{
+      "id": "36",
+      "que": "What is Safe Navigation Operator In Angular ?",
+      "order": ["paragraph"],
+      "ans": {
+        "paragraph": ["The Safe Navigation Operator is also known as the 'Elvis Operator'. This operator is very useful to protect against null and undefined values in property paths. This operator allows us to navigate an object path in situations when we are not aware whether a path exists or not. It returns value of the object path if it exists, else it returns the null value. It is very useful to prevent null-reference exceptions."],
+        "list": [],
+        "codeblock": {
+          "lang": "",
+          "code": ""
+        }
+      }
+    },
+{
+      "id": "37",
+      "que": "What is template reference variable in angular?",
+      "order": ["paragraph"],
+      "ans": {
+        "paragraph": ["A template reference variable is a way of capturing a reference to a specific element, component or directive so that it can be used somewhere else in the same template."],
+        "list": [],
+        "codeblock": {
+          "lang": "",
+          "code": ""
+        }
+      }
+    },
+{
+      "id": "38",
+      "que": "What is 'Shadow DOM' in Angular?",
+      "order": ["paragraph"],
+      "ans": {
+        "paragraph": ["Shadow DOM basically allows group of DOM implementation to be hidden inside a single element and encapsulate styles to the element, on the other hand we can say shadow DOM allows us to hide DOM logic behind other elements."],
+        "list": [ ],
+        "codeblock": {
+          "lang": "",
+          "code": ""
+        }
+      }
+    },
+{
+      "id": "39",
+      "que": "What is @HostBinding and @HostListener decorator in Angular?",
+      "order": ["paragraph"],
+      "ans": {
+        "paragraph": ["@HostListener and @HostBinding are two decorators that can be really useful in custom directives. @HostBinding lets us to set properties on the element or component that hosts the directive, and @HostListener lets us to listen for events on the host element or component."],
+        "list": [],
+        "codeblock": {
+          "lang": "",
+          "code": ""
+        }
+      }
+    },
+{
+      "id": "40",
+      "que": "What is @ViewChild and @ViewChildren decorator in Angular?",
+      "order": ["paragraph"],
+      "ans": {
+        "paragraph": ["@ViewChild and @ViewChildren are the types of decorators that are used to access the child component class and its different properties into the parent component. @ViewChild  used for single element and ViewChildren used for multiple elements"],
+        "list": [],
+        "codeblock": {
+          "lang": "",
+          "code": ""
+        }
+      }
+    },
+{
+      "id": "41",
+      "que": "What is @ContentChild and @ContentChildren decorator in Angular?",
+      "order": ["paragraph"],
+      "ans": {
+        "paragraph": ["ContentChild and ContentChildren are the features in Angular to access Child Component in the Parent Component. @ContentChild decorator are very similar to @ViewChild decorator. It work with the elements inside 'ng-content' directives. it is a parameter decorator that configures a content query. ContentChild used for single element and ContentChildren for multiple elements."],
+        "list": [],
+        "codeblock": {
+          "lang": "",
+          "code": ""
+        }
+      }
+    },
+{
+      "id": "42",
+      "que": "What is different between @ViewChild and @ContentChild decorator in Angular?",
+      "order": ["paragraph"],
+      "ans": {
+        "paragraph": ["@ContentChild and @ContentChildren queries will return directives existing inside the ng-content element, whereas @ViewChild and @ViewChildren only look at elements that are on our view template directly."],
+        "list": [],
+        "codeblock": {
+          "lang": "",
+          "code": ""
+        }
+      }
+    },
+{
+      "id": "43",
+      "que": "What is JiT (Just in Time) Compilation?",
+      "order": ["paragraph"],
+      "ans": {
+        "paragraph": ["JiT compiles the code just in the time of loading the page in browser. The browser will download the compiler and build the application code and renders it. It will be good for development environment."],
+        "list": [],
+        "codeblock": {
+          "lang": "",
+          "code": ""
+        }
+      }
+    },
+{
+      "id": "44",
+      "que": "What is AOT (Ahead-Of-Time) Compilation?",
+      "order": ["paragraph"],
+      "ans": {
+        "paragraph": ["AOT stands for the Ahead-of-Time that was recently introduced in Angular. it compiles the code when building the application. it loads the page very quickly and happens only once per occasion per user. AOT is good for production environment"],
+        "list": [],
+        "codeblock": {
+          "lang": "",
+          "code": ""
+        }
+      }
+    },
+{
+      "id": "45",
+      "que": "JiT vs AoT Compilation?",
+      "order": ["list"],
+      "ans": {
+        "paragraph": [""],
+        "list": [
+            {"desc": "Jit loads the application slowly whereas Aot loads the page quickly."},
+            {"desc": "Jit download the compiler and compiles the application before displaying whereas AOT doesn't download compiler, since it already compiles the code when building the application"},
+            {"desc": "The JiT's bundle size is higher, Whereas AOT created fully optimied code, so its buldle size become half of Jit."},
+            {"desc": "JiT is suitable for development mode whereas AOT is suitable for production."},
+            {"desc": "JiT is default compiler follow the cli command of ng build, ng serve whereas Aot follow the cli command of ng build --aot, ng serve --aot, ng build --prod"},
+            {"desc": "In JiT error are shown in the browser whereas AoT shows error at the compile time."}
+        ],
+        "codeblock": {
+          "lang": "",
+          "code": ""
+        }
+      }
+    },
+{
+      "id": "46",
+      "que": "What is Interceptors in Angular?",
+      "order": ["paragraph"],
+      "ans": {
+        "paragraph": ["Interceptors provide a mechanism to intercept HTTP requests and responses to transform or handle them before passing them along. Intercept method takes two arguments, req and next, and returns an observable of HttpEvent type. It was introduced in Angular 4.3."],
+        "list": [],
+        "codeblock": {
+          "lang": "",
+          "code": ""
+        }
+      }
+    },
+{
+      "id": "47",
+      "que": "What is Angular?",
+      "order": ["paragraph"],
+      "ans": {
+        "paragraph": ["Angular is a TypeScript-based open-source web application framework, developed and maintained by Google. It offers an easy and powerful way of building front end web-based applications."],
+        "list": [ ],
+        "codeblock": {
+          "lang": "",
+          "code": ""
+        }
+      }
+    },
+{
+      "id": "48",
+      "que": "What is Lazy Loading in Angular?",
+      "order": ["paragraph"],
+      "ans": {
+        "paragraph": ["Lazy loading is a method used to load JavaScript components asynchronously when a specific route is activated. This does a great work in boosting the performance during initial load especially when you have complex routing with multiple components. The Lazy loading modules allows application to load modules only when they are needed. It has many benefits from enhancing the performance and size of the application."],
+        "list": [],
+        "codeblock": {
+          "lang": "",
+          "code": ""
+        }
+      }
+    },
+{
+      "id": "49",
+      "que": "Difference between AngularJs and Angular.",
+      "order": ["list"],
+      "ans": {
+        "paragraph": [""],
+        "list": [
+            {"desc": "AngularJS is based on JavaScript while Angular is based on TypeScript the superset of ES6."},
+            {"desc": "The architecture of AngularJs is based on MVC design pattern while Angular is a service based architecture."},
+            {"desc": "AngularJs was not mobile friendly but Angular is mobile friendly framework."},
+            {"desc": "AngularJS is run on client side only while Angular is run on server and client side."}
+        ],
+        "codeblock": {
+          "lang": "",
+          "code": ""
+        }
+      }
+    },
+{
+      "id": "50",
+      "que": "Some Important Features of Angular.",
+      "order": ["list"],
+      "ans": {
+        "paragraph": [""],
+        "list": [
+            {"desc": "Angular is Modern, faster, and highly scalable framework."},
+            {"desc": "It is Equally useful framework for web, mobile, and desktop apps."},
+            {"desc": "It has Web components based architecture."},
+            {"desc": "It Supports Hierarchical Dependency Injection."}
+        ],
+        "codeblock": {
+          "lang": "",
+          "code": ""
+        }
+      }
+    }, 
+    {
+      "id": "51",
+      "que": "Difference between *ngIf and [hidden]?",
+      "order": ["paragraph"],
+      "ans": {
+        "paragraph": ["ngIf is a structural directive, it add or remove the element from DOM, based on condition. But the hidden property allow to show/hide the content with css like adding/removing display:none to the element."],
+        "list": [],
+        "codeblock": {
+          "lang": "",
+          "code": ""
+        }
+      }
+    },
+    {
+      "id": "52",
+      "que": "What is Event Emitter in Angular?",
+      "order": ["paragraph"],
+      "ans": {
+        "paragraph": ["Event Emitter is used to emit custom events synchronously or asynchronously and register handlers for those events by subscribing to an instance."],
+        "list": [],
+        "codeblock": {
+          "lang": "",
+          "code": ""
+        }
+      }
+    },
+{
+      "id": "53",
+      "que": "What is emit() method in Angular?",
+      "order": ["paragraph"],
+      "ans": {
+        "paragraph": ["The emit() method allow us to raise an event in our Angular application."],
+        "list": [],
+        "codeblock": {
+          "lang": "",
+          "code": ""
+        }
+      }
+    },
+{
+      "id": "54",
+      "que": "What is CanActivate in angular?",
+      "order": ["paragraph"],
+      "ans": {
+        "paragraph": ["CanActivate is an Angular interface. It is used to force user to login into application before navigating to the route."],
+        "list": [],
+        "codeblock": {
+          "lang": "",
+          "code": ""
+        }
+      }
+    },
+{
+      "id": "55",
+      "que": "What is Subject in Angular",
+      "order": ["paragraph", "list"],
+      "ans": {
+        "paragraph": ["Subject is a special type of observable than allows you to publish and subscribe both but a plain observable allows us to subscribe only. Using Subject we can do cross component comnunication. There are different types of subject in angular like:"],
+        "list": [
+            {"title":"BehaviorSubject ", "desc": "A BehaviorSubject holds initial value. When it is subscribed it emits the value immediately."},
+            {"title":"ReplaySubject ", "desc": "ReplaySubject has the extra characteristic that it can record a part of the observable execution and therefore store multiple old values and 'replay' them to new subscribers. When creating the ReplaySubject you can specify how much values you want to store and for how long you want to store them."},
+            {"title":"AsyncSubject ", "desc": "The AsyncSubject is a variant where only the last value of the Observable execution is sent to its observers, and only when the execution completes"}
+          ],
+        "codeblock": {
+          "lang": "",
+          "code": ""
+        }
+      }
+    },
+{
+      "id": "56",
+      "que": "What is builiding block in Angular",
+      "order": ["paragraph", "list"],
+      "ans": {
+        "paragraph": ["The component which is used to create angular application Structure are commonly called as builidng blocks. The main building blocks of Angular are:"],
+        "list": [
+            {"desc": "Modules"},
+            {"desc": "Components"},
+            {"desc": "Templates"},
+            {"desc": "Metadata"},
+            {"desc": "Data binding"},
+            {"desc": "Directives"},
+            {"desc": "Services"},
+            {"desc": "Dependency injection"}
+          ],
+        "codeblock": {
+          "lang": "",
+          "code": ""
+        }
+      }
+    },
+{
+      "id": "56",
+      "que": "What is Modules in Angular?",
+      "order": ["paragraph"],
+      "ans": {
+        "paragraph": ["In Angular Module refers to a place where we can group the components, directives, pipes, and services, which are related to the application."],
+        "list": [],
+        "codeblock": {
+          "lang": "",
+          "code": ""
+        }
+      }
+    },
+{
+      "id": "58",
+      "que": "What is Component in Angular Terminology?",
+      "order": ["paragraph"],
+      "ans": {
+        "paragraph": ["Components are the most besic UI building block of angular applications. A web page in Angular has many components involved in it. A Component is basically a block in which the data can be displayed on HTML using some logic usually written in typescript."],
+        "list": [],
+        "codeblock": {
+          "lang": "",
+          "code": ""
+        }
+      }
+    },
+{
+      "id": "59",
+      "que": "What is Template in Angular?",
+      "order": ["paragraph", "list"],
+      "ans": {
+        "paragraph": ["The view of the component is defined through templates. A template is an HTML snippet that tells Angular how to render the component in angular application."],
+        "list": [],
+        "codeblock": {
+          "lang": "",
+          "code": ""
+        }
+      }
+    },
+{
+      "id": "51",
+      "que": "",
+      "order": ["paragraph", "list"],
+      "ans": {
+        "paragraph": [""],
+        "list": [
+            {"desc": ""}
+          ],
+        "codeblock": {
+          "lang": "",
+          "code": ""
+        }
+      }
+    },
+{
+      "id": "60",
+      "que": "What is Metadata in angular",
+      "order": ["paragraph", "code"],
+      "ans": {
+        "paragraph": ["Metadata tells Angular how a class should be processed on the screen. We are using a component class (decorator) with certain metadata attached in it. For example:"],
+        "list": [],
+        "codeblock": {
+          "lang": "",
+          "code":[
+            {"tab":"1", "line":"@Component({"},
+            {"tab":"3", "line":"selector: 'food-list',"},
+            {"tab":"3", "line":"templateUrl: 'app/food-list.component.html',"},
+            {"tab":"3", "line":"directives:  [FoodDetailComponent],"},
+            {"tab":"3", "line":"providers:   [FoodService]"},
+            {"tab":"1", "line":"})"}           
+          ]
+        }
+      }
+    },
+{
+      "id": "61",
+      "que": "Data binding in Angular?",
+      "order": ["paragraph"],
+      "ans": {
+        "paragraph": ["Data binding is communication between .ts file and the html file. For example, we have done some logical implementation in the .ts file and that I want to show in html template."],
+        "list": [],
+        "codeblock": {
+          "lang": "",
+          "code": ""
+        }
+      }
+    },
+{
+      "id": "62",
+      "que": "What is Directive in Angular.",
+      "order": ["paragraph", "list"],
+      "ans": {
+        "paragraph": ["Directive is basically used to add behaviour to an existing DOM element. It is used to design re-usable component. Directive used to extend HTML elements, attribute and classes, we can create custom directive also."],
+        "list": [],
+        "codeblock": {
+          "lang": "",
+          "code": ""
+        }
+      }
+    },
+{
+      "id": "63",
+      "que": "What are Services in Angular and what command is used to create a service?",
+      "order": ["paragraph"],
+      "ans": {
+        "paragraph": ["A service is a class containing any function, feature with a defined, and specific purpose. It help us in not repeating the code. Using the services, we can use the same code in different components. CMD command to create a service in angular is ng g service User."],
+        "list": [],
+        "codeblock": {
+          "lang": "",
+          "code": ""
+        }
+      }
+    },
+{
+      "id": "64",
+      "que": "Life cycle hook in angular",
+      "order": ["paragraph", "list"],
+      "ans": {
+        "paragraph": ["The events in the life of a component are also known as lifecycle hooks. Lifecycle hooks are callback methods that Angular raises when a positive event happens in the lifecycle of a component. There are 8 distinct kinds of hooks in the lifecycle of a component or directive.", "When the value of a data bound property changes, then this method is called."],
+        "list": [
+            {"title":"ngOnChanges: ", "desc": "called every time when value of a data-bound input property changes. It’s called a first time before the ngOnInit hook."},
+            {"title":"ngOnInit : ", "desc": "Called once upon initialization of the component or directive."},
+            {"title":"ngDoCheck : ", "desc": "called this hook instead of ngOnChanges for changes that Angular doesn't detect. It gets called at every change detection cycle."},
+            {"title":"ngAfterContentInit : ", "desc": "Called after Angular has projected the external content into the component's view."},
+            {"title":"ngAfterContentChecked : ", "desc": "alled after Angular checks the content projected into the component's view."},
+            {"title":"ngAfterViewInit : ", "desc": "Called after a component's view or child view is initialized."},
+            {"title":"ngAfterViewChecked : ", "desc": "Called after a component's view or child view is checked."},
+            {"title":"ngOnDestroy : ", "desc": "Called once when the component is destroyed. Its a cleanup phase called just before Angular destroys and unsubscribe from observables."}
+          ],
+        "codeblock": {
+          "lang": "",
+          "code": ""
+        }
+      }
+    },
+{
+      "id": "65",
+      "que": "Dependency Injection in angular?",
+      "order": ["paragraph"],
+      "ans": {
+        "paragraph": ["Dependency Injection (DI) is a core concept of Angular and allows a class can receive dependencies from another class. Most of the dependencies are services. Most of the time, a dependency injection is done by injecting a service class into a component or module class. Angular uses dependency injection to provide new components with the services. To use this we need to pass with the constructor parameter to request the service."],
+        "list": [],
+        "codeblock": {
+          "lang": "",
+          "code": ""
+        }
+      }
+    },
+{
+      "id": "66",
+      "que": "What is Decorator?",
+      "order": ["paragraph"],
+      "ans": {
+        "paragraph": ["A Decorator is a function that is invoked with @ prefix and followed by class, method, property.Decorators are basically used for attaching metadata to classes."],
+        "list": [],
+        "codeblock": {
+          "lang": "",
+          "code": ""
+        }
+      }
+    },
+{
+      "id": "67",
+      "que": "Types of decorators in Angular 2/4",
+      "order": ["paragraph", "list"],
+      "ans": {
+        "paragraph": ["There are four types of decorator available in angular 2/4"],
+        "list": [
+            {"title":"Class Decorators - ", "desc": "@NgModule, @Component, @Directive"},
+            {"title":"Property Decorators -  ", "desc": "@Input, @Output"},
+            {"title":"Method Decorators - ", "desc": "@HostListener, @HostBinding"},
+            {"title":"Parameter Decorators - ", "desc": "@Inject"}
+          ],
+        "codeblock": {
+          "lang": "",
+          "code": ""
+        }
+      }
+    },
+{
+      "id": "68",
+      "que": "@Input & @Output Decorator in Angular",
+      "order": ["paragraph"],
+      "ans": {
+        "paragraph": ["@Input and @Output are two decorator which is used for communication between two component."],
+        "list": [],
+        "codeblock": {
+          "lang": "",
+          "code": ""
+        }
+      }
+    },
+{
+      "id": "69",
+      "que": "Mandatory objects that must be defined in component Decorators",
+      "order": ["paragraph"],
+      "ans": {
+        "paragraph": ["selector and templateUrl/template are the mandatory object that must be define in component decorator."],
+        "list": [],
+        "codeblock": {
+          "lang": "",
+          "code": ""
+        }
+      }
+    },
+{
+      "id": "70",
+      "que": "Bootsraping in angular",
+      "order": ["paragraph"],
+      "ans": {
+        "paragraph": ["Bootstrapping in Angular is nothing but just the initialization of Angular app. There are two ways of bootstrapping AngularJS. One is Automatic Initialization and other is Manually using Script."],
+        "list": [],
+        "codeblock": {
+          "lang": "",
+          "code": ""
+        }
+      }
+    },
+{
+      "id": "71",
+      "que": "How many html file in templateUrl object can be given to a component decorator",
+      "order": ["paragraph"],
+      "ans": {
+        "paragraph": ["Only one html file can be given in templateUrl object"],
+        "list": [],
+        "codeblock": {
+          "lang": "",
+          "code": ""
+        }
+      }
+    },
+{
+      "id": "72",
+      "que": "What is routing in angularjs.",
+      "order": ["paragraph"],
+      "ans": {
+        "paragraph": ["Routing is a way to load different templates at runtime."],
+        "list": [],
+        "codeblock": {
+          "lang": "",
+          "code": ""
+        }
+      }
+    },
+{
+      "id": "73",
+      "que": "Type of data binding in Angular",
+      "order": ["paragraph", "list"],
+      "ans": {
+        "paragraph": ["There are four types of data binding in Angular"],
+        "list": [
+            {"desc": "String Interpolation"},
+            {"desc": "Property binding"},
+            {"desc": "Event binding"},
+            {"desc": "Two way data binding"}
+          ],
+        "codeblock": {
+          "lang": "",
+          "code": ""
+        }
+      }
+    },
+{
+      "id": "74",
+      "que": "String interpolation?",
+      "order": ["paragraph"],
+      "ans": {
+        "paragraph": ["String interpolation outputting the data from ts file to html template as string and this should always be a string. \nSyntax: {{data}"],
+        "list": [],
+        "codeblock": {
+          "lang": "",
+          "code": ""
+        }
+      }
+    },
+{
+      "id": "75",
+      "que": "Property binding?",
+      "order": ["paragraph"],
+      "ans": {
+        "paragraph": ["Property binding, binding the value to a property of the DOM element.","Syntax: [propertyName]='data';"],
+        "list": [],
+        "codeblock": {
+          "lang": "",
+          "code": ""
+        }
+      }
+    },
+{
+      "id": "76",
+      "que": "Event Binding?",
+      "order": ["paragraph"],
+      "ans": {
+        "paragraph": ["Event Binding, binding the value to an event of a DOM element", "Syntax: (change) ='onChoosingPort ()'"],
+        "list": [],
+        "codeblock": {
+          "lang": "",
+          "code": ""
+        }
+      }
+    },
+{
+      "id": "77",
+      "que": "Two way data binding?",
+      "order": ["paragraph", "list"],
+      "ans": {
+        "paragraph": ["Two way data binding, combines the input and output binding into a single notation using the ngModel directive. For example assigning the property value from .ts file to template and on changing the value in template assigning the value to .ts file.", "Syntax :[(ngModel)] ='data'"],
+        "list": [],
+        "codeblock": {
+          "lang": "",
+          "code": ""
+        }
+      }
+    },
+{
+      "id": "78",
+      "que": "Built in Directive available in Angular is-",
+      "order": ["paragraph"],
+      "ans": {
+        "paragraph": ["Different types of Built in Directives in Angular"],
+        "list": [
+          {"title":"Structural directives: ", "desc":"@If & @for"},
+          {"title":"Attribute directives: ", "desc":"ngStyle & ngClass"}
+        ],
+        "codeblock": {
+          "lang": "",
+          "code": ""
+        }
+      }
+    },
+{
+      "id": "79",
+      "que": "When rendering the page for the first time, which file is called first?",
+      "order": ["paragraph"],
+      "ans": {
+        "paragraph": ["main.ts file will be called first. In this file app component to be bootstrapped is called."],
+        "list": [],
+        "codeblock": {
+          "lang": "",
+          "code": ""
+        }
+      }
+    },
+{
+      "id": "80",
+      "que": "Changes need to done in the app.module.ts file if we create a component/directives manually? i.e. without using cli command line tool",
+      "order": ["paragraph"],
+      "ans": {
+        "paragraph": ["First import the component/directive, Then in declarations add the component/directive name"],
+        "list": [],
+        "codeblock": {
+          "lang": "",
+          "code": ""
+        }
+      }
+    },
+{
+      "id": "81",
+      "que": "Different types of component selector",
+      "order": ["paragraph", "list"],
+      "ans": {
+        "paragraph": ["There are three types of selector available in angular-"],
+        "list": [
+            {"title":"Element selector - ", "desc": "selector: 'app-test' In html"},
+            {"title":"Class selector - ", "desc": "selector: '.app-test’=' In html"},
+            {"title":"Property selector - ", "desc": "selector: '[app-test]' In html"},
+            {"title":"", "desc": "We don’t have Id selector in angular"}
+          ],
+        "codeblock": {
+          "lang": "",
+          "code": ""
+        }
+      }
+    },
+{
+      "id": "82",
+      "que": "Differentiate between Components and Directives in Angular.",
+      "order": ["paragraph"],
+      "ans": {
+        "paragraph": ["Components break up the application into smaller parts, whereas Directives add behavior to an existing DOM element."],
+        "list": [],
+        "codeblock": {
+          "lang": "",
+          "code": ""
+        }
+      }
+    },
+{
+      "id": "83",
+      "que": "What does a router.navigate do?",
+      "order": ["paragraph"],
+      "ans": {
+        "paragraph": ["When we want to navigate to a specific component we use router.navigate.","Syntax: this.router .navigate(['/component_name']);"],
+        "list": [ ],
+        "codeblock": {
+          "lang": "",
+          "code": ""
+        }
+      }
+    },
+{
+      "id": "84",
+      "que": "What is ViewEncapsulation?",
+      "order": ["paragraph", "list"],
+      "ans": {
+        "paragraph": ["ViewEncapsulation decides whether the styles defined in a component can affect the entire application or not. There are three ways to do this in Angular:"],
+        "list": [
+            {"title":"Emulated - ", "desc": "styles from other HTML spread to the component."},
+            {"title":"Native  - ", "desc": "styles from other HTML do not spread to the component."},
+            {"title":"None  - ", "desc": "styles defined in a component are visible to all components."}
+          ],
+        "codeblock": {
+          "lang": "",
+          "code": ""
+        }
+      }
+    },
+{
+      "id": "85",
+      "que": "What is the purpose of using package.json in the angular project?",
+      "order": ["paragraph"],
+      "ans": {
+        "paragraph": ["With the existence of package.json, it will be easy to manage the dependencies of the project. If we are using typescript in the angular project then we can mention the typescript package and version of typescript in package.json."],
+        "list": [],
+        "codeblock": {
+          "lang": "",
+          "code": ""
+        }
+      }
+    },
+{
+      "id": "86",
+      "que": "What does a Subscribe method do in Angular 4?",
+      "order": ["paragraph"],
+      "ans": {
+        "paragraph": ["It is a method which is subscribed to an observable. Whenever the subscribe method is called, an independent execution of the observable happens."],
+        "list": [],
+        "codeblock": {
+          "lang": "",
+          "code": ""
+        }
+      }
+    },
+{
+      "id": "87",
+      "que": "Differentiate between Observables and Promises.",
+      "order": ["paragraph"],
+      "ans": {
+        "paragraph": ["Observables are lazy, which means nothing happens until a subscription is made. Whereas Promises are eager; which means as soon as a promise is created, the execution takes place. Observable is a stream in which passing of zero or more events is possible and the callback is called for each event. Whereas, promise handles a single event."],
+        "list": [],
+        "codeblock": {
+          "lang": "",
+          "code": ""
+        }
+      }
+    },
+{
+      "id": "88",
+      "que": "Pipes in Angular",
+      "order": ["paragraph"],
+      "ans": {
+        "paragraph": ["In angular pipes are a way that takes data as input and transforms it into the desired output."],
+        "list": [],
+        "codeblock": {
+          "lang": "",
+          "code": ""
+        }
+      }
+    },
+{
+      "id": "89",
+      "que": "Built in Pipes in Angular",
+      "order": ["list", "paragraph"],
+      "ans": {
+        "paragraph": ["Pipes Syntax: {{expression | PipeName: input Param}}"],
+        "list": [
+            {"desc": "Currency"},
+            {"desc": "Date"},
+            {"desc": "Decimal"},
+            {"desc": "JSON"},
+            {"desc": "LowerCase & UpperCase"},
+            {"desc": "Percent"}
+          ],
+        "codeblock": {
+          "lang": "",
+          "code": ""
+        }
+      }
+    },
+{
+      "id": "90",
+      "que": "Mandatory Package to import for Custom Pipes?",
+      "order": ["code", "paragraph"],
+      "ans": {
+        "paragraph": ["CMD for Pipe ng g pipe mypipe"],
+        "list": [],
+        "codeblock": {
+          "lang": "typescript",
+          "code": [
+            {"tab":"1", "line":"import {Pipe, PipeTransform} from '@angular/core'"}           
+          ]
+        }
+      }
+    },
+{
+      "id": "91",
+      "que": "Router Outlet in Angular",
+      "order": ["paragraph"],
+      "ans": {
+        "paragraph": ["Router Outlet acts as a placeholder that angular template dynamically fills based on the current router state."],
+        "list": [],
+        "codeblock": {
+          "lang": "",
+          "code": ""
+        }
+      }
+    },
+{
+      "id": "92",
+      "que": "ngModel Directive in Angular",
+      "order": ["paragraph"],
+      "ans": {
+        "paragraph": ["ngModel directive used for bind the value of input, select and textarea. This a two-way data binding. ngModel is represented by [()]"],
+        "list": [],
+        "codeblock": {
+          "lang": "",
+          "code": ""
+        }
+      }
+    },
+{
+      "id": "93",
+      "que": "Filter using Pipes Operator",
+      "order": ["paragraph"],
+      "ans": {
+        "paragraph": ["We can filter the data using upperCase, lowerCase, currency and search pipe operator."],
+        "list": [],
+        "codeblock": {
+          "lang": "",
+          "code": ""
+        }
+      }
+    },
+{
+      "id": "94",
+      "que": "Types of Directives in Angular",
+      "order": ["paragraph", "list"],
+      "ans": {
+        "paragraph": ["There are three types of directives"],
+        "list": [
+            {"title":"Component Directive -", "desc": "Component directive is the most common directive and can not be create angular application without Component directive. This types of component adds DOM element."},
+            {"title":"Structural  Directive -", "desc": "Structural Directive change the Structure of DOM, like ngIf and ngFor."},
+            {"title":"Attribute  Directive -", "desc": "Attribute Directive change the behavior of DOM element, like ngModel, ngClass, ngStyle."}
+          ],
+        "codeblock": {
+          "lang": "",
+          "code": ""
+        }
+      }
+    },
+{
+      "id": "95",
+      "que": "@Directive v/s @Component in Angular.",
+      "order": ["paragraph", "list", "paragraph2",
+        "list2"],
+      "ans": {
+        "paragraph": ["<b class='subhead'>Component-</b>"],
+        "paragraph2": ["<b class='subhead'>Directive-</b>"],
+        "list": [
+            {"desc": "Component are typically used to create UI widgets."},
+            {"desc": "Component break up the application into smaller components."},
+            {"desc": "Only one component can be persent per DOM element."},
+            {"desc": "@View decorator or templateURL/template are mandatory object in the component."}
+          ],
+          "list2": [
+            { "desc": "Directive is used to add behaviour to an existing DOM element."},
+            { "desc": "Directive is used to design re-usable component."},
+            { "desc": "Many directive can be used per DOM element."}
+          ],
+        "codeblock": {
+          "lang": "",
+          "code": ""
+        }
+      }
+    },
+{
+      "id": "96",
+      "que": "What is Router Guards in Angular.",
+      "order": ["paragraph"],
+      "ans": {
+        "paragraph": ["The Router Guards allow to grant of remove access to certain parts of the navigation."],
+        "list": [],
+        "codeblock": {
+          "lang": "",
+          "code": ""
+        }
+      }
+    },
+{
+      "id": "97",
+      "que": "What is Observable?",
+      "order": ["paragraph"],
+      "ans": {
+        "paragraph": ["Observable provide support for data sharing between publishers and subscribers in our application.","Observable is like an arrya whose items arrives ashynchronously over the time. Observable helps us to manage asynchoronous data, such as data coming from backend service. To use observable, angular uses a third-party library called Reactive-Extension(rxjs). The observable are a proposed feature for ES2016, the next version of javascript."],
+        "list": [],
+        "codeblock": {
+          "lang": "",
+          "code": ""
+        }
+      }
+    },
+{
+      "id": "98",
+      "que": "Explain Authentication and Authorization.",
+      "order": ["paragraph", "list"],
+      "ans": {
+        "paragraph": ["<b>Authentication :</b> The user login credentials are passed to an authenticate API (on the server). On the server side validation of the credentials happens and a JSON Web Token (JWT) is returned. JWT is a JSON object that has some information or attributes about the current user. Once the JWT is given to the client, the client or the user will be identified with that JWT.", "<b>Authorization: </b> After logging in successfully, the authenticated or genuine user does not have access to everything. The user is not authorized to access someone else’s data, he/she is authorized to access some data."],
+        "list": [],
+        "codeblock": {
+          "lang": "",
+          "code": ""
+        }
+      }
+    },
+{
+      "id": "99",
+      "que": "What is Redux?",
+      "order": ["paragraph"],
+      "ans": {
+        "paragraph": ["It is a library which helps us maintain the state of the application. Redux is not required in applications that are simple with the simple data flow, it is used in Single Page Applications that have complex data flow."],
+        "list": [],
+        "codeblock": {
+          "lang": "",
+          "code": ""
+        }
+      }
+    },
+{
+      "id": "100",
+      "que": "What is an AsyncPipe in Angular?",
+      "order": ["paragraph"],
+      "ans": {
+        "paragraph": ["When an observable or promise returns something, we use a temporary property to hold the content. Later, we bind the same content to the template. With the usage of AsyncPipe, the promise or observable can be directly used in a template and a temporary property is not required."],
+        "list": [],
+        "codeblock": {
+          "lang": "",
+          "code": ""
+        }
+      }
+    },
+{
+      "id": "101",
+      "que": "How is SPA (Single Page Application) technology different from the traditional web technology?",
+      "order": ["paragraph"],
+      "ans": {
+        "paragraph": ["In traditional web technology, the client requests for a web page (HTML/JSP/asp) and the server sends the resource (or HTML page), and the client again requests for another page and the server responds with another resource. The problem here is a lot of time is consumed in the requesting/responding or due to a lot of reloading. Whereas, in the SPA technology, we maintain only one page (index.HTML) even though the URL keeps on changing."],
+        "list": [],
+        "codeblock": {
+          "lang": "",
+          "code": ""
+        }
+      }
+    },
+{
+      "id": "102",
+      "que": "What are router events in Angular ?",
+      "order": ["paragraph", "list"],
+      "ans": {
+        "paragraph": ["During each navigation, the router emits navigation events through the Router.navigate method, that allow us to track the lifecycle of the route. There are multiple events are emmited by route like -"],
+        "list": [
+            {"desc": "NavigationStart"},
+            {"desc": "RouteConfigLoadStart"},
+            {"desc": "RouteConfigLoadEnd"},
+            {"desc": "RoutesRecognized"},
+            {"desc": "GuardsCheckStart"},
+            {"desc": "ChildActivationStart"},
+            {"desc": "ActivationStart"},
+            {"desc": "GuardCehckEnd"},
+            {"desc": "ResolveEnd"},
+            {"desc": "ActivationEnd"},
+            {"desc": "ChildActivationEnd"},
+            {"desc": "NavigationEnd"},
+            {"desc": "NavigationCancel"},
+            {"desc": "NavigationError"},
+            {"desc": "Scroll"}
+          ],
+        "codeblock": {
+          "lang": "",
+          "code": ""
+        }
+      }
+    }
+  ],
+  "status":"success"
+}

@@ -28,6 +28,7 @@ navItems:any = this.getMenus();
           { name: "mongodb", title: "MongoDB", color: "btn-primary", active: true },
           { name: "nodejs", title: "Nodejs", color: "btn-primary", active: true },          
           { name: "jscore", title: "JavaScript Core", color: "btn-primary", active: true },
+          { name: "linux", title: "Linux Command", color: "btn-primary", active: true },
           { name: "es5-6", title: "ES5 / ES6", color: "btn-primary", active: false },
           { name: "javaScript-reasoning", title: "JavaScript Reasoning", color: "btn-primary", active: false },
           { name: "oojs-programing", title: "OOJS Programing", color: "btn-primary", active: false },
@@ -41,16 +42,23 @@ navItems:any = this.getMenus();
       {
         module: "personal", title: "Personal", path: "/personal/",
         description:"Some quick example text to build on the card title and make up the bulk of the card's content.",
-        children: [
-          { name: "profile", title: "Profile", color:"btn-warning", active: true },
-          { name: "numerology", title: "Numerology", color: "btn-warning", active: true },
-          { name: "finance", title: "Financial Knowledge", color: "btn-warning", active: true }
+        children: [          
+          { name: "occult", title: "Occult Science", color: "btn-warning", active: true },        
         ]},
       {
-        module: "speaking", title: "English Speaking", path: "/m/speaking/",
+        module: "speaking", title: "E-Language ", path: "/m/speaking/",
         description: "Some quick example text to build on the card title and make up the bulk of the card's content.",
         children: [
           { name: "useofphrases", title: "Use of Phrases", color: "btn-success", active: true }        
+        ]
+      },
+
+      {
+        module: "finance", title: "Finance", path: "/m/finance/",
+        description: "Some quick example text to build on the card title and make up the bulk of the card's content.",
+        children: [
+          { name: "stock-tracking", title: "Stock Tracking", color: "btn-danger", active: true } ,
+          { name: "add-stock", title: "Add Stock", color: "btn-danger", active: true }   
         ]
       },
 

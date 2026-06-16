@@ -7,6 +7,7 @@ import { JsBasics } from './js-basics/js-basics';
 import { HtmlCss } from './html-css/html-css';
 import { JavascriptES6 } from './javascript-es6/javascript-es6';
 import { JavascriptCore } from './javascript-core/javascript-core';
+import { Linux } from './linux/linux';
 
 
 export const TUTORIAL_ROUTES: Routes = [
@@ -15,10 +16,11 @@ export const TUTORIAL_ROUTES: Routes = [
     path: 'tutorial', component: TutorialsComponent, children: [
       { path: '', redirectTo: "/m/tutorial/javascript", pathMatch: "full" },
       { path: 'javascript-es6', component: JavascriptES6},
-      { path: 'jscore', component: JavascriptCore },
+      { path: 'javascript', component: JavascriptCore },
       { path: 'angular', component: Angular },
       { path: 'mongodb', component: Mongodb },
       { path: 'nodejs', component: Nodejs },
+      { path: 'linux', component: Linux },
       { path: 'js-basics', component: JsBasics},
       { path: 'html-css', component: HtmlCss }
     ]

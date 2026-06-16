@@ -1,7 +1,7 @@
 <div class="blue_themes">
 <header class="custom_nav">
   <div class="container">
-    <a routerLink="/"><span class="fa fa-home"></span></a>
+    <a routerLink="/dashboard"><span class="fa fa-home"></span></a>
     <nav>
       <div [class.open]="isActiveMenu" class="Menu-btn">
         <div (click)="isActiveMenu = !isActiveMenu" class="stripes">
@@ -20,7 +20,6 @@
     </nav>
   </div>
 </header>
-
 <div class="content">
   <router-outlet></router-outlet>
 </div>

@@ -1,0 +1,120 @@
+<div class="add-stock-wrapper container py-4">
+  <form [formGroup]="stockForm" (ngSubmit)="onSubmit(stockForm.value)" novalidate>
+    <fieldset class="stock-form-fieldset">
+      <legend class="stock-form-legend">
+        <span class="legend-icon fa fa-line-chart" aria-hidden="true"></span>
+        {{ isEditMode ? 'Edit Stock' : 'Add New Stock' }}
+      </legend>
+
+      <div class="stock-form-body">
+        <div class="row g-2 stock-form-row align-items-start">
+          <div class="col-md-8">
+            <mat-form-field appearance="outline" class="stock-field w-100" subscriptSizing="dynamic">
+              <mat-label>Stock Name</mat-label>
+              <input matInput formControlName="stockName" placeholder="Enter stock name" />
+              @if (stockForm.get('stockName')?.invalid && stockForm.get('stockName')?.touched) {
+                <mat-error>Stock name is required.</mat-error>
+              }
+            </mat-form-field>
+          </div>
+          <div class="col-md-4">
+            <mat-form-field appearance="outline" class="stock-field w-100" subscriptSizing="dynamic">
+              <mat-label>Stop Loss</mat-label>
+              <input matInput type="number" formControlName="stopLosss" placeholder="0.00" step="any" />
+            </mat-form-field>
+          </div>
+        </div>
+
+        <div class="row g-2 stock-form-row align-items-start">
+          <div class="col-md-6">
+            <mat-form-field appearance="outline" class="stock-field w-100" subscriptSizing="dynamic">
+              <mat-label>LTP</mat-label>
+              <input matInput type="number" formControlName="ltp" placeholder="Last traded price" step="any" />
+            </mat-form-field>
+          </div>
+          <div class="col-md-6">
+            <mat-form-field appearance="outline" class="stock-field w-100" subscriptSizing="dynamic">
+              <mat-label>Priority</mat-label>
+              <mat-select formControlName="priority" placeholder="Select priority">
+                @for (option of priorityOptions; track option) {
+                  <mat-option [value]="option">{{ option }}</mat-option>
+                }
+              </mat-select>
+            </mat-form-field>
+          </div>
+        </div>
+
+        <div class="row g-2 stock-form-row align-items-start">
+          <div class="col-md-6">
+            <mat-form-field appearance="outline" class="stock-field w-100" subscriptSizing="dynamic">
+              <mat-label>Target First</mat-label>
+              <input matInput type="number" formControlName="targetFirst" placeholder="Enter first target" step="any" />
+            </mat-form-field>
+          </div>
+          <div class="col-md-6">
+            <mat-form-field appearance="outline" class="stock-field w-100" subscriptSizing="dynamic">
+              <mat-label>Deadline T1</mat-label>
+              <input matInput [matDatepicker]="deadlineT1Picker" formControlName="deadlineT1" />
+              <mat-datepicker-toggle matIconSuffix [for]="deadlineT1Picker"></mat-datepicker-toggle>
+              <mat-datepicker #deadlineT1Picker></mat-datepicker>
+            </mat-form-field>
+          </div>
+        </div>
+
+        <div class="row g-2 stock-form-row align-items-start">
+          <div class="col-md-6">
+            <mat-form-field appearance="outline" class="stock-field w-100" subscriptSizing="dynamic">
+              <mat-label>Target Second</mat-label>
+              <input matInput type="number" formControlName="targetSecond" placeholder="Enter second target" step="any" />
+            </mat-form-field>
+          </div>
+          <div class="col-md-6">
+            <mat-form-field appearance="outline" class="stock-field w-100" subscriptSizing="dynamic">
+              <mat-label>Deadline T2</mat-label>
+              <input matInput [matDatepicker]="deadlineT2Picker" formControlName="deadlineT2" />
+              <mat-datepicker-toggle matIconSuffix [for]="deadlineT2Picker"></mat-datepicker-toggle>
+              <mat-datepicker #deadlineT2Picker></mat-datepicker>
+            </mat-form-field>
+          </div>
+        </div>
+
+        <div class="row g-2 stock-form-row align-items-start">
+          <div class="col-md-6">
+            <mat-form-field appearance="outline" class="stock-field w-100" subscriptSizing="dynamic">
+              <mat-label>Target Third</mat-label>
+              <input matInput type="number" formControlName="targetThird" placeholder="Enter third target" step="any" />
+            </mat-form-field>
+          </div>
+          <div class="col-md-6">
+            <mat-form-field appearance="outline" class="stock-field w-100" subscriptSizing="dynamic">
+              <mat-label>Deadline T3</mat-label>
+              <input matInput [matDatepicker]="deadlineT3Picker" formControlName="deadlineT3" />
+              <mat-datepicker-toggle matIconSuffix [for]="deadlineT3Picker"></mat-datepicker-toggle>
+              <mat-datepicker #deadlineT3Picker></mat-datepicker>
+            </mat-form-field>
+          </div>
+        </div>
+
+        <div class="row g-2 stock-form-row align-items-start">
+          <div class="col-md-6 stock-checkbox-field">
+            <mat-checkbox formControlName="hasTargetMatch" color="primary" class="stock-checkbox">
+              Has Target Match
+            </mat-checkbox>
+          </div>
+        </div>
+      </div>
+
+      <div class="stock-form-actions">
+        <button mat-stroked-button type="button" class="stock-back-btn" (click)="goBack()">
+          Back
+        </button>
+        <button mat-stroked-button type="button" class="stock-reset-btn" (click)="onReset()">
+          Reset
+        </button>
+        <button mat-flat-button type="submit" class="stock-submit-btn" [disabled]="stockForm.invalid">
+          {{ isEditMode ? 'Update Stock' : 'Add Stock' }}
+        </button>
+      </div>
+    </fieldset>
+  </form>
+</div>

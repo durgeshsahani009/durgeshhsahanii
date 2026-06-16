@@ -1,0 +1,118 @@
+<div class="stocks-tracker-wrapper container py-4">
+  @if (stocks$ | async; as stocks) {
+    <div class="tracker-header">
+      <div class="tracker-title">
+        <span class="title-icon fa fa-line-chart" aria-hidden="true"></span>
+        <h2>Stock Tracker</h2>
+      </div>
+      @if (stocks.length > 0) {
+        <span class="stock-count">{{ stocks.length }} {{ stocks.length === 1 ? 'stock' : 'stocks' }}</span>
+      }
+    </div>
+
+    @if (errorMessage) {
+      <div class="tracker-error" role="alert">{{ errorMessage }}</div>
+    }
+
+    <div class="table-panel">
+      @if (stocks.length === 0) {
+        <div class="empty-state">
+          <p>No stocks tracked yet.</p>
+          <span class="empty-hint">Use Add Stock from the menu to create one.</span>
+        </div>
+      } @else {
+        <div class="table-scroll-container desktop-table-wrap">
+          <table class="table table-bordered table-hover stocks-table align-middle mb-0">
+            <thead>
+              <tr>
+                <th scope="col" class="sticky-col sticky-col-sno text-center">#</th>
+                <th scope="col" class="sticky-col sticky-col-first">Stock</th>
+                <th scope="col">Stop Loss</th>
+                <th scope="col">LTP</th>
+                <th scope="col">Target-1</th>
+                <th scope="col">Deadline T1</th>
+                <th scope="col">Target-2</th>
+                <th scope="col">Deadline T2</th>
+                <th scope="col">Target-3</th>
+                <th scope="col">Deadline T3</th>
+                <th scope="col" class="text-center">Match</th>
+                <th scope="col">Priority</th>
+                <th scope="col">Updated</th>
+                <th scope="col" class="sticky-col sticky-col-last text-center">Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              @for (stock of stocks; track stock.id ?? stock.stockName; let i = $index) {
+                <tr>
+                  <td class="sticky-col sticky-col-sno text-center" data-label="#">{{ i + 1 }}</td>
+                  <td class="stock-name-cell sticky-col sticky-col-first" data-label="Stock">{{ stock.stockName }}</td>
+                  <td class="num-cell" data-label="Stop Loss">
+                    {{ stock.stopLosss ?? '—' }}
+                  </td>
+                  <td class="num-cell" data-label="Stop Loss">
+                    {{ stock.ltp ?? '—' }}
+                  </td>
+                  <td class="num-cell" data-label="T1">
+                    {{ stock.targetFirst ?? '—' }}
+                  </td>
+                  <td class="date-cell" data-label="Deadline T1">{{ formatDeadline(stock.deadlineT1) }}</td>
+                  <td class="num-cell" data-label="T2">
+                    {{ stock.targetSecond ?? '—' }}
+                  </td>
+                  <td class="date-cell" data-label="Deadline T2">{{ formatDeadline(stock.deadlineT2) }}</td>
+                  <td class="num-cell" data-label="T3">
+                    {{ stock.targetThird ?? '—' }}
+                  </td>
+                  <td class="date-cell" data-label="Deadline T3">{{ formatDeadline(stock.deadlineT3) }}</td>
+                  <td class="match-cell text-center" data-label="Match">
+                    {{ stock.hasTargetMatch ? 'Yes' : 'No' }}
+                  </td>
+                  <td class="match-cell text-center" data-label="Match">
+                    {{ stock.priority ?? '—' }}
+                  </td>
+                  <td class="date-cell" data-label="Updated">{{ stock.updatedAt | date: 'dd/MM/yyyy:hh:mm' }}</td>
+                  <td class="actions-cell sticky-col sticky-col-last text-center" data-label="Actions">
+                    <button
+                      type="button"
+                      class="btn btn-icon btn-edit"
+                      aria-label="Edit stock"
+                      title="Edit"
+                      (click)="editStock(stock)"
+                    >
+                      <i class="fa fa-pencil" aria-hidden="true"></i>
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-icon btn-delete"
+                      aria-label="Delete stock"
+                      title="Delete"
+                      (click)="deleteStock(stock)"
+                    >
+                      <i class="fa fa-trash" aria-hidden="true"></i>
+                    </button>
+                  </td>
+                </tr>
+              }
+            </tbody>
+          </table>
+        </div>
+      }
+    </div>
+  } @else {
+    <div class="tracker-header">
+      <div class="tracker-title">
+        <span class="title-icon fa fa-line-chart" aria-hidden="true"></span>
+        <h2>Stock Tracker</h2>
+      </div>
+    </div>
+
+    <div class="table-panel">
+      <div class="loading-state">
+        <div class="spinner-border spinner-border-sm" role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+        <span>Loading stocks...</span>
+      </div>
+    </div>
+  }
+</div>

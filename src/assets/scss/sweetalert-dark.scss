@@ -1,0 +1,107 @@
+// Dark SweetAlert2 theme aligned with finance / stock form palette
+.swal2-popup.swal-dark {
+  background: linear-gradient(180deg, rgba(10, 10, 35, 0.98) 0%, rgba(2, 2, 25, 1) 100%) !important;
+  border: 1px solid rgba(29, 130, 255, 0.45);
+  border-radius: 8px;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.35);
+  padding: 1.25rem 1.5rem 1.5rem;
+  color: #eee;
+  font-family: Roboto, 'Helvetica Neue', sans-serif;
+
+  .swal2-title {
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 0.5rem 0 0;
+  }
+
+  .swal2-html-container,
+  .swal2-content {
+    color: #ccc;
+    font-size: 13px;
+    line-height: 1.5;
+  }
+
+  .swal2-icon {
+    margin: 1rem auto 0.75rem;
+    transform: scale(0.85);
+
+    &.swal2-question {
+      border-color: rgba(29, 130, 255, 0.55);
+      color: #1d82ff;
+
+      .swal2-icon-content {
+        color: #1d82ff;
+      }
+    }
+
+    &.swal2-error {
+      border-color: rgba(255, 69, 51, 0.55);
+      color: #ff4533;
+
+      [class^='swal2-x-mark-line'] {
+        background-color: #ff4533;
+      }
+    }
+
+    &.swal2-success {
+      border-color: rgba(29, 130, 255, 0.55);
+
+      [class^='swal2-success-line'] {
+        background-color: #1d82ff;
+      }
+
+      .swal2-success-ring {
+        border-color: rgba(29, 130, 255, 0.35);
+      }
+    }
+
+    &.swal2-warning {
+      border-color: rgba(255, 193, 7, 0.55);
+      color: #ffc107;
+    }
+  }
+
+  .swal2-actions {
+    gap: 0.65rem;
+    margin-top: 1.25rem;
+  }
+}
+
+.swal-dark-btn {
+  font-size: 13px !important;
+  font-weight: 500 !important;
+  line-height: 1 !important;
+  min-width: 90px;
+  height: 32px;
+  padding: 0 1rem !important;
+  border-radius: 4px !important;
+  box-shadow: none !important;
+  transition: background-color 0.2s ease, border-color 0.2s ease, transform 0.15s ease;
+
+  &--confirm {
+    background-color: #1d82ff !important;
+    color: #fff !important;
+    border: 1px solid #1d82ff !important;
+
+    &:hover,
+    &:focus {
+      background-color: #1568cc !important;
+      border-color: #1568cc !important;
+      transform: translateY(-1px);
+    }
+  }
+
+  &--cancel {
+    background-color: transparent !important;
+    color: #bababa !important;
+    border: 1px solid rgba(97, 98, 98, 0.55) !important;
+
+    &:hover,
+    &:focus {
+      background-color: rgba(137, 137, 137, 0.12) !important;
+      border-color: #848484 !important;
+      color: #ddd !important;
+    }
+  }
+}

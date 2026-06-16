@@ -1,0 +1,1012 @@
+{
+  "data": [
+    {
+      "id": "1",
+      "que": "Pure function?",
+      "order": [
+        "paragraph"
+      ],
+      "ans": {
+        "paragraph": [
+          "A Pure Function is a function (a block of code) that always returns the same result if the same arguments are passed. It does not depend on any state or data change during a program’s execution. Rather, it only depends on its input arguments. Also a pure function does not produce any observable side effects such as network requests or data mutation etc."
+        ],
+        "list": [],
+        "codeblock": {
+          "lang": "",
+          "code": ""
+        }
+      }
+    },
+    {
+      "id": "2",
+      "que": "What is Singleton Class?",
+      "order": [
+        "paragraph"
+      ],
+      "ans": {
+        "paragraph": [
+          "A Pure Function is a function (a block of code) that always returns the same result if the same arguments are passed. It does not depend on any state or data change during a program’s execution. Rather, it only depends on its input arguments. Also a pure function does not produce any observable side effects such as network requests or data mutation etc."
+        ],
+        "list": [],
+        "codeblock": {
+          "lang": "",
+          "code": ""
+        }
+      }
+    },
+    {
+      "id": "3",
+      "que": "What is the ‘Strict mode’ in JavaScript and how can it be enabled?",
+      "order": [
+        "paragraph","list","code",
+        "list",
+        "code"
+      ],
+      "ans": {
+        "paragraph": [
+          "Strict Mode adds certain compulsions to JavaScript which is introduce in ES5. The purpose of “use strict” literal is to indicate that the code should be executed in the “strict mode.” It helps us to identify some hidden bugs. We can’t use undeclared variables in strict mode. Strict mode can be enabled by adding the string literal “use strict” above the file. it has many benefits like.-"
+        ],
+        "list": [
+          {
+            "desc": "Strict mode eliminates some JavaScript silent errors by changing them to throw errors."
+          },
+          {
+            "desc": "Strict mode fixed some mistakes that make it difficult for JavaScript engines to perform optimizations."
+          },
+          {
+            "desc": "It prevents, or throws errors, when relatively “unsafe” actions are taken such as gaining access to the global objec."
+          },
+          {
+            "desc": "It prevents, or throws errors, when relatively “unsafe” actions are taken such as gaining access to the global objec."
+          }
+        ],
+        "codeblock": {
+          "lang": "",
+          "code": [
+            {
+              "tab": "1",
+              "line": " function myfunction(){"
+            },
+            {
+              "tab": "2",
+              "line": "\"use strict\";"
+            },
+            {
+              "tab": "3",
+              "line": "var v = \"This is a strict mode function \";"
+            },
+            {
+              "tab": "4",
+              "line": "}"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "4",
+      "que": "What is Singleton Class?",
+      "order": [
+        "paragraph","list"
+      ],
+      "ans": {
+        "paragraph": [
+          "Arrow functions are a short-hand notation for writing a functions in ES6. It has many benefits like."
+        ],
+        "list": [
+          {
+            "desc": "Arrow syntax automatically binds \"this\" keyword to the surrounding code’s context."
+          },
+          {
+            "desc": "The syntax allows an implicit \"return\" keyword when there is no body block."
+          },
+          {
+            "desc": "Arrow syntax is shorter and simpler than function in some cases, although stylistic issues are often subjective"
+          }
+        ],
+        "codeblock": {
+          "lang": "",
+          "code": ""
+        }
+      }
+    },
+    {
+      "id": "5",
+      "que": "What is Template literals (Template strings) in ES6?",
+      "order": [
+        "paragraph"
+      ],
+      "ans": {
+        "paragraph": [
+          "Template Literals are a new ES6 feature that allows us to work with strings in better way as we can write multi line template.Template literals are enclosed by the backtick (` `) character instead of double or single quotes. The expression can be write using dollor($) sign and curly braces."
+        ],
+        "list": [],
+        "codeblock": {
+          "lang": "",
+          "code": ""
+        }
+      }
+    },
+    {
+      "id": "6",
+      "que": "What is lexical scope in JavaScript?",
+      "order": [
+        "paragraph"
+      ],
+      "ans": {
+        "paragraph": [
+          "A lexical scoping means variable defined outside a function can be accessible inside another function defined after the variable declaration. But the opposite is not allowed and the variables defined inside a function will not be accessible outside that function."
+        ],
+        "list": [],
+        "codeblock": {
+          "lang": "",
+          "code": ""
+        }
+      }
+    },
+    {
+      "id": "7",
+      "que": "What is function overloading?",
+      "order": [
+        "paragraph"
+      ],
+      "ans": {
+        "paragraph": [
+          "Function overloading is the ability of a programming language to create multiple functions of the same name with different implementations. when an overloaded function is called it will run function a specific implementation of that function appropriate to the context of the call."
+        ],
+        "list": [],
+        "codeblock": {
+          "lang": "",
+          "code": ""
+        }
+      }
+    },
+    {
+      "id": "8",
+      "que": "Disadvantages of TypeScript over JavaScript?",
+      "order": [
+        "paragraph","list"
+      ],
+      "ans": {
+        "paragraph": [
+          ""
+        ],
+        "list": [
+          {
+            "desc": "TypeScript required compilation step but in JavaScript not required."
+          },
+          {
+            "desc": "TypeScript takes a time to compile the code."
+          },
+          {
+            "desc": "TypeScript doesn’t support abstract classes."
+          },
+          {
+            "desc": "Whenever TypeScript needs to run in a browser, there must still be a compilation step to transform TypeScript to JavaScript"
+          },
+          {
+            "desc": "When using a third party library, there needs to be a definition file, and sometimes it’s not always available"
+          }
+        ],
+        "codeblock": {
+          "lang": "",
+          "code": ""
+        }
+      }
+    },
+    {
+      "id": "9",
+      "que": "What Are the Basic Data Types in TypeScript?",
+      "order": [
+        "list"
+      ],
+      "ans": {
+        "paragraph": [
+          ""
+        ],
+        "list": [
+          {
+            "desc": "string"
+          },
+          {
+            "desc": "number"
+          },
+          {
+            "desc": "boolean"
+          },
+          {
+            "desc": "null"
+          },
+          {
+            "desc": "undefined"
+          },
+          {
+            "desc": "Array"
+          },
+          {
+            "desc": "enum"
+          },
+          {
+            "desc": "void"
+          },
+          {
+            "desc": "any"
+          },
+          {
+            "desc": "never"
+          },
+          {
+            "desc": "tuple"
+          }
+        ],
+        "codeblock": {
+          "lang": "",
+          "code": ""
+        }
+      }
+    },
+    {
+      "id": "10",
+      "que": "What are the user defined Data Types in TypeScript?",
+      "order": [
+        "list"
+      ],
+      "ans": {
+        "paragraph": [
+          ""
+        ],
+        "list": [
+          {
+            "desc": "enum"
+          },
+          {
+            "desc": "classes"
+          },
+          {
+            "desc": "interfaces"
+          },
+          {
+            "desc": "arrays"
+          },
+          {
+            "desc": "tuple"
+          }
+        ],
+        "codeblock": {
+          "lang": "",
+          "code": ""
+        }
+      }
+    },
+    {
+      "id": "11",
+      "que": "What is the different between Classes and Interfaces in TypeScript?",
+      "order": [
+        "paragraph"
+      ],
+      "ans": {
+        "paragraph": [
+          "A class is a blueprint from which we can create objects that share the same configuration - properties and methods. An interface is a group of related properties and methods that describe an object, but neither provides implementation nor initialisation for them."
+        ],
+        "list": [],
+        "codeblock": {
+          "lang": "",
+          "code": ""
+        }
+      }
+    },
+    {
+      "id": "12",
+      "que": "Classes Vs Interfaces",
+      "order": [
+        "paragraph"
+      ],
+      "ans": {
+        "paragraph": [
+          "Interface properties can end with commas or semi-colons, where as class properties can only end with semi-colons.",
+          "We can not use interfaces when we have default values, implementations, constructors, or functions whereas Classes can have default values, implementations, constructors and functions along with default values.",
+          "Interface completely removed during compilation of code, While class does not remove during compilation.",
+          "In TypeScript the only job of an interface is to describe a type While class and function deal with implementation.",
+          "One interface can extend another interface by extends keyword in this way interface provides inheritance and support multiple inheritances by extending multiple interfaces together. Interface can not extend a class.",
+          "The class implements the interface by implements keyword, and class can extends other class using extends keyword, this way class provides inheritance, and class does not support multiple inheritances."
+        ],
+        "list": [],
+        "codeblock": {
+          "lang": "",
+          "code": ""
+        }
+      }
+    },
+    {
+      "id": "13",
+      "que": "What is polyfill in js?",
+      "order": [
+        "paragraph"
+      ],
+      "ans": {
+        "paragraph": [
+          "A polyfill is a piece of code used to provide modern functionality on older browsers that do not natively support it."
+        ],
+        "list": [],
+        "codeblock": {
+          "lang": "",
+          "code": ""
+        }
+      }
+    },
+    {
+      "id": "14",
+      "que": "What is deep copy and shallow copy in JavaScript?",
+      "order": [
+        "paragraph"
+      ],
+      "ans": {
+        "paragraph": [
+          "A deep copy means that all of the values of the new variable are copied and disconnected from the original object. A shallow copy means that bit-wise copy of an object is happen and certain (sub-)values are still connected to the original variable."
+        ],
+        "list": [],
+        "codeblock": {
+          "lang": "",
+          "code": ""
+        }
+      }
+    },
+    {
+      "id": "15",
+      "que": "What is Higher-order functions?",
+      "order": [
+        "paragraph"
+      ],
+      "ans": {
+        "paragraph": [
+          "Higher-order functions are functions that take other functions as arguments or return functions as their results.",
+          "Taking an other function as an argument is often referred as a callback function, because it is called back by the higher-order function. This is a concept that Javascript uses a lot.",
+          "For example, the map function on arrays is a higher order function. The map function takes a function as an argument."
+        ],
+        "list": [],
+        "codeblock": {
+          "lang": "",
+          "code": ""
+        }
+      }
+    },
+    {
+      "id": "16",
+      "que": "Is TypeScript a scripting or programming language?",
+      "order": [
+        "paragraph"
+      ],
+      "ans": {
+        "paragraph": [
+          "The theoretical difference between a scripting language and a programming language is that scripting languages do not require the compilation step. But TypeScript is compiled to JavaScript and requires an extra step. Therefore, TypeScript is not a scripting language.",
+          "TypeScript is, indeed, a strict superset of JavaScript. Any pure JavaScript code will compile successfully in TypeScript."
+        ],
+        "list": [],
+        "codeblock": {
+          "lang": "",
+          "code": ""
+        }
+      }
+    },
+    {
+      "id": "17",
+      "que": "What is rest and spread operator in ES6",
+      "order": [
+        "paragraph"
+      ],
+      "ans": {
+        "paragraph": [
+          "Rest Parameter is collecting all remaining elements into an array. And Spread Operator is unpacking collected elements such as arrays into single elements.It is define using three dots."
+        ],
+        "list": [],
+        "codeblock": {
+          "lang": "",
+          "code": ""
+        }
+      }
+    },
+    {
+      "id": "18",
+      "que": "Difference between \"var\" , \"let\" and \"const\" keyword ?",
+      "order": [
+        "paragraph"
+      ],
+      "ans": {
+        "paragraph": [
+          "Let: let keyword use to declare variables in block-scope. It is can be updated but not re-declared.",
+          "Var: The var keyword is function scoped. it means a variable declared using the var keyword is scoped to the entire function in which it was declared.",
+          "Const: The const statement allows you to declare a constant with a constant value. Const are similar to let variables, except that the value cannot be changed."
+        ],
+        "list": [],
+        "codeblock": {
+          "lang": "",
+          "code": ""
+        }
+      }
+    },
+    {
+      "id": "19",
+      "que": "Hoisting in javascript.",
+      "order": [
+        "paragraph"
+      ],
+      "ans": {
+        "paragraph": [
+          "Hoisting is the JavaScript interpreter's action of moving all variable and function declarations to the top of the current scope. However, only the actual declarations are hoisted. Any assignments are left where they are."
+        ],
+        "list": [],
+        "codeblock": {
+          "lang": "",
+          "code": ""
+        }
+      }
+    },
+    {
+      "id": "20",
+      "que": "Closure in JavaScript",
+      "order": [
+        "paragraph",
+        "list"
+      ],
+      "ans": {
+        "paragraph": [
+          "A closure is a function defined inside another function (called the parent function), and has access to variables that are declared and defined in the parent function scope.",
+          "The closure has access to variables in three scopes:-"
+        ],
+        "list": [
+          {
+            "desc": "Variables declared in their own scope"
+          },
+          {
+            "desc": "Variables declared in a parent function scope"
+          },
+          {
+            "desc": "Variables declared in the global namespace"
+          }
+        ],
+        "codeblock": {
+          "lang": "",
+          "code": ""
+        }
+      }
+    },
+    {
+      "id": "21",
+      "que": "Different between call(), apply() and bind() method.",
+      "order": [
+        "paragraph",
+        "list"
+      ],
+      "ans": {
+        "paragraph": [
+          "The all method attach \"this\" into function (or object) and the difference is in the function invocation."
+        ],
+        "list": [
+          {
+            "desc": "Call invokes the function immediately and allows you to pass in arguments one by one."
+          },
+          {
+            "desc": "Apply invokes the function immediately and allows you to pass in arguments as an array."
+          },
+          {
+            "desc": "Bind returns a new function to be later called, allowing you to pass in a this array and any number of arguments."
+          }
+        ],
+        "codeblock": {
+          "lang": "",
+          "code": ""
+        }
+      }
+    },
+    {
+      "id": "22",
+      "que": "Promise in javascript?",
+      "order": [
+        "paragraph"
+      ],
+      "ans": {
+        "paragraph": [
+          "Promises are used to handle asynchronous operations in JavaScript. Promises provide a mechanism to handle the results and errors from asynchronous operations. We can accomplish the same thing with callbacks, but promises provide improved readability via method chaining and error handling.",
+          "A promises will be in one of 3 possible states:"
+        ],
+        "list": [
+          {
+            "desc": "Pending - not yet fulfilled or rejected"
+          },
+          {
+            "desc": "Fulfilled - The state of a promise representing a successful operation. e.g., resolve() was called"
+          },
+          {
+            "desc": "Rejected - The state of a promise representing a failed operation. e.g., reject() was called"
+          }
+        ],
+        "codeblock": {
+          "lang": "",
+          "code": ""
+        }
+      }
+    },
+    {
+      "id": "23",
+      "que": "What is the use of Async/Await.",
+      "order": [
+        "paragraph"
+      ],
+      "ans": {
+        "paragraph": [
+          "Async keyword is used to define an asynchronous function, which returns a AsyncFunction object.",
+          "Await keyword is used to pause async function execution until a Promise is fulfilled, that is resolved or rejected, and to resume execution of the asyncfunction after fulfillments."
+        ],
+        "list": [],
+        "codeblock": {
+          "lang": "",
+          "code": ""
+        }
+      }
+    },
+    {
+      "id": "24",
+      "que": "What is the feature of async/await function!",
+      "order": [
+        "paragraph",
+        "list"
+      ],
+      "ans": {
+        "paragraph": [
+          "The key feature of async/await function:"
+        ],
+        "list": [
+          {
+            "desc": "Await can only be used inside an async function."
+          },
+          {
+            "desc": "Functions with the async keyword will always return a promise."
+          },
+          {
+            "desc": "Multiple awaits will always run in sequential order under a same function."
+          },
+          {
+            "desc": "If a promise resolves normally, then await promise returns the result. But in case of a rejection it throws the error."
+          },
+          {
+            "desc": "Async function cannot wait for multiple promises at the same time."
+          },
+          {
+            "desc": "Performance issues can occur if using await after await as many times one statement doesn’t depend on the previous one."
+          }
+        ],
+        "codeblock": {
+          "lang": "",
+          "code": ""
+        }
+      }
+    },
+    {
+      "id": "25",
+      "que": "What is Template literals (Template strings) in ES6?",
+      "order": [
+        "paragraph",
+        "list"
+      ],
+      "ans": {
+        "paragraph": [
+          "OOPs Concepts in javascript!"
+        ],
+        "list": [
+          {
+            "desc": "Encapsulation : Encapsulation is a way of enclosing all the functionalities of an object within that object so that the object's internal workings are hidden from the rest of the application."
+          },
+          {
+            "desc": "Abstraction : An abstraction is a way of hiding the implementation details and showing only the functionality to the users. In other words, it ignores the irrelevant details and shows only the required one."
+          },
+          {
+            "desc": "Inheritance : Inheritance is a way in which some property and methods of an Object is being used by another Object using \"extends\" keyword."
+          },
+          {
+            "desc": "Polymorphism : Polymorphism is a concept in which Ability to call the same method on different objects and each object responds in different way."
+          }
+        ],
+        "codeblock": {
+          "lang": "",
+          "code": ""
+        }
+      }
+    },
+    {
+      "id": "26",
+      "que": "Prototype in Javascript",
+      "order": [
+        "paragraph"
+      ],
+      "ans": {
+        "paragraph": [
+          "The Prototype property allow us to add new properties and methods to existing object (class) type. Prototype is global property which is available with almost all javascript objects."
+        ],
+        "list": [],
+        "codeblock": {
+          "lang": "",
+          "code": ""
+        }
+      }
+    },
+    {
+      "id": "27",
+      "que": "Function Definitions? or Function Declarations vs. Function Expressions.",
+      "order": [
+        "paragraph",
+        "code"
+      ],
+      "ans": {
+        "paragraph": [
+          "JavaScript functions are defined with the function keyword and we can use a function declaration or a function expression.",
+          "Function declarations load before any code is executed while Function expressions load only when the interpreter reaches that line of code.",
+          "In the other worlds an function declared with funtion name is called as function declaration and a function stored in a variable are known as function expression.",
+          "We can clear understand with following example."
+        ],
+        "list": [],
+        "codeblock": {
+          "lang": "",
+          "code": [
+            {
+              "tab": "1",
+              "line": "/*FUNCTION DECLARATION */"
+            },
+            {
+              "tab": "2",
+              "line": "function add(num1, num2) {"
+            },
+            {
+              "tab": "3",
+              "line": "  return num1 + num2;"
+            },
+            {
+              "tab": "4",
+              "line": " }"
+            },
+            {
+              "tab": "6",
+              "line": "  /*FUNCTION EXPRESSION */"
+            },
+            {
+              "tab": "7",
+              "line": " var add = function (num1, num2) {"
+            },
+            {
+              "tab": "8",
+              "line": "  return num1 + num2;"
+            },
+            {
+              "tab": "9",
+              "line": " };"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "28",
+      "que": "What is Throttling in JavaScript?",
+      "order": [
+        "paragraph"
+      ],
+      "ans": {
+        "paragraph": [
+          "Throttling is a technique in which, no matter how many times the user fires the event, the attached function will be executed only once in a given time interval."
+        ],
+        "list": [],
+        "codeblock": {
+          "lang": "",
+          "code": ""
+        }
+      }
+    },
+    {
+      "id": "29",
+      "que": "What is Debouncing in JavaScript?",
+      "order": [
+        "paragraph"
+      ],
+      "ans": {
+        "paragraph": [
+          "Debouncing is a technique in which, no matter how many times the user fires the event, the attached function will be executed only after the specified time once the user stops firing the event."
+        ],
+        "list": [],
+        "codeblock": {
+          "lang": "",
+          "code": ""
+        }
+      }
+    },
+    {
+      "id": "30",
+      "que": "Different between Throttling & Debouncing in JavaScript?",
+      "order": [
+        "paragraph"
+      ],
+      "ans": {
+        "paragraph": [
+          "The main difference between throttling and debouncing is that throttling executes the function at a regular interval, while debouncing executes the function only after some cooling period. Both throttling and debouncing can be implemented with the help of the setTimeout function. Debouncing and throttling are not something provided by JavaScript itself. They’re just concepts we can implement using the setTimeout function."
+        ],
+        "list": [],
+        "codeblock": {
+          "lang": "",
+          "code": ""
+        }
+      }
+    },
+    {
+      "id": "31",
+      "que": "What is Typescript?",
+      "order": [
+        "paragraph"
+      ],
+      "ans": {
+        "paragraph": [
+          "Typescript is a modern age Javascript development language. It is a statically compiled language to write clear and simple Javascript code. It can be run on Node js or any browser which supports ECMAScript 3 or newer versions.",
+          "Typescript provides optional static typing, classes, and interface. For a large JavaScript project adopting Typescript can bring you more robust software and easily deployable with a regular JavaScript application."
+        ],
+        "list": [],
+        "codeblock": {
+          "lang": "",
+          "code": ""
+        }
+      }
+    },
+    {
+      "id": "32",
+      "que": "Advantages of using TypeScript over JavaScript?",
+      "order": [
+        "list"
+      ],
+      "ans": {
+        "paragraph": [
+          ""
+        ],
+        "list": [
+          {
+            "desc": "TypesScript is known as Object oriented programming language whereas JavaScript is a scripting language."
+          },
+          {
+            "desc": "TypeScript has a feature known as Static typing but JavaScript does not have this feature."
+          },
+          {
+            "desc": "TypeScript gives support for modules whereas JavaScript does not support modules."
+          },
+          {
+            "desc": "TypeScript has Interface but JavaScript does not have Interface."
+          },
+          {
+            "desc": "TypeScript support optional parameter function but JavaScript does not support optional parameter function."
+          }
+        ],
+        "codeblock": {
+          "lang": "",
+          "code": ""
+        }
+      }
+    },
+    {
+      "id": "33",
+      "que": "Difference between TypeScript and JavaScript?",
+      "order": [
+        "list"
+      ],
+      "ans": {
+        "paragraph": [
+          ""
+        ],
+        "list": [
+          {
+            "desc": "TypeScript always point out the compilation errors at the time of development only. Because of this at the run-time the chance of getting errors are very less whereas JavaScript is an interpreted language."
+          },
+          {
+            "desc": "TypeScript has a feature known as static typing. That means Static typing allows for checking type correctness at compile time. This is not available in JavaScript."
+          },
+          {
+            "desc": "Typescript is not supported by target browser, therefore typescript compilier convert the typescript code into javascript but JavaScript not required to compile."
+          }
+        ],
+        "codeblock": {
+          "lang": "",
+          "code": ""
+        }
+      }
+    },
+    {
+      "id": "34",
+      "que": "Features of TypeScript?",
+      "order": [
+        "list"
+      ],
+      "ans": {
+        "paragraph": [
+          ""
+        ],
+        "list": [
+          {
+            "desc": "TypeScript code is not understandable by the browsers. Thats why if the code is written in TypeScript then it is compiled and converted into the JavaScript.The above process is known as Trans-piled. By the help of JavaScript code, browsers are able to read the code and display the result."
+          },
+          {
+            "desc": "Whatever code is written in JavaScript can be converted to TypeScript by changing the extension from .js to .ts."
+          },
+          {
+            "desc": "With TypeScript, developers can use existing JavaScript code, incorporate popular JavaScript libraries, and can be called from other JavaScript code."
+          },
+          {
+            "desc": "TypeScript code can be run on any browser, devices or in any operating system. TypeScipt is not specific to any Virtual-machine etc."
+          }
+        ],
+        "codeblock": {
+          "lang": "",
+          "code": ""
+        }
+      }
+    },
+    {
+      "id": "35",
+      "que": "What are some of new features of ES6?",
+      "order": [
+        "paragraph",
+        "list"
+      ],
+      "ans": {
+        "paragraph": [
+          "Some of the new features of ES6 are:"
+        ],
+        "list": [
+          {
+            "desc": "Support for constants (also known as \"immutable variables\")"
+          },
+          {
+            "desc": "Block-Scope support for both variables, constants, functions"
+          },
+          {
+            "desc": "Arrow functions"
+          },
+          {
+            "desc": "Extended Parameter Handling"
+          },
+          {
+            "desc": "Template Literals and Extended Literals"
+          },
+          {
+            "desc": "Enhanced Regular Expression"
+          },
+          {
+            "desc": "Destructuring Assignment"
+          },
+          {
+            "desc": "Modules, Classes, Iterators and Generators"
+          },
+          {
+            "desc": "Enhanced Object Properties"
+          },
+          {
+            "desc": "Support for Map/Set & WeakMap/WeakSet"
+          },
+          {
+            "desc": "Promises, Meta-Programming ,Internationalization and Localization"
+          }
+        ],
+        "codeblock": {
+          "lang": "",
+          "code": ""
+        }
+      }
+    },
+    {
+      "id": "36",
+      "que": "What is Set in ES6?",
+      "order": [
+        "paragraph"
+      ],
+      "ans": {
+        "paragraph": [
+          "Set objects are collections of unique values. Duplicate values are ignored, as the collection must have all unique values. The values can be primitive types or object references."
+        ],
+        "list": [],
+        "codeblock": {
+          "lang": "",
+          "code": ""
+        }
+      }
+    },
+    {
+      "id": "37",
+      "que": "The best way to use ES6 in a project?",
+      "order": [
+        "paragraph"
+      ],
+      "ans": {
+        "paragraph": [
+          "As it is mentioned that ES6 is not supported by all the browsers, so to use ES6 script we need to convert into the ES5 script which is supported by all the browsers. To convert into a pre-ES6 script, we need transpilers like Babel. Babel is a popular javascript transpiler used for this purpose, which allows ES6 code to convert into an ES5 script which is support by all the browsers."
+        ],
+        "list": [],
+        "codeblock": {
+          "lang": "",
+          "code": ""
+        }
+      }
+    },
+    {
+      "id": "38",
+      "que": "Explain about Default parameter values, Rest parameter, Spread operator?",
+      "order": [
+        "list"
+      ],
+      "ans": {
+        "paragraph": [
+          ""
+        ],
+        "list": [
+          {
+            "desc": "Default parameter values : Default parameter values are used to initialize the functions with default values. The value of a parameter can be anything like a null, number or function."
+          },
+          {
+            "desc": "Rest parameter : The rest parameter is used to retrieve all the arguments to invoke the function."
+          },
+          {
+            "desc": "Spread operator : It has been used to manipulate array and to copy the enumerable properties from one object to another."
+          }
+        ],
+        "codeblock": {
+          "lang": "",
+          "code": ""
+        }
+      }
+    },
+    {
+      "id": "39",
+      "que": "What is a Destructuring assignment?",
+      "order": [
+        "paragraph"
+      ],
+      "ans": {
+        "paragraph": [
+          "Destructuring assignment is used to bind the set of variable to the corresponding values. It mainly refers to the use of patterns to extract the parts of an object."
+        ],
+        "list": [],
+        "codeblock": {
+          "lang": "",
+          "code": ""
+        }
+      }
+    },
+    {
+      "id": "40",
+      "que": "What is the difference between ES5 and ES6.",
+      "order": [
+        "paragraph"
+      ],
+      "ans": {
+        "paragraph": [
+          "ES5 is the 5th edition of ECMAScript, standardized in 2009. This standard has been implemented fairly completely in all modern browsers.",
+          "ES6 is the 6th edition of ECMAScript, standardized in 2015. This standard has been partially implemented in most modern browsers."
+        ],
+        "list": [],
+        "codeblock": {
+          "lang": "",
+          "code": ""
+        }
+      }
+    },
+    {
+      "id": "41",
+      "que": "What is IIFEs (Immediately Invoked Function Expressions)?",
+      "order": [
+        "paragraph"
+      ],
+      "ans": {
+        "paragraph": [
+          "It’s an Immediately-Invoked Function Expression, or IIFE for short. It executes immediately after it’s created. The syntax is like below"
+        ],
+        "list": [],
+        "codeblock": {
+          "lang": "",
+          "code": ""
+        }
+      }
+    }
+  ],
+  "status":"success"
+}

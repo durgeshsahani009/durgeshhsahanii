@@ -57,7 +57,7 @@
 
         {
             "id": "4",
-            "que": "Pure function?",
+            "que": "What is Event loop in JavaScript?",
             "order": [
                 "paragraph","code"
             ],
@@ -68,7 +68,7 @@
                 ],
                 "list": [],
                 "codeblock": {
-                    "lang": "",
+                    "lang": "javascript",
                     "code": [
                         {
                             "tab": "1",

@@ -1,0 +1,33 @@
+.titleValueList{margin:0;padding:0; list-style: none; width:100%; display:flex;  flex-wrap:wrap;
+li{display:flex; width:100%; margin-bottom:7px;
+ label{
+    width:300px;
+    display:flex;
+    position: relative;
+    padding-right:20px;
+    .cmdname{
+        background-color: #01224a;
+        display: inline-block;
+        margin: 0 10px 0 0;
+        padding: 1px 5px;
+        color: #9ec9ff;
+        border: 1px solid #033c83;
+        border-radius: 2px;
+        font-size: 14px;
+        line-height: 16px;
+    }
+    &::after{
+        content:":";
+        position:absolute;
+        right:10px; top:0;;
+    }
+}
+.desc{font-size:14px; font-style:italic; width:calc(100% - 300px);}    
+ }
+ }
+ @media screen and (max-width:600px) {
+    .titleValueList li label{width:100%; margin-bottom:5px;}
+    .titleValueList li label::after{display:none;}
+    .titleValueList li{margin-bottom: 10px; flex-wrap:wrap;}    
+    .titleValueList li .desc{width:100%;}
+ }

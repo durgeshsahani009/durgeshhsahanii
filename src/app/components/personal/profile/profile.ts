@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Auth } from '../../../services/auth';
-import { ActivatedRoute, Router, RouterLink, RouterModule, RouterOutlet } from '@angular/router';
+import { ActivatedRoute, Router, RouterLink, RouterOutlet } from '@angular/router';
 import { NgIf } from '@angular/common';
 import { MatDialog } from '@angular/material/dialog';
 import { DialogModule } from '@angular/cdk/dialog';
@@ -8,7 +8,7 @@ import { Login } from '../../common/login/login';
 
 @Component({
   selector: 'app-profile',
-  imports: [RouterOutlet,  RouterLink, DialogModule],
+  imports: [RouterOutlet, RouterLink, DialogModule],
   templateUrl: './profile.html',
   styles: [`
     @use  "header";

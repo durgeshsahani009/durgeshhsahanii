@@ -9,6 +9,7 @@ import { Highlight } from '../../../core/highlight';
 })
 export class JavascriptES6 {
   warperWD: any = 0;
+
   constructor(private tutorialService: Tutorial) { }
 
   ngOnInit(): void {

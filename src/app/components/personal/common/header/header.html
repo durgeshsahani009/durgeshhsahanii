@@ -1,6 +1,6 @@
 <header class="custom_nav">
   <div class="container">
-    <a routerLink="/"><span class="fa fa-home"></span></a>
+    <a routerLink="/dashboard"><span class="fa fa-home"></span></a>
     <nav>
       <div [class.open]="isActiveMenu" class="Menu-btn">
         <div (click)="isActiveMenu = !isActiveMenu" class="stripes">
@@ -12,7 +12,7 @@
       <ul>
         @for (item of navItems; track $index) {
         @if(item.active) {
-        <li><a [routerLink]="'/personal/numerology/'+item?.name">{{item.title}}</a></li>
+        <li><a [routerLink]="'/personal/occult/'+item?.name">{{item.title}}</a></li>
         }
         }
       </ul>

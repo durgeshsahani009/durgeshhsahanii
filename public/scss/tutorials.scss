@@ -25,7 +25,7 @@ header{
 *{-webkit-box-sizing:border-box; box-sizing:border-box; word-wrap:break-word;}
 section{width:100%; display:block; float:left; clear:both;}
 ul.none{list-style:none !important;}
-p{margin-bottom:10px;}
+p{margin-bottom:10px; line-height:1.4}
 p.para{margin-bottom:1em; width:100%; clear:both; float:left;}
 ul.none{list-style:none !important; padding:0}
 ul.none li{margin-bottom:15px;}
@@ -57,7 +57,7 @@ ol#que_index > li:before{content:attr(index); position:absolute; left:0; top:0; 
 .practicle li p > span{font-style: italic; font-size:14px;  color:#aad650;}
 .curd_opp li span{font-style: italic; font-size:14px;  color:#aad650;}
 #que_index li p > i, #que_index li .normal_bullet  i, #que_index p > b > i{font-style: italic; font-size:14px;  color:#d6ad50;}
- #que_index p{margin:0; display:block; width:100%; float:left;}
+ #que_index p{display:block; width:100%; float:left;}
 .practicle h5{margin:20px 0 5px; display:block; float:left; font-style:italic;}
 
 #pract_index{width:100%; display:block; float:left; clear:both; padding-left:0;}
@@ -137,6 +137,7 @@ pre[class*="language-"]{padding:0; margin:0; clear:both; display:block;}
 .source_wrapper{width:100%; display:block; float:left; clear:both; overflow:hidden; max-width:100%;}
 .highlight{background-color:#076413;  font-size: .8rem; padding: 2px 5px;}
 .marker{background-color:#027812; }
+
 @media only screen and (max-width:1366px){
 	.source_code{max-width:1250px; min-width:1250px;}
 	#pract_index .source{max-width:1250px; min-width:1250px;}

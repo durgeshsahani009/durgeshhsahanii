@@ -1,0 +1,45 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "firstName": "durgesh",
+      "lastName": "sahani",
+      "mobile": 9717758007,
+      "email": "sahani.durgesh@gmail.com",
+      "password": "Abc@123",
+      "confirmPWD": "Abc@123"
+    },
+    {
+      "id": 2,
+      "firstName": "Navya",
+      "lastName": "Sahani",
+      "mobile": "9015535657",
+      "email": "navya.sahani@gmail.com",
+      "password": "Abc@123",
+      "confirmPWD": "Abc@123",
+      "lasttName": "Sahani"
+    }
+  ],
+  "students": [
+    {
+      "id": 1,
+      "fullName": "durgesh sahani",
+      "mobile": 9717758007,
+      "email": "sahani.durgesh@gmail.com",
+      "gender": "Male",
+      "subject": "English",
+      "medium": "English",
+      "terms": true
+    },
+    {
+      "id": 2,
+      "fullName": "Navya Sahani",
+      "mobile": "9015535657",
+      "email": "navya.sahani@gmail.com",
+      "gender": "Female",
+      "subject": "English",
+      "medium": "Punjabi",
+      "terms": true
+    }
+  ]
+}

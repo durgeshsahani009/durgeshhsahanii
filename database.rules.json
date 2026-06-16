@@ -1,0 +1,18 @@
+{
+  "rules": {
+    "stocks": {
+      ".read": true,
+      ".write": true,
+      "$stockId": {
+        ".validate": "newData.hasChildren(['stockName', 'updatedAt']) && newData.child('stockName').isString() && newData.child('stockName').val().length > 0"
+      }
+    },
+    "stocks_tracker": {
+      ".read": true,
+      ".write": true,
+      "$stockId": {
+        ".validate": "newData.hasChildren(['stockName', 'updatedAt']) && newData.child('stockName').isString() && newData.child('stockName').val().length > 0"
+      }
+    }
+  }
+}

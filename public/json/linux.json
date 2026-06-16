@@ -1,0 +1,286 @@
+{
+    "data":[
+         {
+            "id": "1",
+            "que": "SYSTEM INFORMATION",           
+            "ans": {
+                "keyvalues": [                  
+                    {"key":"uname  -a" ,"desc":"# Display Linux system information"},
+                    {"key":"uname -r"  ,"desc":"# Display kernel release information"},
+                    {"key":"lsb_release -a"  ,"desc":"# Show which version of ubuntu installed"},
+                    {"key":"uptime" ,"desc":"# Show how long the system has been running + load"},
+                    {"key":"hostname" ,"desc":"# Show system host name"},
+                    {"key":"hostname -I"  ,"desc":"# Display the IP addresses of the host"},
+                    {"key":"last reboot"  ,"desc":"# Show system reboot history"},
+                    {"key":"date" ,"desc":"# Show the current date and time"},
+                    {"key":"cal" ,"desc":"# Show this month's calendar"},
+                    {"key":"w" ,"desc":"# Display who is online"},
+                    {"key":"whoami" ,"desc":"# Who you are logged in as"}
+                ]            
+            }
+        },
+        {
+            "id": "2",
+            "que": "HARDWARE INFORMATION",           
+            "ans": {
+                "keyvalues": [                  
+                    {"key":"cat /proc/cpuinfo", "desc":"# Display CPU information"},
+                    {"key":"cat /proc/meminfo", "desc":"# Display memory information"},
+                    {"key":"free -h", "desc":"# Display free and used memory ( -hfor human readable,-mfor MB, -gfor GB.)"},
+                    {"key":"lspci -tv", "desc":"# Display PCI devices"},
+                    {"key":"lsusb -tv", "desc":"# Display USB devices"},
+                    {"key":"dmidecode", "desc":"# Display DMI/SMBIOS (hardware info) from theBIOS"},
+                    {"key":"hdparm -i /dev/sda", "desc":"# Show info about disk sda"},
+                    {"key":"hdparm -tT /dev/sda", "desc":"# Perform a read speed test on disk sda"}
+                ]            
+            }
+        },
+        {
+            "id": "3",
+            "que": "PERFORMANCE MONITORING ANDSTATISTICS",           
+            "ans": {
+                "keyvalues": [                  
+                    {"key":"top", "desc":"# Display and manage the top processes"},
+                    {"key":"mpstat 1", "desc":"# Display processor related statistics"},
+                    {"key":"vmstat 1", "desc":"# Display virtual memory statistics"},
+                    {"key":"iostat 1", "desc":"# Display I/O statistics"},
+                    {"key":"tcpdump -i eth0", "desc":"# Capture and display all packets on interface eth0"},
+                    {"key":"tcpdump -i eth0 'port 80'", "desc":"# Monitor all traffic on port 80 ( HTTP )"},
+                    {"key":"lsof", "desc":"# List all open files on the system"},
+                    {"key":"lsof -u user", "desc":"# List files opened by user"},
+                    {"key":"free -h #", "desc":"Display free and used memory (-h for human readable, -m for MB, -g for GB.)"},                    
+                    {"key":"watch df -h", "desc":"# Execute 'df -h', showing periodic updates"}
+                ]            
+            }
+        },
+        {
+            "id": "4",
+            "que": "USER INFORMATION ANDMANAGEMENT",           
+            "ans": {
+                "keyvalues": [                  
+                    {"key":"id", "desc":"# Display the user and group ids of your current user.                    "},
+                    {"key":"last", "desc":"# Display the last users who have loggedonto the system."},
+                    {"key":"who", "desc":"# Show who is logged into the system."},
+                    {"key":"w", "desc":"# Show who is logged in and what they are doing."},
+                    {"key":"groupadd test", "desc":"# Create a group named 'test'."},
+                    {"key":"useradd -c 'John Smith' -m john", "desc":"# Create an account named john, with a comment of 'John Smith' and create the user's home  directory."},
+                    {"key":"userdel john", "desc":"# Delete the john account."},
+                    {"key":"usermod -aG sales john", "desc":"# Add the john account to the sales group"}
+                ]            
+            }
+        },
+        {
+                    "id": "5",
+                    "que": "FILE AND DIRECTORY COMMANDS",           
+                    "ans": {
+                        "keyvalues": [                  
+                            {"key":"ls -al", "desc":"# List all files in a long listing (detailed)format"},
+                            {"key":"pwd", "desc":"# Display the present working directory"},
+                            {"key":"mkdir directory", "desc":"# Create a directory"},
+                            {"key":"rm file", "desc":"# Remove (delete) file"},
+                            {"key":"rm -r directory", "desc":"# Remove the directory and itscontents recursively"},
+                            {"key":"rm -f file", "desc":"# Force removal of file without promptingfor confirmation"},
+                            {"key":"rm -rf directory", "desc":"# Forcefully remove directory recursively"},
+                            {"key":"rmdir", "desc":"# Delete a file or files"},
+                            {"key":"cp file1 file2", "desc":"# Copy file1 to file2"},
+                            {"key":"cp -r source_directory destination", "desc":"# Copy source_directory recursively to destination. If destination exists, copy source_directory into destination, otherwise create destination with the contents of source_directory."},
+                            {"key":"mv file1 file2", "desc":"# Rename or move file1 to file2. If file2 is an existing directory, move file1 into directory file2"},
+                            {"key":"ln -s /path/to/file linkname", "desc":"# Create symbolic link to linkname"},
+                            {"key":"touch file", "desc":"# Create an empty file or update the access and modification times of file."},
+                            {"key":"cat file", "desc":"# View the contents of file"},
+                            {"key":"less file", "desc":"# Browse through a text file"},
+                            {"key":"head file", "desc":"# Display the first 10 lines of file"},
+                            {"key":"tail file", "desc":"# Display the last 10 lines of file"},
+                            {"key":"tail -f file", "desc":"# Display the last 10 lines of file and 'follow' the file as it grows"},
+                            {"key":"lpr", "desc":"# Spool file for line printing"},
+                            {"key":"chgrp", "desc":"# Change file group"},
+                            {"key":"more, page", "desc":"# Display file data at your terminal"},
+                            {"key":"file", "desc":"# Determine file type"},
+                            {"key":"vi", "desc":"# GNOME text editor"},
+                            {"key":"gedit", "desc":"# Standard text editor"}
+                        ]            
+                    }
+            },
+             {
+                    "id": "6",
+                    "que": "MANIPULATING DATA",           
+                    "ans": {
+                        "keyvalues": [                  
+                            {"key":"awk", "desc":"# Pattern scanning and processing language"},
+                            {"key":"perl", "desc":"# Data manipulation language"},
+                            {"key":"cmp", "desc":"# Compare the contents of two files"},
+                            {"key":"paste", "desc":"# Merge file data"},
+                            {"key":"sed", "desc":"# Stream text editor"},
+                            {"key":"cut", "desc":"# Cut out selected fields of each line of a file"},
+                            {"key":"sort", "desc":"# Sort file data"},
+                            {"key":"diff", "desc":"# Differential file comparator"},
+                            {"key":"split", "desc":"# Split file into smaller files"},
+                            {"key":"expand, unexpand", "desc":"# Expand tabs to spaces, and vice versa"},
+                            {"key":"tr", "desc":"# Translate characters"},
+                            {"key":"uniq", "desc":"# Report repeated lines in a file"},
+                            {"key":"join", "desc":"# Join files on some common field"},
+                            {"key":"look", "desc":"# Find lines in sorted data"},
+                            {"key":"wc", "desc":"# Count words, lines, and characters"},
+                            {"key":"gzip", "desc":"# Compress files"},
+                            {"key":"zmore", "desc":"# File perusal filter for crt viewing of compressed text"},
+                            {"key":"uncompress", "desc":"# Uncompress files"},
+                            {"key":"zcat", "desc":"# Cat a compressed file"},
+                            {"key":"gunzip", "desc":"# Uncompress gzipped files"},
+                            {"key":"zcmp, zdiff", "desc":"# Compare compressed files"}
+                        ]            
+                    }
+            },
+            {
+                    "id": "7",
+                    "que": "PROCESS MANAGEMENT",           
+                    "ans": {
+                        "keyvalues": [                  
+                            {"key":"ps", "desc":"# Display your currently running processes"},
+                            {"key":"ps -ef", "desc":"# Display all the currently running processes on the system."},
+                            {"key":"ps -ef | grep processname", "desc":"# Display process information for processname"},
+                            {"key":"top", "desc":"# Display and manage the top processes"},
+                            {"key":"htop", "desc":"# Interactive process viewer (top alternative)"},
+                            {"key":"kill pid", "desc":"# Kill process with process ID of pid"},
+                            {"key":"killall processname", "desc":"# Kill all processes named processname"},
+                            {"key":"program &", "desc":"# Start programin the background"},
+                            {"key":"bg", "desc":"# Display stopped or background jobs"},
+                            {"key":"fg", "desc":"# Brings the most recent background jobto foreground"},
+                            {"key":"fg n", "desc":"# Brings job nto the foreground"}
+                        ]            
+                    }
+            },
+            {
+                    "id": "8",
+                    "que": "NETWORKING",           
+                    "ans": {
+                        "keyvalues": [                  
+                            {"key":"ifconfig -a", "desc":"# Display all network interfaces and ip address"},
+                            {"key":"ifconfig eth0", "desc":"# Display eth0 address and details"},
+                            {"key":"ethtool eth0", "desc":"# Query or control network driver and hardwaresettings"},
+                            {"key":"ping host", "desc":"# Send ICMP echo request to host"},
+                            {"key":"whois domain", "desc":"# Display whois information for domain"},
+                            {"key":"dig domain", "desc":"# Display DNS information for domain"},
+                            {"key":"dig -x IP_ADDRESS", "desc":"# Reverse lookup of IP_ADDRESS"},
+                            {"key":"host domain", "desc":"# Display DNS ip address for domain"},
+                            {"key":"hostname -i", "desc":"# Display the network address of the host name."},
+                            {"key":"hostname -I", "desc":"# Display all local ip addresses"},
+                            {"key":"wget http://domain.com/file", "desc":"# Download http://domain.com/file"},
+                            {"key":"netstat -nutlp", "desc":"# Display listening tcp and udp ports and corresponding programs"},
+                            {"key":"ftp", "desc":"# File transfer program"},
+                            {"key":"tftp", "desc":"# Trivial file transfer program"},
+                            {"key":"sftp", "desc":"# Secure shell file transfer program"},
+                            {"key":"rcp", "desc":"# Remote file copy"},
+                            {"key":"scp", "desc":"# Secure shell remote file copy"},
+                            {"key":"wget", "desc":"# Non-interactive network downloader"},
+                            {"key":"telnet", "desc":"# Make terminal connection to another host"},
+                            {"key":"ssh", "desc":"# Secure shell terminal or command connection"},
+                            {"key":"rlogin", "desc":"# Remote login to a Linux host"},
+                            {"key":"rsh", "desc":"# Remote shell"},
+                            {"key":"curl", "desc":"# Transfer data from a url"}
+                        ]            
+                    }
+            },{
+                    "id": "9",
+                    "que": "ARCHIVES (TARFILES)",           
+                    "ans": {
+                        "keyvalues": [ 
+                            {"key":"tar cf archive.tar directory", "desc": "# Create tar named archive .tar containing directory."},
+                            {"key":"tar xf archive.tar", "desc": "# Extract the contents from archive.tar. tar czf"},
+                            {"key":"archive.tar.gz directory", "desc": "# Create a gzip compressed tar file name archive.tar.gz"},
+                            {"key":"tar xzf archive.tar.gz", "desc": "# Extract a gzip compressed tar file."},
+                            {"key":"tar cjf archive.tar.bz2 directory", "desc": "# Create a tar file with bzip2 compression"},
+                            {"key":"tar xjf archive.tar.bz2", "desc": "# Extract a bzip2 compressed tar file."}
+                            
+                        ]            
+                    }
+            },{
+                    "id": "10",
+                    "que": "INSTALLING PACKAGES",           
+                    "ans": {
+                        "keyvalues": [ 
+                            {"key":"yum search keyword", "desc":"# Search for a package by keyword."},
+                            {"key":"yum install package", "desc":"# Install package."},
+                            {"key":"yum info package", "desc":"# Display description and summaryinformation about package."},
+                            {"key":"rpm -i package.rpm", "desc":"# Install package from local file named package.rpm"},
+                            {"key":"yum remove package", "desc":"# Remove/uninstall package"},
+                            {"key":"tar zxvf sourcecode.tar.gz\ncd sourcecode\n./configure\nmake install", "desc":"# Install software from source code."}
+                          ]            
+                    }
+            },{
+                    "id": "11",
+                    "que": "SEARCH",           
+                    "ans": {
+                        "keyvalues": [ 
+                            {"key":"grep pattern file", "desc":"# Search for patternin file"},
+                            {"key":"grep -r pattern directory", "desc":"# Search recursively for patternin directory"},
+                            {"key":"locate name", "desc":"# Find files and directories by name"},
+                            {"key":"find /home/john -name 'prefix*'", "desc":"# Find files in /home/johnthat start with 'prefix'."},
+                            {"key":"find /home -size +100M", "desc":"# Find files larger than 100MB in /home"}
+                          ]            
+                    }
+            },{
+                    "id": "12",
+                    "que": "SSH LOGINS",           
+                    "ans": {
+                        "keyvalues": [ 
+                            {"key":"ssh host", "desc":"# Connect to hostas your local username."},
+                            {"key":"ssh user@host", "desc":"# Connect to hostas user"},
+                            {"key":"ssh -p port user@host", "desc":"# Connect to hostusing port"}
+                          ]            
+                    }
+            },{
+                    "id": "13",
+                    "que": "FILE TRANSFERS",           
+                    "ans": {
+                        "keyvalues": [ 
+                            {"key":"scp file.txt server:/tmp", "desc":"# Secure copy file.txt to the /tmp folder on server"},
+                            {"key":"scp server:/var/www/*.html /tmp", "desc":"# Copy *.htmlfiles from serverto the local /tmp folder."},
+                            {"key":"scp -r server:/var/www /tmp", "desc":"# Copy all files and directories recursively from server to the current system's /tmp folder."},
+                            {"key":"rsync -a /home /backups/", "desc":"# Synchronize /home to /backups/home"},
+                            {"key":"rsync -avz /home server:/backups/", "desc":"# Synchronize files/directories between the local and remote system with compression enabled"}
+                          ]            
+                    }
+            },{
+                    "id": "14",
+                    "que": "DISK USAGE",           
+                    "ans": {
+                        "keyvalues": [ 
+                            {"key":"df -h", "desc":"# Show free and used space on mounted filesystems"},
+                            {"key":"df -i", "desc":"# Show free and used inodes on mountedfilesystems"},
+                            {"key":"fdisk -l", "desc":"# Display disks partitions sizes and types"},
+                            {"key":"du -ah", "desc":"# Display disk usage for all files and directories in human readable format"},
+                            {"key":"du -sh", "desc":"# Display total disk usage off the current directory"}
+                          ]            
+                    }
+            },{
+                    "id": "15",
+                    "que": "DIRECTORY NAVIGATION",           
+                    "ans": {
+                        "keyvalues": [ 
+                            {"key":"cd ..", "desc":"# To go up one level of the directory tree. (Change into the parent directory.)"},
+                            {"key":"cd", "desc":"# Go to the $HOME directory"},
+                            {"key":"cd /etc", "desc":"# Change to the /etc directory"}
+                          ]            
+                    }
+            },{
+                    "id": "16",
+                    "que": "PROGRAMMING",           
+                    "ans": {
+                        "keyvalues": [ 
+                            {"key":"make", "desc":"# Maintain groups of programs"},
+                            {"key":"size", "desc":"# print program's sizes"},
+                            {"key":"nm", "desc":"# print program's name list"},
+                            {"key":"strip", "desc":"# remove symbol table and relocation bits"},
+                            {"key":"bcpp", "desc":"# make C++ beautifier"},
+                            {"key":"gcc", "desc":"# GNU ANSI C Compiler"},
+                            {"key":"ctrace", "desc":"# C program debugger"},
+                            {"key":"indent", "desc":"# indent and format C program source"},
+                            {"key":"cxref", "desc":"# generate C program cross reference"},
+                            {"key":"g++", "desc":"# GNU C++ Compiler"}
+                          ]            
+                    }
+            }
+        ],
+
+     "status":"success"
+}

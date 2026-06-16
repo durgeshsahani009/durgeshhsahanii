@@ -23,4 +23,8 @@ export class Tutorial {
   getJascriptCore(): Observable<any> {
     return this.http.get('json/jascript_core.json')
   }
+
+   getlinux(): Observable<any> {
+    return this.http.get('json/linux.json')
+  }
 }

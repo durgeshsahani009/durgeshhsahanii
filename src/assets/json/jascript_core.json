@@ -1,0 +1,324 @@
+{
+  "data":[
+   {
+      "id":"1",
+      "que":"JavaScript Array method with its version.",
+       "order":["subTitle-0","list_0","subTitle-1","list_1","subTitle-2","list_2","subTitle-3","list_3","subTitle-4","list_4"],
+      "ans":{
+        "paragraph": [],
+        "subTitle":["ECMAScript 1", "ECMAScript 3", "ECMAScript 5", "ECMAScript 6 or ES6 or ES2015", "ECMAScript 7 or ES7 or ES2016"],
+        "list_0":[       
+          {"desc":"concat()"},
+          {"desc":"join()"},
+          {"desc":"pop()"},
+          {"desc":"push()"},
+          {"desc":"reverse()"},
+          {"desc":"shift()"},
+          {"desc":"slice()"},
+          {"desc":"sort()"},
+          {"desc":"splice()"},
+          {"desc":"toString()"},
+          {"desc":"unshift()"},
+          {"desc":"valueOf()"}
+        ],
+        "list_1":[       
+          {"desc":"some()"}
+        ],
+        "list_2": [
+          {"desc": "every()"},
+          {"desc": "filter()"},
+          {"desc": "forEach()"},
+          {"desc": "indexOf()"},
+          {"desc": "isArray()"},
+          {"desc": "lastIndexOf()"},
+          {"desc": "map()"},
+          {"desc": "reduce()"},
+          {"desc": "reduceRight()"}          
+        ],
+        "list_3":[       
+          {"desc":"copyWithin()"},
+          {"desc":"entries()"},
+          {"desc":"fill()"},
+          {"desc":"find()"},
+          {"desc":"findIndex()"},
+          {"desc":"from()"},
+          {"desc":"keys()"}
+        ],
+         "list_4":[       
+          {"desc":"includes()"}
+        ],
+        "codeblock":{
+          "lang":"",
+          "code":""
+        }
+      }
+    },
+     {
+      "id":"2",
+      "que":"JavaScript String method.",
+       "order":["list"],
+      "ans":{
+        "paragraph": [],
+        "subTitle":[],
+        "list":[       
+          {"desc":"charAt()", "info":"ECMAScript1"},
+          {"desc":"charCodeAt()", "info":"ECMAScript1"},
+          {"desc":"fromCharCode()", "info":"ECMAScript1"},
+          {"desc":"endsWith()", "info":"ECMAScript6"},
+          {"desc":"startsWith()", "info":"ECMAScript6"},
+          {"desc":"concat()", "info":"ECMAScript1"},
+          {"desc":"includes()", "info":"ECMAScript6"},
+          {"desc":"indexOf()", "info":"ECMAScript1"},
+          {"desc":"lastIndexOf()", "info":"ECMAScript1"},
+          {"desc":"match()", "info":"ECMAScript1"},
+          {"desc":"repeat()", "info":"ECMAScript6"},
+          {"desc":"replace()", "info":"ECMAScript1"},
+          {"desc":"search()", "info":"ECMAScript1"},
+          {"desc":"slice()", "info":"ECMAScript1"},
+          {"desc":"split()", "info":"ECMAScript1"},
+          {"desc":"trim()", "info":"ECMAScript5"},
+          {"desc":"substr()", "info":"ECMAScript1"},
+          {"desc":"substring()", "info":"ECMAScript1"},
+          {"desc":"toString()", "info":"ECMAScript1"},
+          {"desc":"valueOf()", "info":"ECMAScript1"},
+          {"desc":"localeCompare()", "info":"ECMAScript1"},
+          {"desc":"toLocaleLowerCase()", "info":"ECMAScript1"},
+          {"desc":"toLocaleUpperCase()", "info":"ECMAScript1"},
+          {"desc":"toLowerCase()", "info":"ECMAScript1"},
+          {"desc":"toUpperCase()", "info":"ECMAScript1"}
+        ],        
+        "codeblock":{
+          "lang":"",
+          "code":""
+        }
+      }
+    },
+    {
+      "id":"3",
+      "que":"DOM Document Object Properties and Methods.",
+       "order":["subTitle-0","list_0","subTitle-1","list_1","subTitle-2","list_2"],
+      "ans":{
+        "paragraph": [],
+        "subTitle":["DOM Document Set-1", "DOM Document Set-2", "DOM Document Set-3"],
+        "list_0":[       
+          {"desc":"activeElement"},
+          {"desc":"addEventListener()"},
+          {"desc":"adoptNode()"},
+          {"desc":"anchors"},
+          {"desc":"applets"},
+          {"desc":"baseURI"},
+          {"desc":"body"},
+          {"desc":"close()"},
+          {"desc":"cookie"},
+          {"desc":"charset"},
+          {"desc":"characterSet"},
+          {"desc":"createAttribute()"},
+          {"desc":"createComment()"},
+          {"desc":"createDocumentFragment()"},
+          {"desc":"createElement()"},
+          {"desc":"createEvent()"},
+          {"desc":"createTextNode()"},
+          {"desc":"defaultView"},
+          {"desc":"designMode"},
+          {"desc":"documentElement"},
+          {"desc":"documentURI"},
+          {"desc":"doctype"},
+          {"desc":"domain"},
+          {"desc":"domConfig"}
+        ],
+        "list_1":[       
+          {"desc":"embeds"},
+          {"desc":"execCommand()"},
+          {"desc":"forms"},
+          {"desc":"fullscreenElement"},
+          {"desc":"fullscreenEnabled()"},
+          {"desc":"getElementById()"},
+          {"desc":"getElementsByClassName()"},
+          {"desc":"getElementsByName()"},
+          {"desc":"getElementsByTagName()"},
+          {"desc":"hasFocus()"},
+          {"desc":"head"},
+          {"desc":"images"},
+          {"desc":"implementation"},
+          {"desc":"importNode()"},
+          {"desc":"inputEncoding"}
+        ],
+        "list_2": [
+          {"desc":"links"},
+          {"desc":"lastModified"},
+          {"desc":"normalize()"},
+          {"desc":"querySelector()"},
+          {"desc":"querySelectorAll()"},
+          {"desc":"removeEventListener()"},
+          {"desc":"readyState"},
+          {"desc":"referrer"},
+          {"desc":"scripts"},
+          {"desc":"open()"},
+          {"desc":"URL"},
+          {"desc":"title"},
+          {"desc":"write()"},
+          {"desc":"writeln()"}
+        ],        
+        "codeblock":{
+          "lang":"",
+          "code":""
+        }
+      }
+    },
+    {
+      "id":"4",
+      "que":"JavaScript Traversal methods.",
+       "order":["list"],
+      "ans":{
+        "paragraph": [],
+        "subTitle":[],
+        "list":[       
+          {"desc":"parentNode"},
+          {"desc":"parentELement"},
+          {"desc":"children"},
+          {"desc":"childNodes"},
+          {"desc":"firstChild"},
+          {"desc":"lastChild"},
+          {"desc":"firstElementChild"},
+          {"desc":"lastElementChild"},
+          {"desc":"nextSibling"},
+          {"desc":"previousSibling"},
+          {"desc":"nextElementSibling"},
+          {"desc":"previousElementSibling"},
+          {"desc":"closest"}
+        ],        
+        "codeblock":{
+          "lang":"",
+          "code":""
+        }
+      }
+    },
+    {
+      "id":"5",
+      "que":"DOM Document Object Properties and Methods.",
+       "order":["subTitle-0","list_0","subTitle-1","list_1","subTitle-2","list_2","subTitle-3","list_3"],
+      "ans":{
+        "paragraph": [],
+        "subTitle":["DOM Element Methods Set-1", "DOM Element Methods Set-2", "DOM Element Methods Set-3", "DOM Element Methods Set-4"],
+        "list_0":[       
+          {"desc":"accessKey"},
+          {"desc":"appendChild()"},
+          {"desc":"attributes"},
+          {"desc":"blur()"},
+          {"desc":"click()"},
+          {"desc":"children"},
+          {"desc":"childNodes"},
+          {"desc":"childElementCount"},
+          {"desc":"classList"},
+          {"desc":"className"},
+          {"desc":"clientHeight"},
+          {"desc":"clientWidth"},
+          {"desc":"clientLeft"},
+          {"desc":"clientTop"},
+          {"desc":"cloneNode()"},
+          {"desc":"contains()"},
+          {"desc":"contentEditable"},
+          {"desc":"compareDocumentPosition()"},
+          {"desc":"dir"},
+          {"desc":"focus()"},
+          {"desc":"firstChild"},
+          {"desc":"firstElementChild"},
+          {"desc":"exitFullscreen()"}
+        ],
+        "list_1":[       
+          {"desc":"getAttribute()"},
+          {"desc":"getAttributeNode()"},
+          {"desc":"getBoundingClientRect()"},
+          {"desc":"hasAttribute()"},
+          {"desc":"hasAttributes()"},
+          {"desc":"hasChildNodes()"},
+          {"desc":"innerHTML"},
+          {"desc":"innerText"},
+          {"desc":"insertAdjacentElement()"},
+          {"desc":"insertAdjacentHTML()"},
+          {"desc":"insertAdjacentText()"},
+          {"desc":"insertBefore()"},
+          {"desc":"isContentEditable"},
+          {"desc":"isDefaultNamespace()"},
+          {"desc":"isEqualNode()"},
+          {"desc":"isSameNode()"},
+          {"desc":"isSupported()"},
+          {"desc":"id"},
+          {"desc":"lang"},
+          {"desc":"lastChild"},
+          {"desc":"lastElementChild"}
+        ],
+        "list_2": [
+          {"desc":"namespaceURI"},
+          {"desc":"nextSibling"},
+          {"desc":"nextElementSibling"},
+          {"desc":"nodeName"},
+          {"desc":"nodeType"},
+          {"desc":"nodeValue"},
+          {"desc":"normalize()"},
+          {"desc":"offsetHeight"},
+          {"desc":"offsetWidth"},
+          {"desc":"offsetLeft"},
+          {"desc":"offsetTop"},
+          {"desc":"offsetParent"},
+          {"desc":"outerHTML"},
+          {"desc":"outerText"},
+          {"desc":"ownerDocument"},
+          {"desc":"parentNode"},
+          {"desc":"parentElement"},
+          {"desc":"previousSibling"},
+          {"desc":"previousElementSibling"}
+        ],
+        "list_3": [
+          {"desc":"remove()"},
+          {"desc":"removeChild()"},
+          {"desc":"removeAttribute()"},
+          {"desc":"removeAttributeNode()"},
+          {"desc":"replaceChild()"},
+          {"desc":"requestFullscreen()"},
+          {"desc":"scrollHeight"},
+          {"desc":"scrollWidth"},
+          {"desc":"scrollLeft"},
+          {"desc":"scrollTop"},
+          {"desc":"scrollIntoView()"},
+          {"desc":"setAttribute()"},
+          {"desc":"setAttributeNode()"},
+          {"desc":"style"},
+          {"desc":"tabIndex"},
+          {"desc":"tagName"},
+          {"desc":"textContent"},
+          {"desc":"toString()"}
+        ],         
+        "codeblock":{
+          "lang":"",
+          "code":""
+        }
+      }
+    },
+     {
+      "id":"6",
+      "que":"JavaScript 'window.location' methods?",
+       "order":["paragraph", "list"],
+      "ans":{
+        "paragraph": ["For the given full url <b class='marker'>https://example.com:8080/path?user=1&role=admin#top</b>,\n we can break up all component as follow:"],
+        "subTitle":[],
+        "list":[       
+          {"title":"window.location.href", "marker":"<span class='highlight'>https://example.com:8080/path?user=1&role=admin</span>"},
+          {"title":"window.location.protocol", "marker":"<span class='highlight'>https:</span>//example.com:8080/path?user=1&role=admin"},
+          {"title":"window.location.hostname", "marker":"https://<span class='highlight'>example.com</span>:8080/path?user=1&role=admin"},
+          {"title":"window.location.host", "marker":"https://<span class='highlight'>example.com:8080</span>/path?user=1&role=admin"},
+          {"title":"window.location.origin", "marker":"<span class='highlight'>https://example.com:8080</span>/path?user=1&role=admin"},
+          {"title":"window.location.port", "marker":"https://example.com:<span class='highlight'>8080</span>/path?user=1&role=admin"},
+          {"title":"window.location.pathname", "marker":"https://example.com:8080/<span class='highlight'>path</span>?user=1&role=admin"},
+          {"title":"window.location.search", "marker":"https://example.com:8080/path?<span class='highlight'>user=1&role=admin</span>"},
+          {"title":"window.location.hash", "marker":"https://example.com:8080/path?user=1&role=admin<span class='highlight'>#top</span>"}
+        ],        
+        "codeblock":{
+          "lang":"",
+          "code":""
+        }
+      }
+    }
+  ],
+  "status": "success"
+}
