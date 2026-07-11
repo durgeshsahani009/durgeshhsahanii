@@ -34,13 +34,12 @@ export class AddStock implements OnInit {
   stockId: string | null = null;
   isEditMode = false;
   readonly priorityOptions: any[] = ['High', 'Medium', 'Low'];
+   recommendedByOptions: any[] = ['B.L.A Ambala', 'Rachit Khandelwal', 'Other'];
 
-  constructor(
-    private fb: FormBuilder,
+  constructor(private fb: FormBuilder,
     private financeservice: Finance,
     private route: ActivatedRoute,
-    private router: Router
-  ) {
+    private router: Router) {
     this.stockForm = this.initForm();
   }
 
@@ -60,13 +59,14 @@ export class AddStock implements OnInit {
             stockName: stock.stockName,
             ltp: stock.ltp,
             priority: stock.priority,
-            stopLosss: stock.stopLosss,
+            stopLosss: stock.stopLosss,           
             targetFirst: stock.targetFirst,
             deadlineT1: this.toDate(stock.deadlineT1),
             targetSecond: stock.targetSecond,
             deadlineT2: this.toDate(stock.deadlineT2),
             targetThird: stock.targetThird,
             deadlineT3: this.toDate(stock.deadlineT3),
+            recomendedBy: stock.recomendedBy,
             hasTargetMatch: stock.hasTargetMatch ?? false,
           });
         });
@@ -111,6 +111,7 @@ export class AddStock implements OnInit {
       targetThird: this.toNumberOrNull(data['targetThird']),
       deadlineT3: this.toTimestamp(data['deadlineT3']),
       hasTargetMatch: Boolean(data['hasTargetMatch']),
+      recomendedBy: this.toRecommendedByOrNull(data['recomendedBy']),
       updatedAt: Date.now(),
     };
 
@@ -160,11 +161,20 @@ export class AddStock implements OnInit {
   }
 
   private toPriorityOrNull(value: unknown): any | null {
-    if (value === 'High' || value === 'Medium' || value === 'Low') {
+    if (["High", "Medium", "Low"].includes(value as string)) {
       return value;
     }
     return null;
   }
+
+  private toRecommendedByOrNull(value: unknown): any | null {
+    if (this.recommendedByOptions.includes(value as string)) {
+      return value;
+    }
+    return null;
+  }
+
+
 
   onReset(): void {
     this.stockForm.reset({
@@ -178,6 +188,7 @@ export class AddStock implements OnInit {
       deadlineT2: null,
       targetThird: null,
       deadlineT3: null,
+      recomendedBy: null,
       hasTargetMatch: false,
     });
     this.stockForm.markAsPristine();
@@ -200,6 +211,7 @@ export class AddStock implements OnInit {
       deadlineT2: [null as Date | null],
       targetThird: [null as number | null],
       deadlineT3: [null as Date | null],
+      recomendedBy: [null as any | null],
       hasTargetMatch: [false],
     });
   }

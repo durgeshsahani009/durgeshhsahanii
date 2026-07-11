@@ -15,6 +15,7 @@ export interface StockRecord {
   ltp: number | null;
   priority: any | null;
   stopLosss: number | null;
+  recomendedBy?: string | null;
   targetFirst: number | null;
   deadlineT1: number | null;
   targetSecond: number | null;

@@ -43,6 +43,7 @@
             </mat-form-field>
           </div>
         </div>
+       
 
         <div class="row g-2 stock-form-row align-items-start">
           <div class="col-md-6">
@@ -95,7 +96,17 @@
           </div>
         </div>
 
-        <div class="row g-2 stock-form-row align-items-start">
+        <div class="row g-2 stock-form-row align-items-start">          
+            <div class="col-md-6">
+                <mat-form-field appearance="outline" class="stock-field w-100" subscriptSizing="dynamic">
+                  <mat-label>Recommended By</mat-label>
+                  <mat-select formControlName="recomendedBy" placeholder="Select recommended by">
+                    @for (option of recommendedByOptions; track option) {
+                    <mat-option [value]="option">{{ option }}</mat-option>
+                    }
+                  </mat-select>
+                </mat-form-field>
+            </div>
           <div class="col-md-6 stock-checkbox-field">
             <mat-checkbox formControlName="hasTargetMatch" color="primary" class="stock-checkbox">
               Has Target Match

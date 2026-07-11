@@ -7,7 +7,19 @@
     font-weight: normal;
     line-height: 1;
   }
-  .mat-mdc-option .mdc-list-item__primary-text{font-size:13px;}
+  .mat-mdc-option .mdc-list-item__primary-text {
+    font-size: 12px;
+  }
+}
+
+:host ::ng-deep .mat-mdc-select-panel {
+  .mat-mdc-option {
+    font-size: 12px !important;
+  }
+
+  .mdc-list-item__primary-text {
+    font-size: 12px !important;
+  }
 }
 
 .stock-form-fieldset {

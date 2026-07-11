@@ -37,7 +37,9 @@
                 <th scope="col">Deadline T3</th>
                 <th scope="col" class="text-center">Match</th>
                 <th scope="col">Priority</th>
-                <th scope="col">Updated</th>
+                <th scope="col">Updated At</th>
+                <th scope="col">Recommended By</th>
+                <th scope="col">Remaining Time</th>
                 <th scope="col" class="sticky-col sticky-col-last text-center">Actions</th>
               </tr>
             </thead>
@@ -45,11 +47,15 @@
               @for (stock of stocks; track stock.id ?? stock.stockName; let i = $index) {
                 <tr>
                   <td class="sticky-col sticky-col-sno text-center" data-label="#">{{ i + 1 }}</td>
-                  <td class="stock-name-cell sticky-col sticky-col-first" data-label="Stock">{{ stock.stockName }}</td>
+                  <td class="stock-name-cell sticky-col sticky-col-first" data-label="Stock">
+                    <span class="stock_name_badge">
+                      {{ stock.stockName }}
+                    </span>
+                   </td>
                   <td class="num-cell" data-label="Stop Loss">
                     {{ stock.stopLosss ?? '—' }}
                   </td>
-                  <td class="num-cell" data-label="Stop Loss">
+                  <td class="num-cell" data-label="LTP">
                     {{ stock.ltp ?? '—' }}
                   </td>
                   <td class="num-cell" data-label="T1">
@@ -64,13 +70,19 @@
                     {{ stock.targetThird ?? '—' }}
                   </td>
                   <td class="date-cell" data-label="Deadline T3">{{ formatDeadline(stock.deadlineT3) }}</td>
-                  <td class="match-cell text-center" data-label="Match">
+                  <td class="match-cell text-center" data-label="Matched">
                     {{ stock.hasTargetMatch ? 'Yes' : 'No' }}
                   </td>
-                  <td class="match-cell text-center" data-label="Match">
+                  <td class="match-cell text-center" data-label="Priority">
                     {{ stock.priority ?? '—' }}
                   </td>
                   <td class="date-cell" data-label="Updated">{{ stock.updatedAt | date: 'dd/MM/yyyy:hh:mm' }}</td>
+                  <td class="num-cell" data-label="Recommended By">
+                    {{ stock.recomendedBy ?? '—' }}
+                  </td>
+                  <td class="num-cell" data-label="Remaining Time">
+                    {{ calculateRemainingTime(stock.deadlineT1, stock.deadlineT2, stock.deadlineT3) }}
+                  </td>
                   <td class="actions-cell sticky-col sticky-col-last text-center" data-label="Actions">
                     <button
                       type="button"

@@ -18,8 +18,8 @@ export class Login {
 
   login(data:any){    
     if(data.username==='durgeshh' && data.password==='profile$41084'){
-      sessionStorage.setItem('user', JSON.stringify(data.username));
-      sessionStorage.setItem('token', 'ABCXYZ007');
+      localStorage.setItem('user', JSON.stringify(data.username));
+      localStorage.setItem('token', 'ABCXYZ007');
     }
   }
 
