@@ -28,10 +28,11 @@ body {
   // variables at https://material.angular.dev/guide/system-variables
   background-color: var(--mat-sys-surface);
   color: var(--mat-sys-on-surface);
-  font: var(--mat-sys-body-medium);
+  // font: var(--mat-sys-body-medium);
 
   // Reset the user agent margin.
   margin: 0;
+
 }
 :root{
   --theme_color:#009f7c;
@@ -73,5 +74,6 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .login_panel .mat-mdc-dialog-surface{border-radius:4px !important; border:1px solid var(--gray_100); background-color:var(--light);}
 .blue_themes *{
   font-family: "Rubik", sans-serif;
+  .fa{font:normal normal normal 14px/1 FontAwesome !important;}
   pre code{background-color:#333; line-height:.9;}
 }

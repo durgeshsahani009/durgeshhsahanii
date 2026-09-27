@@ -4,7 +4,7 @@ import { Angular } from './angular/angular';
 import { Mongodb } from './mongodb/mongodb';
 import { Nodejs } from './nodejs/nodejs';
 import { JsBasics } from './js-basics/js-basics';
-import { HtmlCss } from './html-css/html-css';
+import { Git } from './git/git';
 import { JavascriptES6 } from './javascript-es6/javascript-es6';
 import { JavascriptCore } from './javascript-core/javascript-core';
 import { Linux } from './linux/linux';
@@ -22,7 +22,7 @@ export const TUTORIAL_ROUTES: Routes = [
       { path: 'nodejs', component: Nodejs },
       { path: 'linux', component: Linux },
       { path: 'js-basics', component: JsBasics},
-      { path: 'html-css', component: HtmlCss }
+      { path: 'git', component: Git }
     ]
   }
 ];

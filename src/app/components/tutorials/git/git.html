@@ -1,0 +1,25 @@
+<div class="container mt-5">
+  <h2>Git Commands</h2>
+  <hr />
+  <div class="content">
+    @for (item of dataset; track $index) {
+      <h4>{{item.title}}</h4>
+      <table class="table table-bordered" border="1" cellpadding="5" cellspacing="0">
+        <tr>
+          <th>Command</th>
+          <th>Purpose</th>
+          <th>Explanation</th>
+        </tr>
+        @for (data of item.data; track $index) {
+          <tr>
+            <td data-attr="Command"><span>{{data.command}}</span></td>
+            <td data-attr="Purpose">{{data.purpose}}</td>
+            <td data-attr="Explanation">{{data.explanation}}</td>
+          </tr>
+        }
+        <tr></tr>
+      </table>
+    }
+
+  </div>
+  </div>
